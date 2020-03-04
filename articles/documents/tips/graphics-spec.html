@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#12464;&#12521;&#12501;&#12451;&#12483;&#12463;&#12473;&#12398;&#22522;&#26412;&#20181;&#27096; | Lumino website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#12464;&#12521;&#12501;&#12451;&#12483;&#12463;&#12473;&#12398;&#22522;&#26412;&#20181;&#27096; | Lumino website ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-default ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="グラフィックスの基本仕様">グラフィックスの基本仕様</h1>
+
+<h2 id="座標空間">座標空間</h2>
+<h3 id="ワールド座標-world-space">ワールド座標 (World space)</h3>
+<p>3D 空間内の座標を指します。</p>
+<p><a href="../first-tutorial/2-graphics-basic.html">チュートリアルの 3D 座標系の説明</a> のように、X+ を右、Y+を上、Z+ を前方とする左手座標系です。</p>
+<h3 id="スクリーン座標-screen-space">スクリーン座標 (Screen space)</h3>
+<p>解像度と一致する座標空間です。</p>
+<p>例えばサイズが 640x480 であるウィンドウの場合、左上を (0.0, 0.0) 、右下を (640.0, 480.0) とします。</p>
+<h3 id="uv座標-uv-space">UV座標 (UV space)</h3>
+<p>テクスチャサンプリングに使用する座標系です。</p>
+<p>Lumino ではサンプリングソースの左上を (0.0, 0.0)、右下を (1.0, 1.0) とします。</p>
+<div class="NOTE"><h5>Note</h5><p>OpenGL 系のグラフィックスバックエンドとは縦方向の向きが逆である点に注意してください。
+Lumino はシェーダをクロスコンパイルする際にこの座標系を変換するコードを挿入し、プラットフォームの差を吸収します。</p>
+</div>
+<h3 id="クリップ座標-clip-space">クリップ座標 (Clip space)</h3>
+<p>左上を (-1.0, -1.0)、右下を (+1.0, +1.0)、遠くの平面を +1.0 とする座標空間です。</p>
+<p>この座標空間は、主にシェーダを記述する際に注意する必要があります。</p>
+<p>なお、範囲はグラフィックスバックエンドによって異なります。</p>
+<div class="NOTE"><h5>Note</h5><p>Direct3D-like: クリップ空間の深さは、near:0.0 ~ far:1.0 となります。</p>
+<p>OpenGL-like: クリップ空間の深さは、near:-1.0 ~ far:1.0 となります。</p>
+</div>
+<h2 id="面の正面方向">面の正面方向</h2>
+<p>頂点が右回りである面を表とします。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017-2020 lriki
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lumino &#12398;&#22522;&#26412; | Lumino website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Lumino &#12398;&#22522;&#26412; | Lumino website ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-default ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lumino-の基本">Lumino の基本</h1>
+
+<p>この章では、Lumino を使ってアプリケーションを作成するための最も基本的な流れについて学びます。</p>
+<h2 id="最小のプログラム">最小のプログラム</h2>
+<p>「最初のプログラム」で見たように、Lumino でアプリを開発するには Application クラスの実装から始めます。</p>
+<p>空のウィンドウを表示するだけの最小限のプログラムは、次のようになります。</p>
+<div class="tabGroup" id="tabgroup_M3Sl-asvur">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur_lang-cpp" role="tab" aria-controls="tabpanel_M3Sl-asvur_lang-cpp" data-tab="lang-cpp" tabindex="0" aria-selected="true">C++</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur_lang-ruby" role="tab" aria-controls="tabpanel_M3Sl-asvur_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+</ul>
+<section id="tabpanel_M3Sl-asvur_lang-cpp" role="tabpanel" data-tab="lang-cpp">
+<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
+
+class App : public Application
+{
+};
+
+LUMINO_APP(App);
+</code></pre></section>
+<section id="tabpanel_M3Sl-asvur_lang-ruby" role="tabpanel" data-tab="lang-ruby" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-ruby">require &quot;lumino&quot;
+
+class App &lt; Application
+end
+
+App.new.run
+</code></pre></section>
+</div>
+<p>実行して、ウィンドウを表示してみましょう。</p>
+<p><img src="img/basic-1.png" alt=""></p>
+<p>この時点でできることは、クローズボタンなどでウィンドウを閉じるだけです。</p>
+<p>文字を表示したり、ユーザー入力を受けてインタラクションを実現するためにはこの App クラスにいくつかのメソッドを実装する必要があります。</p>
+<h2 id="初期化と更新">初期化と更新</h2>
+<p>小さな Lumino アプリケーションを作成するための基本的なタスクは次の2つです。</p>
+<ul>
+<li>プログラムの開始時に変数を初期化する</li>
+<li>プログラムが動き出したら、繰り返し変数を変更する</li>
+</ul>
+<p>これらを行うために、次のように 2 つのメソッド定義を追加します。</p>
+<div class="tabGroup" id="tabgroup_M3Sl-asvur-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-1_lang-cpp" role="tab" aria-controls="tabpanel_M3Sl-asvur-1_lang-cpp" data-tab="lang-cpp" tabindex="0" aria-selected="true">C++</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-1_lang-ruby" role="tab" aria-controls="tabpanel_M3Sl-asvur-1_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+</ul>
+<section id="tabpanel_M3Sl-asvur-1_lang-cpp" role="tabpanel" data-tab="lang-cpp">
+<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
+
+class App : public Application
+{
+    void onInit() override
+    {
+    }
+
+    void onUpdate() override
+    {
+    }
+};
+
+LUMINO_APP(App);
+</code></pre></section>
+<section id="tabpanel_M3Sl-asvur-1_lang-ruby" role="tabpanel" data-tab="lang-ruby" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-ruby">require &quot;lumino&quot;
+
+class App &lt; Application
+  def on_init
+  end
+
+  def on_update
+  end
+end
+
+App.new.run
+</code></pre></section>
+</div>
+<p>空のメソッドを追加しただけなので、実行するとウィンドウは表示できますが、動きは変わりません。</p>
+<p>この後のチュートリアルやサンプルで紹介するプログラムでは、プログラムの開始時に1回呼び出される onInit() メソッドで変数を初期化し、onUpdate() メソッドでこれらの変数を変更して、アプリケーションを実装していくことになります。</p>
+<div class="NOTE"><h5>Note</h5><p>onUpdate() は 1秒間に 60 回、繰り返し実行されます。
+この 1 回分の実行単位を <code>フレーム</code> と呼び、「1 秒間は 60 フレーム」といったように使います。</p>
+</div>
+<h2 id="hello-lumino">Hello, Lumino!</h2>
+<p>ウィンドウに文字列を表示してみましょう。</p>
+<p>テキストや数値を画面に表示するには、Lumino の デバッグようの機能である、Debug クラスの print() メソッドを使うと簡単にできます。</p>
+<div class="tabGroup" id="tabgroup_M3Sl-asvur-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-2_lang-cpp" role="tab" aria-controls="tabpanel_M3Sl-asvur-2_lang-cpp" data-tab="lang-cpp" tabindex="0" aria-selected="true">C++</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-2_lang-ruby" role="tab" aria-controls="tabpanel_M3Sl-asvur-2_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+</ul>
+<section id="tabpanel_M3Sl-asvur-2_lang-cpp" role="tabpanel" data-tab="lang-cpp">
+<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
+
+class App : public Application
+{
+    void onInit() override
+    {
+        Debug::print(u&quot;Hello, Lumino!&quot;);
+    }
+
+    void onUpdate() override
+    {
+    }
+};
+
+LUMINO_APP(App);
+</code></pre></section>
+<section id="tabpanel_M3Sl-asvur-2_lang-ruby" role="tabpanel" data-tab="lang-ruby" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-ruby">require &quot;lumino&quot;
+
+class App &lt; Application
+  def on_init
+    Debug.print(&quot;Hello, Lumino!&quot;)
+  end
+
+  def on_update
+  end
+end
+
+App.new.run
+</code></pre></section>
+</div>
+<p>文字列がウィンドウ上に表示されます。（その後、しばらくすると消えます）</p>
+<p><img src="img/basic-2.png" alt=""></p>
+<h2 id="文字列を表示し続ける">文字列を表示し続ける</h2>
+<p>次は onUpdate で文字列を表示してみます。</p>
+<div class="tabGroup" id="tabgroup_M3Sl-asvur-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-3_lang-cpp" role="tab" aria-controls="tabpanel_M3Sl-asvur-3_lang-cpp" data-tab="lang-cpp" tabindex="0" aria-selected="true">C++</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-3_lang-ruby" role="tab" aria-controls="tabpanel_M3Sl-asvur-3_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+</ul>
+<section id="tabpanel_M3Sl-asvur-3_lang-cpp" role="tabpanel" data-tab="lang-cpp">
+<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
+
+class App : public Application
+{
+    void onInit() override
+    {
+    }
+
+    void onUpdate() override
+    {
+        Debug::print(String::format(u&quot;Time: {0}&quot;, Engine::time()));
+    }
+};
+
+LUMINO_APP(App);
+</code></pre></section>
+<section id="tabpanel_M3Sl-asvur-3_lang-ruby" role="tabpanel" data-tab="lang-ruby" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-ruby">require &quot;lumino&quot;
+
+class App &lt; Application
+  def on_init
+  end
+
+  def on_update
+    Debug.print(&quot;Time: %f&quot; % Engine.time)
+  end
+end
+
+App.new.run
+</code></pre></section>
+</div>
+<p><code>Engine::time()</code> は アプリケーションの起動からの経過時間を返します。これを利用して、onUpdate() がどのくらいの頻度で実行されているのかを確認してみます。</p>
+<p><img src="img/basic-3.png" alt=""></p>
+<p>実行してみると、画面からあふれるほどのテキストが表示されてしまいました。</p>
+<p>繰り返し実行されているのはわかりましたが、今は過去の情報は不要です。</p>
+<p><code>Debug::print()</code> は第一引数に数値を指定することで、テキストの表示時間をコントロールできます。次のように 0 を指定することで、テキストは 1 フレームの間だけ表示されるようになります。</p>
+<div class="tabGroup" id="tabgroup_M3Sl-asvur-4">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-4_lang-cpp" role="tab" aria-controls="tabpanel_M3Sl-asvur-4_lang-cpp" data-tab="lang-cpp" tabindex="0" aria-selected="true">C++</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_M3Sl-asvur-4_lang-ruby" role="tab" aria-controls="tabpanel_M3Sl-asvur-4_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+</ul>
+<section id="tabpanel_M3Sl-asvur-4_lang-cpp" role="tabpanel" data-tab="lang-cpp">
+<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
+
+class App : public Application
+{
+    void onInit() override
+    {
+    }
+
+    void onUpdate() override
+    {
+        Debug::print(0, String::format(u&quot;Time: {0}&quot;, Engine::time()));
+    }
+};
+
+LUMINO_APP(App);
+</code></pre></section>
+<section id="tabpanel_M3Sl-asvur-4_lang-ruby" role="tabpanel" data-tab="lang-ruby" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-ruby">require &quot;lumino&quot;
+
+class App &lt; Application
+  def on_init
+  end
+
+  def on_update
+    Debug.print(0, &quot;Time: %f&quot; % Engine.time)
+  end
+end
+
+App.new.run
+</code></pre></section>
+</div>
+<p>修正したら、実行してみましょう。</p>
+<p><img src="img/basic-4.gif" alt=""></p>
+<p>シンプルなタイマーができました！</p>
+<p>テキストは 1 秒間に 60 回、表示と消去を繰り返すことで、リアルタイムに変化しているように見えます。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2017-2020 lriki
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+var classln_1_1_optional =
+[
+    [ "Optional", "classln_1_1_optional.html#a905af3f574fda5a63248fdb7d9193946", null ],
+    [ "Optional", "classln_1_1_optional.html#a7f64277862fc537a44e4d780e33611be", null ],
+    [ "Optional", "classln_1_1_optional.html#a0038b65e454f885f39f6878c4e75884a", null ],
+    [ "Optional", "classln_1_1_optional.html#a5a0f49b841fa298d080af269c936d0d1", null ],
+    [ "Optional", "classln_1_1_optional.html#a462fd01d4ae9fd63f27b1f2a94700ef6", null ],
+    [ "Optional", "classln_1_1_optional.html#a5a652e897333a3a256722f7a6cf2b679", null ],
+    [ "Optional", "classln_1_1_optional.html#a70e6e846d2da158a4db13a50a0c2473b", null ],
+    [ "Optional", "classln_1_1_optional.html#a80291e3d3ce6d3ab66e5d3a5688ff64b", null ],
+    [ "Optional", "classln_1_1_optional.html#adb54beb68e7e0f3585659f1bf940933b", null ],
+    [ "Optional", "classln_1_1_optional.html#adb54beb68e7e0f3585659f1bf940933b", null ],
+    [ "hasValue", "classln_1_1_optional.html#a67b5256e1a08c46cc31288e59e79cfd7", null ],
+    [ "operator bool", "classln_1_1_optional.html#ac530bf3d6c8d40fd2db5e97947567ce8", null ],
+    [ "operator*", "classln_1_1_optional.html#aca41fcca7e1480fe1ea0f9416a5232c0", null ],
+    [ "operator*", "classln_1_1_optional.html#aa6b1f26f2479494f468c74b239bc6c3f", null ],
+    [ "operator*", "classln_1_1_optional.html#a9e3844161683056464ea42329117a49a", null ],
+    [ "operator*", "classln_1_1_optional.html#a04091f69f00280873965e737dd1ed35f", null ],
+    [ "operator->", "classln_1_1_optional.html#a143bba7d219911f74cfa711a69338c79", null ],
+    [ "operator->", "classln_1_1_optional.html#ad0f8416606d3e6ecf94cf9f56149bb9e", null ],
+    [ "reset", "classln_1_1_optional.html#ae79d791f0099ae161e88fc9a06cb28dc", null ],
+    [ "value", "classln_1_1_optional.html#af907b3361df2acf9afaec59a791b9c16", null ],
+    [ "value", "classln_1_1_optional.html#ad69d572abc40a556047676ec9ee391c2", null ],
+    [ "value", "classln_1_1_optional.html#a02e25f08e315e0f19307fb1f83320fa8", null ],
+    [ "value", "classln_1_1_optional.html#a4d1378edc0e1f1cebd82cc6c91b0fd7d", null ],
+    [ "valueOr", "classln_1_1_optional.html#aad11d2176be371aa3b316417f328e4d1", null ],
+    [ "valueOr", "classln_1_1_optional.html#a0924f86e750c3db83578d63f9e4397d4", null ]
+];
