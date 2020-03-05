@@ -622,7 +622,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/download.html",
-          "hash": "3ILOdOvAnPnvWneaSJlaOA=="
+          "hash": "d/Uvnd5VjxwxJqrFWqW4eg=="
         }
       },
       "is_incremental": false,
@@ -634,7 +634,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/getting-started-native.html",
-          "hash": "STCeIQ/nUQ5arychIvFRnQ=="
+          "hash": "6Sp/qTIaplysAzTkv7NKgg=="
         }
       },
       "is_incremental": false,
@@ -1640,7 +1640,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/toc.html",
-          "hash": "+M+v3Tp7OK1pryuPfIz/Jg=="
+          "hash": "3tN9yPmrh/iOyk4niiripA=="
         }
       },
       "is_incremental": false,
@@ -1925,15 +1925,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "vx9Bor7FST9xfYE+oBRzrw=="
+          "hash": "YRkYcFFLYShLJxd9UKW31w=="
         }
       },
       "is_incremental": false,
