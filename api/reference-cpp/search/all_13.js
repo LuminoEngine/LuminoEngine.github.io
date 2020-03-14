@@ -84,5 +84,5 @@ var searchData=
   ['trytouint64',['tryToUInt64',['../classln_1_1_string.html#a92147ae4ac5ac31e20515a3f0d711b3a',1,'ln::String']]],
   ['trytouint8',['tryToUInt8',['../classln_1_1_string.html#a55015820e0a5127c0866cf1732039da3',1,'ln::String']]],
   ['turquoise',['Turquoise',['../structln_1_1_color.html#a2d82602ff13e166aa716dc6b21683081',1,'ln::Color']]],
-  ['type',['type',['../classln_1_1_animation_value.html#acc24f9603903b82e58063c7a1e7b93a5',1,'ln::AnimationValue::type()'],['../classln_1_1_animation_track.html#a9c283f4cfcaf3f25f5ffd0e8ea3ef8b7',1,'ln::AnimationTrack::type()'],['../structln_1_1_vertex_element.html#ab979844a17ffdca9a79195504c3ab8b5',1,'ln::VertexElement::Type()']]]
+  ['type',['Type',['../structln_1_1_vertex_element.html#ab979844a17ffdca9a79195504c3ab8b5',1,'ln::VertexElement::Type()'],['../classln_1_1_animation_value.html#acc24f9603903b82e58063c7a1e7b93a5',1,'ln::AnimationValue::type()'],['../classln_1_1_animation_track.html#a9c283f4cfcaf3f25f5ffd0e8ea3ef8b7',1,'ln::AnimationTrack::type()']]]
 ];

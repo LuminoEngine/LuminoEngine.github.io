@@ -212,8 +212,10 @@ var hierarchy =
     [ "ln::Ref< ln::VertexLayout >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< ln::WorldObject >", "classln_1_1_ref.html", null ],
     [ "Ref< LN_SPECIALIZED_TYPE >", "class_ref_3_01_l_n___s_p_e_c_i_a_l_i_z_e_d___t_y_p_e_01_4.html", null ],
+    [ "ln::Ref< Mesh >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< MeshResource >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< MeshTilemapModel >", "classln_1_1_ref.html", null ],
+    [ "ln::Ref< MeshTileset >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< Object >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< PhysicsObject2D >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< PhysicsWorld >", "classln_1_1_ref.html", null ],
@@ -422,8 +424,8 @@ var hierarchy =
       [ "ln::ReadOnlyList< ln::Ref< MeshNode > >", "classln_1_1_read_only_list.html", [
         [ "ln::List< ln::Ref< MeshNode > >", "classln_1_1_list.html", null ]
       ] ],
-      [ "ln::ReadOnlyList< ln::Ref< MeshResource > >", "classln_1_1_read_only_list.html", [
-        [ "ln::List< ln::Ref< MeshResource > >", "classln_1_1_list.html", null ]
+      [ "ln::ReadOnlyList< ln::Ref< MeshTilemapLayer > >", "classln_1_1_read_only_list.html", [
+        [ "ln::List< ln::Ref< MeshTilemapLayer > >", "classln_1_1_list.html", null ]
       ] ],
       [ "ln::ReadOnlyList< ln::Ref< PhysicsObject > >", "classln_1_1_read_only_list.html", [
         [ "ln::List< ln::Ref< PhysicsObject > >", "classln_1_1_list.html", null ]
