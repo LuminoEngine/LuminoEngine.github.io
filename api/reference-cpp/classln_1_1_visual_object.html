@@ -99,9 +99,10 @@ Inheritance diagram for ln::VisualObject:</div>
  <div class="center">
   <img src="classln_1_1_visual_object.png" usemap="#ln::VisualObject_map" alt=""/>
   <map id="ln::VisualObject_map" name="ln::VisualObject_map">
-<area href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 " alt="ln::WorldObject" shape="rect" coords="55,0,155,24"/>
-<area href="classln_1_1_box_mesh.html" title="直方体のメッシュオブジェクトです。 " alt="ln::BoxMesh" shape="rect" coords="0,112,100,136"/>
-<area href="classln_1_1_sprite.html" title="スプライトオブジェクトを表します。 " alt="ln::Sprite" shape="rect" coords="110,112,210,136"/>
+<area href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 " alt="ln::WorldObject" shape="rect" coords="119,0,228,24"/>
+<area href="classln_1_1_particle_emitter.html" title="ParticleEmitter. " alt="ln::ParticleEmitter" shape="rect" coords="0,112,109,136"/>
+<area href="classln_1_1_sprite.html" title="スプライトオブジェクトを表します。 " alt="ln::Sprite" shape="rect" coords="119,112,228,136"/>
+<area href="classln_1_1_static_mesh.html" title="StaticMesh. " alt="ln::StaticMesh" shape="rect" coords="238,112,347,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -116,6 +117,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ac08b882ba4430c0eee45291fa760a8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">可視状態を取得します。 <br /></td></tr>
 <tr class="separator:ac08b882ba4430c0eee45291fa760a8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RenderState</div></td></tr>
+<tr class="memitem:a7a463cf68091631332ad53bc2caa3f89"><td class="memItemLeft" align="right" valign="top"><a id="a7a463cf68091631332ad53bc2caa3f89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#a7a463cf68091631332ad53bc2caa3f89">setShadingModel</a> (const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a> &gt; &amp;value)</td></tr>
+<tr class="memdesc:a7a463cf68091631332ad53bc2caa3f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">ShadingModel を設定します。(default: ShadingModel::Default) <br /></td></tr>
+<tr class="separator:a7a463cf68091631332ad53bc2caa3f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7328ce0d64eda1b387571037ff3ca26"><td class="memItemLeft" align="right" valign="top"><a id="ae7328ce0d64eda1b387571037ff3ca26"></a>
+const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#ae7328ce0d64eda1b387571037ff3ca26">shadingModel</a> () const</td></tr>
+<tr class="memdesc:ae7328ce0d64eda1b387571037ff3ca26"><td class="mdescLeft">&#160;</td><td class="mdescRight">ShadingModel を取得します。 <br /></td></tr>
+<tr class="separator:ae7328ce0d64eda1b387571037ff3ca26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75dbde9c99ae277de7e191b49322f0ee"><td class="memItemLeft" align="right" valign="top"><a id="a75dbde9c99ae277de7e191b49322f0ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#a75dbde9c99ae277de7e191b49322f0ee">setBlendMode2</a> (<a class="el" href="namespaceln.html#ab453d7e604c377c267761cf5cf100ce4">BlendMode</a> value)</td></tr>
+<tr class="memdesc:a75dbde9c99ae277de7e191b49322f0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">合成方法を設定します。(default: BlendMode::Normal) <br /></td></tr>
+<tr class="separator:a75dbde9c99ae277de7e191b49322f0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e1779d189a25be0b97468579f57468"><td class="memItemLeft" align="right" valign="top"><a id="a79e1779d189a25be0b97468579f57468"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#a79e1779d189a25be0b97468579f57468">setBlendMode</a> (const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#ab453d7e604c377c267761cf5cf100ce4">BlendMode</a> &gt; &amp;mode)</td></tr>
 <tr class="memdesc:a79e1779d189a25be0b97468579f57468"><td class="mdescLeft">&#160;</td><td class="mdescRight">合成方法を設定します。(default: BlendMode::Normal) <br /></td></tr>
@@ -124,14 +137,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#ab453d7e604c377c267761cf5cf100ce4">BlendMode</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#addf99fdab47ce2b9020cc419383b17ec">blendMode</a> () const</td></tr>
 <tr class="memdesc:addf99fdab47ce2b9020cc419383b17ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">合成方法を取得します。 <br /></td></tr>
 <tr class="separator:addf99fdab47ce2b9020cc419383b17ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a463cf68091631332ad53bc2caa3f89"><td class="memItemLeft" align="right" valign="top"><a id="a7a463cf68091631332ad53bc2caa3f89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#a7a463cf68091631332ad53bc2caa3f89">setShadingModel</a> (const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; ShadingModel &gt; &amp;value)</td></tr>
-<tr class="memdesc:a7a463cf68091631332ad53bc2caa3f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">ShadingModel を設定します。(default: ShadingModel::Default) <br /></td></tr>
-<tr class="separator:a7a463cf68091631332ad53bc2caa3f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7328ce0d64eda1b387571037ff3ca26"><td class="memItemLeft" align="right" valign="top"><a id="ae7328ce0d64eda1b387571037ff3ca26"></a>
-const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; ShadingModel &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#ae7328ce0d64eda1b387571037ff3ca26">shadingModel</a> () const</td></tr>
-<tr class="memdesc:ae7328ce0d64eda1b387571037ff3ca26"><td class="mdescLeft">&#160;</td><td class="mdescRight">ShadingModel を取得します。 <br /></td></tr>
-<tr class="separator:ae7328ce0d64eda1b387571037ff3ca26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8394c501bf4384713a04329791e34474"><td class="memItemLeft" align="right" valign="top"><a id="a8394c501bf4384713a04329791e34474"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_visual_object.html#a8394c501bf4384713a04329791e34474">setDepthTestEnabled</a> (const <a class="el" href="classln_1_1_optional.html">Optional</a>&lt; bool &gt; &amp;enabled)</td></tr>
 <tr class="memdesc:a8394c501bf4384713a04329791e34474"><td class="mdescLeft">&#160;</td><td class="mdescRight">このノードを描画する際の深度テストの有無を設定します。(default: true) <br /></td></tr>
@@ -208,7 +213,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a441fa7aed5cec9163a68dfc166f8544c inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef17fb9d185b1281232a6e10bf74550 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a8ef17fb9d185b1281232a6e10bf74550"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a8ef17fb9d185b1281232a6e10bf74550">setRotation</a> (float x, float y, float z)</td></tr>
-<tr class="memdesc:a8ef17fb9d185b1281232a6e10bf74550 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトの回転をオイラー角から設定します。(radian) <br /></td></tr>
+<tr class="memdesc:a8ef17fb9d185b1281232a6e10bf74550 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトの回転をオイラー角から設定します(radian単位) 。回転順序は Z(Roll) &gt; X(Pich) &gt; Y(Yaw) です。 <br /></td></tr>
 <tr class="separator:a8ef17fb9d185b1281232a6e10bf74550 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add84e8e65cd396d41c2e1305718e2c21 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="add84e8e65cd396d41c2e1305718e2c21"></a>
 const <a class="el" href="structln_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#add84e8e65cd396d41c2e1305718e2c21">rotation</a> () const</td></tr>
@@ -262,30 +267,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a7a76a05684da2756b19df7c980368ad7">addComponent</a> (Component *component)</td></tr>
 <tr class="memdesc:a7a76a05684da2756b19df7c980368ad7 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component を追加します。 <br /></td></tr>
 <tr class="separator:a7a76a05684da2756b19df7c980368ad7 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3316afb8cc48a0e6e27032f8b4c59f10 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a3316afb8cc48a0e6e27032f8b4c59f10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a3316afb8cc48a0e6e27032f8b4c59f10">destroy</a> ()</td></tr>
-<tr class="memdesc:a3316afb8cc48a0e6e27032f8b4c59f10 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトを破棄します。実際の削除は、現在のフレームのアップデート処理後に行われます。 <br /></td></tr>
+<tr class="memitem:ae62287159af99b04a60cd148bc743859 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="ae62287159af99b04a60cd148bc743859"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#ae62287159af99b04a60cd148bc743859">removeComponent</a> (Component *component)</td></tr>
+<tr class="memdesc:ae62287159af99b04a60cd148bc743859 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component を除外します。 <br /></td></tr>
+<tr class="separator:ae62287159af99b04a60cd148bc743859 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311e02d534c55d2ed9a4f52d571ecfb8 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a311e02d534c55d2ed9a4f52d571ecfb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a311e02d534c55d2ed9a4f52d571ecfb8">addTag</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;tag)</td></tr>
+<tr class="memdesc:a311e02d534c55d2ed9a4f52d571ecfb8 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">タグを追加します。 <br /></td></tr>
+<tr class="separator:a311e02d534c55d2ed9a4f52d571ecfb8 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aee74f524f91da0284604c1140f165 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a49aee74f524f91da0284604c1140f165"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a49aee74f524f91da0284604c1140f165">removeTag</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;tag)</td></tr>
+<tr class="memdesc:a49aee74f524f91da0284604c1140f165 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">タグを除外します。 <br /></td></tr>
+<tr class="separator:a49aee74f524f91da0284604c1140f165 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed84cbadbdfd9f43d2a7f6e132a48cc inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a1ed84cbadbdfd9f43d2a7f6e132a48cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a1ed84cbadbdfd9f43d2a7f6e132a48cc">hasTag</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;tag) const</td></tr>
+<tr class="memdesc:a1ed84cbadbdfd9f43d2a7f6e132a48cc inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したタグを持っているかを確認します。 <br /></td></tr>
+<tr class="separator:a1ed84cbadbdfd9f43d2a7f6e132a48cc inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3316afb8cc48a0e6e27032f8b4c59f10 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a3316afb8cc48a0e6e27032f8b4c59f10">destroy</a> ()</td></tr>
+<tr class="memdesc:a3316afb8cc48a0e6e27032f8b4c59f10 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 ">WorldObject</a> を破棄します。  <a href="classln_1_1_world_object.html#a3316afb8cc48a0e6e27032f8b4c59f10">More...</a><br /></td></tr>
 <tr class="separator:a3316afb8cc48a0e6e27032f8b4c59f10 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38bb664526a74979e1841f589318ef45 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a38bb664526a74979e1841f589318ef45"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a38bb664526a74979e1841f589318ef45">destroyed</a> () const</td></tr>
-<tr class="memdesc:a38bb664526a74979e1841f589318ef45 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classln_1_1_world_object.html#a3316afb8cc48a0e6e27032f8b4c59f10" title="このオブジェクトを破棄します。実際の削除は、現在のフレームのアップデート処理後に行われます。 ...">destroy()</a> が呼び出され、オブジェクトが破棄されようとしているか、または破棄されたかを確認します。実際の削除は、現在のフレームのアップデート処理後に行われます。 <br /></td></tr>
+<tr class="memdesc:a38bb664526a74979e1841f589318ef45 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classln_1_1_world_object.html#a3316afb8cc48a0e6e27032f8b4c59f10" title="WorldObject を破棄します。 ">destroy()</a> が呼び出され、オブジェクトが破棄されようとしているか、または破棄されたかを確認します。実際の削除は、現在のフレームのアップデート処理後に行われます。 <br /></td></tr>
 <tr class="separator:a38bb664526a74979e1841f589318ef45 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307c9317eb3d3968061bb696aa46d730 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a307c9317eb3d3968061bb696aa46d730"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a307c9317eb3d3968061bb696aa46d730">removeFromScene</a> ()</td></tr>
-<tr class="memdesc:a307c9317eb3d3968061bb696aa46d730 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトを直ちに World から除外します。このメソッドは World のアップデートシーケンス中に呼び出してはなりません。 <br /></td></tr>
-<tr class="separator:a307c9317eb3d3968061bb696aa46d730 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0302f0e3a9515513b221a9493d880c4b inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a0302f0e3a9515513b221a9493d880c4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a0302f0e3a9515513b221a9493d880c4b">removeFromParent</a> ()</td></tr>
+<tr class="memdesc:a0302f0e3a9515513b221a9493d880c4b inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトを直ちに <a class="el" href="classln_1_1_world.html" title="3D シーンを表すクラスです。 ">World</a> から除外します。このメソッドは <a class="el" href="classln_1_1_world.html" title="3D シーンを表すクラスです。 ">World</a> のアップデートシーケンス中に呼び出してはなりません。 <br /></td></tr>
+<tr class="separator:a0302f0e3a9515513b221a9493d880c4b inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fe57dcec96a61a695ad5b675cdd9aa inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="af2fe57dcec96a61a695ad5b675cdd9aa"></a>
 Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#af2fe57dcec96a61a695ad5b675cdd9aa">findComponentByType</a> (const TypeInfo *type) const</td></tr>
 <tr class="memdesc:af2fe57dcec96a61a695ad5b675cdd9aa inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">この <a class="el" href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 ">WorldObject</a> に含まれている Component のうち、指定した型である最初の Component を返します。 <br /></td></tr>
 <tr class="separator:af2fe57dcec96a61a695ad5b675cdd9aa inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa1fee52e4a9bc9df9211e402b1ef61 inherit pub_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="abfa1fee52e4a9bc9df9211e402b1ef61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#abfa1fee52e4a9bc9df9211e402b1ef61">addInto</a> (<a class="el" href="classln_1_1_world.html">World</a> *world=nullptr)</td></tr>
+<tr class="memdesc:abfa1fee52e4a9bc9df9211e402b1ef61 inherit pub_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">この <a class="el" href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 ">WorldObject</a> を指定した <a class="el" href="classln_1_1_world.html" title="3D シーンを表すクラスです。 ">World</a> へ追加します。省略した場合はデフォルトの <a class="el" href="classln_1_1_world.html" title="3D シーンを表すクラスです。 ">World</a> へ追加します。 <br /></td></tr>
+<tr class="separator:abfa1fee52e4a9bc9df9211e402b1ef61 inherit pub_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classln_1_1_world_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classln_1_1_world_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classln_1_1_world_object.html">ln::WorldObject</a></td></tr>
+<tr class="memitem:ad5e31a02f059e70d210a412183e1060b inherit pro_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="ad5e31a02f059e70d210a412183e1060b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#ad5e31a02f059e70d210a412183e1060b">onPreUpdate</a> ()</td></tr>
+<tr class="memdesc:ad5e31a02f059e70d210a412183e1060b inherit pro_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理演算・衝突判定の前 (onCollisionStay() などはこの後) <br /></td></tr>
+<tr class="separator:ad5e31a02f059e70d210a412183e1060b inherit pro_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09531220ead93ada3a6a0c8eed739d3e inherit pro_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a09531220ead93ada3a6a0c8eed739d3e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a09531220ead93ada3a6a0c8eed739d3e">onUpdate</a> (float elapsedSeconds)</td></tr>
 <tr class="memdesc:a09531220ead93ada3a6a0c8eed739d3e inherit pro_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">フレーム更新 <br /></td></tr>
 <tr class="separator:a09531220ead93ada3a6a0c8eed739d3e inherit pro_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6f536217d00408fd8a6b9dbd5e3cd7 inherit pro_methods_classln_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a id="a4d6f536217d00408fd8a6b9dbd5e3cd7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_world_object.html#a4d6f536217d00408fd8a6b9dbd5e3cd7">init</a> ()</td></tr>
+<tr class="memdesc:a4d6f536217d00408fd8a6b9dbd5e3cd7 inherit pro_methods_classln_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 ">WorldObject</a> を作成します。 <br /></td></tr>
+<tr class="separator:a4d6f536217d00408fd8a6b9dbd5e3cd7 inherit pro_methods_classln_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VisualComponent がアタッチされた <a class="el" href="classln_1_1_world_object.html" title="World 内の全エンティティのベースクラスです。 ">WorldObject</a> のプレハブクラスです。 </p>
@@ -298,7 +330,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_visual_object.html">VisualObject</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:10 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

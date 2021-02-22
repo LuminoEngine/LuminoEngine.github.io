@@ -82,20 +82,205 @@ $(document).ready(function(){initNavTree('classln_1_1_material.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classln_1_1_material-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ln::Material Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>標準的な物理ベースレンダリングのマテリアルです。  
+<p><h3>metallic-roughness テクスチャ</h3>
+Metallic 値は B チャネル、Roughness 値は G チャネルからサンプリングされます。 <a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#pbrmetallicroughnessmetallicroughnesstexture">https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#pbrmetallicroughnessmetallicroughnesstexture</a>  
  <a href="classln_1_1_material.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_material_8hpp_source.html">Material.hpp</a>&gt;</code></p>
 
-<p>Inherits ln::AbstractMaterial.</p>
+<p>Inherits ln::Object.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3f469045bb7a67cf0d83365bdadd8cd7"><td class="memItemLeft" align="right" valign="top"><a id="a3f469045bb7a67cf0d83365bdadd8cd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a3f469045bb7a67cf0d83365bdadd8cd7">setMainTexture</a> (<a class="el" href="classln_1_1_texture.html">Texture</a> *value)</td></tr>
+<tr class="memdesc:a3f469045bb7a67cf0d83365bdadd8cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">mainTexture <br /></td></tr>
+<tr class="separator:a3f469045bb7a67cf0d83365bdadd8cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22fdae61df6db3a12e5ca0a11e264b27"><td class="memItemLeft" align="right" valign="top"><a id="a22fdae61df6db3a12e5ca0a11e264b27"></a>
+<a class="el" href="classln_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a22fdae61df6db3a12e5ca0a11e264b27">mainTexture</a> () const</td></tr>
+<tr class="memdesc:a22fdae61df6db3a12e5ca0a11e264b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">mainTexture <br /></td></tr>
+<tr class="separator:a22fdae61df6db3a12e5ca0a11e264b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5326f565a8718caee49b07716fb4f13c"><td class="memItemLeft" align="right" valign="top"><a id="a5326f565a8718caee49b07716fb4f13c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a5326f565a8718caee49b07716fb4f13c">setMetallicRoughnessTexture</a> (<a class="el" href="classln_1_1_texture.html">Texture</a> *value)</td></tr>
+<tr class="memdesc:a5326f565a8718caee49b07716fb4f13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">metallic-roughness テクスチャを設定します。 <br /></td></tr>
+<tr class="separator:a5326f565a8718caee49b07716fb4f13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fdf9c5152c6603c20b6a3f047195f7"><td class="memItemLeft" align="right" valign="top"><a id="a37fdf9c5152c6603c20b6a3f047195f7"></a>
+<a class="el" href="classln_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a37fdf9c5152c6603c20b6a3f047195f7">metallicRoughnessTexture</a> () const</td></tr>
+<tr class="memdesc:a37fdf9c5152c6603c20b6a3f047195f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">metallic-roughness テクスチャを取得します。 <br /></td></tr>
+<tr class="separator:a37fdf9c5152c6603c20b6a3f047195f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af490aa7076a2bc44089536e75f22c2cd"><td class="memItemLeft" align="right" valign="top"><a id="af490aa7076a2bc44089536e75f22c2cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#af490aa7076a2bc44089536e75f22c2cd">setOcclusionTexture</a> (<a class="el" href="classln_1_1_texture.html">Texture</a> *value)</td></tr>
+<tr class="memdesc:af490aa7076a2bc44089536e75f22c2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">occlusion テクスチャを設定します。 <br /></td></tr>
+<tr class="separator:af490aa7076a2bc44089536e75f22c2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090efa1a90871c963eac3a40ca1bb9e9"><td class="memItemLeft" align="right" valign="top"><a id="a090efa1a90871c963eac3a40ca1bb9e9"></a>
+<a class="el" href="classln_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a090efa1a90871c963eac3a40ca1bb9e9">occlusionTexture</a> () const</td></tr>
+<tr class="memdesc:a090efa1a90871c963eac3a40ca1bb9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">occlusion テクスチャを取得します。 <br /></td></tr>
+<tr class="separator:a090efa1a90871c963eac3a40ca1bb9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e41ec3dc32860bcd0270c7b3d08e9e"><td class="memItemLeft" align="right" valign="top"><a id="a58e41ec3dc32860bcd0270c7b3d08e9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a58e41ec3dc32860bcd0270c7b3d08e9e">setColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:a58e41ec3dc32860bcd0270c7b3d08e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setColor <br /></td></tr>
+<tr class="separator:a58e41ec3dc32860bcd0270c7b3d08e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831a0fdfdb315ad55817f4ee988b1670"><td class="memItemLeft" align="right" valign="top"><a id="a831a0fdfdb315ad55817f4ee988b1670"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a831a0fdfdb315ad55817f4ee988b1670">setRoughness</a> (float value)</td></tr>
+<tr class="memdesc:a831a0fdfdb315ad55817f4ee988b1670"><td class="mdescLeft">&#160;</td><td class="mdescRight">setRoughness <br /></td></tr>
+<tr class="separator:a831a0fdfdb315ad55817f4ee988b1670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffdd38850ad027815e5fe0d45822c1d"><td class="memItemLeft" align="right" valign="top"><a id="a1ffdd38850ad027815e5fe0d45822c1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a1ffdd38850ad027815e5fe0d45822c1d">setMetallic</a> (float value)</td></tr>
+<tr class="memdesc:a1ffdd38850ad027815e5fe0d45822c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">setMetallic <br /></td></tr>
+<tr class="separator:a1ffdd38850ad027815e5fe0d45822c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0138118a372d397c8b187033d900073"><td class="memItemLeft" align="right" valign="top"><a id="ab0138118a372d397c8b187033d900073"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#ab0138118a372d397c8b187033d900073">setEmissive</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:ab0138118a372d397c8b187033d900073"><td class="mdescLeft">&#160;</td><td class="mdescRight">setEmissive <br /></td></tr>
+<tr class="separator:ab0138118a372d397c8b187033d900073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddfd7e4b5b8a46e635ac16e05627cd4"><td class="memItemLeft" align="right" valign="top"><a id="a8ddfd7e4b5b8a46e635ac16e05627cd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a8ddfd7e4b5b8a46e635ac16e05627cd4">setShadingModel</a> (<a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a> value)</td></tr>
+<tr class="memdesc:a8ddfd7e4b5b8a46e635ac16e05627cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">setShadingModel <br /></td></tr>
+<tr class="separator:a8ddfd7e4b5b8a46e635ac16e05627cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb56c6245d94f9dfceb5bdbfa7e80f7"><td class="memItemLeft" align="right" valign="top"><a id="a8eb56c6245d94f9dfceb5bdbfa7e80f7"></a>
+<a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a8eb56c6245d94f9dfceb5bdbfa7e80f7">shadingModel</a> () const</td></tr>
+<tr class="memdesc:a8eb56c6245d94f9dfceb5bdbfa7e80f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">shadingModel <br /></td></tr>
+<tr class="separator:a8eb56c6245d94f9dfceb5bdbfa7e80f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ec119fee1b1693dc87082cc32bfc83"><td class="memItemLeft" align="right" valign="top"><a id="a68ec119fee1b1693dc87082cc32bfc83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a68ec119fee1b1693dc87082cc32bfc83">setShader</a> (<a class="el" href="classln_1_1_shader.html">Shader</a> *<a class="el" href="classln_1_1_material.html#a98ec2bfbac0d601e3695c854424b406c">shader</a>)</td></tr>
+<tr class="memdesc:a68ec119fee1b1693dc87082cc32bfc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">shader <br /></td></tr>
+<tr class="separator:a68ec119fee1b1693dc87082cc32bfc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ec2bfbac0d601e3695c854424b406c"><td class="memItemLeft" align="right" valign="top"><a id="a98ec2bfbac0d601e3695c854424b406c"></a>
+<a class="el" href="classln_1_1_shader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a98ec2bfbac0d601e3695c854424b406c">shader</a> () const</td></tr>
+<tr class="memdesc:a98ec2bfbac0d601e3695c854424b406c"><td class="mdescLeft">&#160;</td><td class="mdescRight">shader <br /></td></tr>
+<tr class="separator:a98ec2bfbac0d601e3695c854424b406c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7af5497cff8738e99913c3c136936aa"><td class="memItemLeft" align="right" valign="top"><a id="ac7af5497cff8738e99913c3c136936aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#ac7af5497cff8738e99913c3c136936aa">setInt</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name, int value)</td></tr>
+<tr class="memdesc:ac7af5497cff8738e99913c3c136936aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数値を設定します。 <br /></td></tr>
+<tr class="separator:ac7af5497cff8738e99913c3c136936aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30091a3695480a21da9f8e29bf951465"><td class="memItemLeft" align="right" valign="top"><a id="a30091a3695480a21da9f8e29bf951465"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a30091a3695480a21da9f8e29bf951465">setIntArray</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name, const int *value, int count)</td></tr>
+<tr class="memdesc:a30091a3695480a21da9f8e29bf951465"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数値の配列を設定します。 <br /></td></tr>
+<tr class="separator:a30091a3695480a21da9f8e29bf951465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b3d2c2a4ae28bb2a742abc1c94bf14"><td class="memItemLeft" align="right" valign="top"><a id="a05b3d2c2a4ae28bb2a742abc1c94bf14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a05b3d2c2a4ae28bb2a742abc1c94bf14">setFloat</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name, float value)</td></tr>
+<tr class="memdesc:a05b3d2c2a4ae28bb2a742abc1c94bf14"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮動小数点値を設定します。 <br /></td></tr>
+<tr class="separator:a05b3d2c2a4ae28bb2a742abc1c94bf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9b7c51897f59f066b389f6e46ac7b6"><td class="memItemLeft" align="right" valign="top"><a id="a6d9b7c51897f59f066b389f6e46ac7b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#a6d9b7c51897f59f066b389f6e46ac7b6">setFloatArray</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name, const float *values, int length)</td></tr>
+<tr class="memdesc:a6d9b7c51897f59f066b389f6e46ac7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮動小数点値の配列を設定します。 <br /></td></tr>
+<tr class="separator:a6d9b7c51897f59f066b389f6e46ac7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+RenderState</h2></td></tr>
+<tr class="memitem:a2ea745ab207c4dbde727e4605ba62718"><td class="memTemplParams" colspan="2"><a id="a2ea745ab207c4dbde727e4605ba62718"></a>
+template&lt;class T_ , typename... TArgs_&gt; </td></tr>
+<tr class="memitem:a2ea745ab207c4dbde727e4605ba62718"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classln_1_1_ref.html">ln::Ref</a>&lt; T_ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ln::makeObject</b> (TArgs_ &amp;&amp;... args)</td></tr>
+<tr class="separator:a2ea745ab207c4dbde727e4605ba62718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c057693388e6fb5f796612ffca219da"><td class="memTemplParams" colspan="2"><a id="a4c057693388e6fb5f796612ffca219da"></a>
+template&lt;class T_ , typename... TArgs_&gt; </td></tr>
+<tr class="memitem:a4c057693388e6fb5f796612ffca219da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classln_1_1_ref.html">ln::Ref</a>&lt; T_ &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ln::makeObject2</b> (TArgs_ &amp;&amp;... args)</td></tr>
+<tr class="separator:a4c057693388e6fb5f796612ffca219da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30763f32951e67ecbd3e1fe38420c1d2"><td class="memTemplParams" colspan="2"><a id="a30763f32951e67ecbd3e1fe38420c1d2"></a>
+template&lt;class T_ , typename... TArgs_&gt; </td></tr>
+<tr class="memitem:a30763f32951e67ecbd3e1fe38420c1d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ln::placementNewObject</b> (void *ptr, TArgs_ &amp;&amp;... args)</td></tr>
+<tr class="separator:a30763f32951e67ecbd3e1fe38420c1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17600ccb3aa9bf054373e287e8680dd0"><td class="memItemLeft" align="right" valign="top"><a id="a17600ccb3aa9bf054373e287e8680dd0"></a>
+<a class="el" href="classln_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a17600ccb3aa9bf054373e287e8680dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b16f62c00de3394defb32f12286f6ed"><td class="memItemLeft" align="right" valign="top"><a id="a8b16f62c00de3394defb32f12286f6ed"></a>
+<a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadingModel</b> = <a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507ea7a1920d61156abc05a60135aefe8bc67">ShadingModel::Default</a></td></tr>
+<tr class="separator:a8b16f62c00de3394defb32f12286f6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff03c2f9a6b42494324c9480d72e143"><td class="memItemLeft" align="right" valign="top"><a id="adff03c2f9a6b42494324c9480d72e143"></a>
+LN_PROTECTED_INTERNAL_ACCESS&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b>:LN_INTERNAL_ACCESS: public: void updateShaderVariables(detail::GraphicsCommandList* commandList</td></tr>
+<tr class="separator:adff03c2f9a6b42494324c9480d72e143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adaa49f5d531f45c3e928d4bfe2eb2d"><td class="memItemLeft" align="right" valign="top"><a id="a6adaa49f5d531f45c3e928d4bfe2eb2d"></a>
+LN_PROTECTED_INTERNAL_ACCESS detail::ShaderSecondaryDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b></td></tr>
+<tr class="separator:a6adaa49f5d531f45c3e928d4bfe2eb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c1f68e4662c942389eb96b157b66d4"><td class="memItemLeft" align="right" valign="top"><a id="af4c1f68e4662c942389eb96b157b66d4"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shader</b></td></tr>
+<tr class="separator:af4c1f68e4662c942389eb96b157b66d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefc87731f15c54fbf10ee723028d881"><td class="memItemLeft" align="right" valign="top"><a id="abefc87731f15c54fbf10ee723028d881"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainTexture</b></td></tr>
+<tr class="separator:abefc87731f15c54fbf10ee723028d881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60694a271826ae2ec8ef1257f712e236"><td class="memItemLeft" align="right" valign="top"><a id="a60694a271826ae2ec8ef1257f712e236"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalMap</b></td></tr>
+<tr class="separator:a60694a271826ae2ec8ef1257f712e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e45e1c08f1c13f76579ab5f4ff05b4"><td class="memItemLeft" align="right" valign="top"><a id="a21e45e1c08f1c13f76579ab5f4ff05b4"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_metallicRoughnessTexture</b></td></tr>
+<tr class="separator:a21e45e1c08f1c13f76579ab5f4ff05b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465b1dace76e915d7ac6952b441c5a77"><td class="memItemLeft" align="right" valign="top"><a id="a465b1dace76e915d7ac6952b441c5a77"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_occlusionTexture</b></td></tr>
+<tr class="separator:a465b1dace76e915d7ac6952b441c5a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302291b276b045a3b40289101737586e"><td class="memItemLeft" align="right" valign="top"><a id="a302291b276b045a3b40289101737586e"></a>
+std::vector&lt; std::pair&lt; <a class="el" href="classln_1_1_string.html">String</a>, std::shared_ptr&lt; detail::ShaderParameterValue &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_values</b></td></tr>
+<tr class="separator:a302291b276b045a3b40289101737586e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde405fedc62e72beed66299d9bc392f"><td class="memItemLeft" align="right" valign="top"><a id="adde405fedc62e72beed66299d9bc392f"></a>
+std::vector&lt; UniformBufferEntiry &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uniformBufferData</b></td></tr>
+<tr class="separator:adde405fedc62e72beed66299d9bc392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7439c596f8d3eeddb153c4e7507218b"><td class="memItemLeft" align="right" valign="top"><a id="aa7439c596f8d3eeddb153c4e7507218b"></a>
+LN_INTERNAL_ACCESS&#160;</td><td class="memItemRight" valign="bottom"><b>__pad1__</b>: bool equalStatus(const <a class="el" href="classln_1_1_material.html">Material</a>* other) const { if (<a class="el" href="_assertion_8hpp.html#a43f02c9d97f062e1ba55b33e15cec6a1">LN_REQUIRE</a>(other)) return false</td></tr>
+<tr class="separator:aa7439c596f8d3eeddb153c4e7507218b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41812b202955244cbeeb827d8a0c69bf"><td class="memItemLeft" align="right" valign="top"><a id="a41812b202955244cbeeb827d8a0c69bf"></a>
+return&#160;</td><td class="memItemRight" valign="bottom"><b>m_shader</b></td></tr>
+<tr class="separator:a41812b202955244cbeeb827d8a0c69bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a574aeb62d1cebf989f1d64d724e3b8"><td class="memItemLeft" align="right" valign="top"><a id="a6a574aeb62d1cebf989f1d64d724e3b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlendMode</b> (<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#ab453d7e604c377c267761cf5cf100ce4">BlendMode</a> &gt; mode)</td></tr>
+<tr class="separator:a6a574aeb62d1cebf989f1d64d724e3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13aa490b6e71ce0b9206124586b2a51c"><td class="memItemLeft" align="right" valign="top"><a id="a13aa490b6e71ce0b9206124586b2a51c"></a>
+<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#ab453d7e604c377c267761cf5cf100ce4">BlendMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getBlendMode</b> () const</td></tr>
+<tr class="separator:a13aa490b6e71ce0b9206124586b2a51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeadb88e44b50348f51cfdbc292273f5"><td class="memItemLeft" align="right" valign="top"><a id="afeadb88e44b50348f51cfdbc292273f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCullingMode</b> (<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#a3e6d7ca36dfa77fbbae097a6eb3a6006">CullMode</a> &gt; mode)</td></tr>
+<tr class="separator:afeadb88e44b50348f51cfdbc292273f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937c8974fe3102b9b0a87b12b29929d1"><td class="memItemLeft" align="right" valign="top"><a id="a937c8974fe3102b9b0a87b12b29929d1"></a>
+<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; <a class="el" href="namespaceln.html#a3e6d7ca36dfa77fbbae097a6eb3a6006">CullMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getCullingMode</b> () const</td></tr>
+<tr class="separator:a937c8974fe3102b9b0a87b12b29929d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c2d0438715b261905cc4276fad33eb"><td class="memItemLeft" align="right" valign="top"><a id="af4c2d0438715b261905cc4276fad33eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDepthTestEnabled</b> (<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; bool &gt; enabled)</td></tr>
+<tr class="separator:af4c2d0438715b261905cc4276fad33eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ebd7f9acafe93b47b6eab73a33a1f3"><td class="memItemLeft" align="right" valign="top"><a id="a66ebd7f9acafe93b47b6eab73a33a1f3"></a>
+<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>isDepthTestEnabled</b> () const</td></tr>
+<tr class="separator:a66ebd7f9acafe93b47b6eab73a33a1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d0559e4572548e1691bdd04b9eb6a0"><td class="memItemLeft" align="right" valign="top"><a id="ab7d0559e4572548e1691bdd04b9eb6a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDepthWriteEnabled</b> (<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; bool &gt; enabled)</td></tr>
+<tr class="separator:ab7d0559e4572548e1691bdd04b9eb6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb805158e5b0a1419d4b1dc6c5bb110"><td class="memItemLeft" align="right" valign="top"><a id="aeeb805158e5b0a1419d4b1dc6c5bb110"></a>
+<a class="el" href="classln_1_1_optional.html">Optional</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>isDepthWriteEnabled</b> () const</td></tr>
+<tr class="separator:aeeb805158e5b0a1419d4b1dc6c5bb110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cbc70deb69248510f7fe981aa6d22e"><td class="memItemLeft" align="right" valign="top"><a id="a58cbc70deb69248510f7fe981aa6d22e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Material</b> ()</td></tr>
+<tr class="separator:a58cbc70deb69248510f7fe981aa6d22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8896ea943fd349d1ed65ca10a773a9"><td class="memItemLeft" align="right" valign="top"><a id="a5e8896ea943fd349d1ed65ca10a773a9"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Material</b> ()</td></tr>
+<tr class="separator:a5e8896ea943fd349d1ed65ca10a773a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e024db22d757096fc8f84c49e6e9ec"><td class="memItemLeft" align="right" valign="top"><a id="ab1e024db22d757096fc8f84c49e6e9ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_material.html#ab1e024db22d757096fc8f84c49e6e9ec">init</a> ()</td></tr>
+<tr class="memdesc:ab1e024db22d757096fc8f84c49e6e9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">init <br /></td></tr>
+<tr class="separator:ab1e024db22d757096fc8f84c49e6e9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0257b55d28fe1cae4298cb61b391addd"><td class="memItemLeft" align="right" valign="top"><a id="a0257b55d28fe1cae4298cb61b391addd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classln_1_1_texture.html">Texture</a> *<a class="el" href="classln_1_1_material.html#a22fdae61df6db3a12e5ca0a11e264b27">mainTexture</a>)</td></tr>
+<tr class="separator:a0257b55d28fe1cae4298cb61b391addd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae06717e3e4a1dcf71c2c14cc39d70b7"><td class="memItemLeft" align="right" valign="top"><a id="aae06717e3e4a1dcf71c2c14cc39d70b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classln_1_1_texture.html">Texture</a> *<a class="el" href="classln_1_1_material.html#a22fdae61df6db3a12e5ca0a11e264b27">mainTexture</a>, <a class="el" href="namespaceln.html#a390f4019c938d4ed399b20894503507e">ShadingModel</a> <a class="el" href="classln_1_1_material.html#a8eb56c6245d94f9dfceb5bdbfa7e80f7">shadingModel</a>)</td></tr>
+<tr class="separator:aae06717e3e4a1dcf71c2c14cc39d70b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b7aa5637ab50bb37f5767b1506dd74"><td class="memItemLeft" align="right" valign="top"><a id="a45b7aa5637ab50bb37f5767b1506dd74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classln_1_1_texture.html">Texture</a> *<a class="el" href="classln_1_1_material.html#a22fdae61df6db3a12e5ca0a11e264b27">mainTexture</a>, const detail::PhongMaterialData &amp;phongMaterialData)</td></tr>
+<tr class="separator:a45b7aa5637ab50bb37f5767b1506dd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfae95f9bf6b42011a9b7ceaf6720f66"><td class="memItemLeft" align="right" valign="top"><a id="adfae95f9bf6b42011a9b7ceaf6720f66"></a>
+detail::ShaderParameterValue *&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (const <a class="el" href="classln_1_1_string_ref.html">ln::StringRef</a> &amp;name)</td></tr>
+<tr class="separator:adfae95f9bf6b42011a9b7ceaf6720f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1caae4f52d335c2f4b4fee2bfb838167"><td class="memItemLeft" align="right" valign="top"><a id="a1caae4f52d335c2f4b4fee2bfb838167"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (Serializer2 &amp;ar) override</td></tr>
+<tr class="separator:a1caae4f52d335c2f4b4fee2bfb838167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa382ce1dfb3dc4d0d46f62ebb1fa6bc"><td class="memItemLeft" align="right" valign="top"><a id="afa382ce1dfb3dc4d0d46f62ebb1fa6bc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>if</b> (this==other) return true</td></tr>
+<tr class="separator:afa382ce1dfb3dc4d0d46f62ebb1fa6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>標準的な物理ベースレンダリングのマテリアルです。 </p>
+<div class="textblock"><h3>metallic-roughness テクスチャ</h3>
+<p>Metallic 値は B チャネル、Roughness 値は G チャネルからサンプリングされます。 <a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#pbrmetallicroughnessmetallicroughnesstexture">https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#pbrmetallicroughnessmetallicroughnesstexture</a> </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Website/Website/_Lumino/include/LuminoEngine/Rendering/<a class="el" href="_material_8hpp_source.html">Material.hpp</a></li>
 </ul>
@@ -105,7 +290,7 @@ $(document).ready(function(){initNavTree('classln_1_1_material.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_material.html">Material</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

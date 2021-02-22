@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#a6c2d9ad66090ea85369ad8dc905bce04">set</a> (float <a class="el" href="structln_1_1_vector3.html#ad26acd4723a02543cd4dded20d5802af">x</a>, float <a class="el" href="structln_1_1_vector3.html#acaf556663b3ee7d2a447536bbeb5cdb2">y</a>, float <a class="el" href="structln_1_1_vector3.html#adb9cff9e2f60679fdb4ddb853a6f3696">z</a>)</td></tr>
 <tr class="memdesc:a6c2d9ad66090ea85369ad8dc905bce04"><td class="mdescLeft">&#160;</td><td class="mdescRight">各要素に値を設定します。 <br /></td></tr>
 <tr class="separator:a6c2d9ad66090ea85369ad8dc905bce04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13444a7fe83e8b6b97477a8b38e88f7"><td class="memItemLeft" align="right" valign="top"><a id="aa13444a7fe83e8b6b97477a8b38e88f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#aa13444a7fe83e8b6b97477a8b38e88f7">get</a> (float *outX, float *outY, float *outZ) const</td></tr>
+<tr class="memdesc:aa13444a7fe83e8b6b97477a8b38e88f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get <br /></td></tr>
+<tr class="separator:aa13444a7fe83e8b6b97477a8b38e88f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af837b13be9ce05576fc6f3d8de14842c"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#af837b13be9ce05576fc6f3d8de14842c">data</a> () noexcept</td></tr>
 <tr class="memdesc:af837b13be9ce05576fc6f3d8de14842c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer to the first element.  <a href="#af837b13be9ce05576fc6f3d8de14842c">More...</a><br /></td></tr>
 <tr class="separator:af837b13be9ce05576fc6f3d8de14842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +258,14 @@ static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</t
 static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#a09056c2023644c346a087f0ae7bddc1b">Ones</a></td></tr>
 <tr class="memdesc:a09056c2023644c346a087f0ae7bddc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector3(1, 1, 1) <br /></td></tr>
 <tr class="separator:a09056c2023644c346a087f0ae7bddc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdeb41542a90e0f237b2b5a339ef6c4b"><td class="memItemLeft" align="right" valign="top"><a id="afdeb41542a90e0f237b2b5a339ef6c4b"></a>
+static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#afdeb41542a90e0f237b2b5a339ef6c4b">Minimum</a></td></tr>
+<tr class="memdesc:afdeb41542a90e0f237b2b5a339ef6c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector3(FLT_MIN, FLT_MIN, FLT_MIN) <br /></td></tr>
+<tr class="separator:afdeb41542a90e0f237b2b5a339ef6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3bf333869256301be25b7f57551c71"><td class="memItemLeft" align="right" valign="top"><a id="a5a3bf333869256301be25b7f57551c71"></a>
+static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structln_1_1_vector3.html#a5a3bf333869256301be25b7f57551c71">Maximum</a></td></tr>
+<tr class="memdesc:a5a3bf333869256301be25b7f57551c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector3(FLT_MAX, FLT_MAX, FLT_MAX) <br /></td></tr>
+<tr class="separator:a5a3bf333869256301be25b7f57551c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>3次元のベクトルを定義します。 </p>
@@ -597,6 +609,7 @@ static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>2つのベクトルの内積 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>正規化された方向ベクトルの内積は、2つのベクトルのコサインを表します。 例えば、向きが完全に一致している場合は 1 を、反対の場合は -1 を返します。 </dd></dl>
 
 </div>
 </div>
@@ -1492,7 +1505,7 @@ static const <a class="el" href="structln_1_1_vector3.html">Vector3</a>&#160;</t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="structln_1_1_vector3.html">Vector3</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:10 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

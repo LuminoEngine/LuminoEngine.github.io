@@ -122,14 +122,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#afff510cafbb05d06073e5c3afef39346">getIntensity</a> () const</td></tr>
 <tr class="memdesc:afff510cafbb05d06073e5c3afef39346"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの明るさを取得します。 <br /></td></tr>
 <tr class="separator:afff510cafbb05d06073e5c3afef39346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c749364a595f9adec0dc5db2a5b057"><td class="memItemLeft" align="right" valign="top"><a id="a76c749364a595f9adec0dc5db2a5b057"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#a76c749364a595f9adec0dc5db2a5b057">setShadowCast</a> (bool enabled)</td></tr>
-<tr class="memdesc:a76c749364a595f9adec0dc5db2a5b057"><td class="mdescLeft">&#160;</td><td class="mdescRight">影の有無を設定します。(default: false) <br /></td></tr>
-<tr class="separator:a76c749364a595f9adec0dc5db2a5b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032bbaae4f1f4750f64c23c79ab63dd5"><td class="memItemLeft" align="right" valign="top"><a id="a032bbaae4f1f4750f64c23c79ab63dd5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#a032bbaae4f1f4750f64c23c79ab63dd5">isShadowCast</a> () const</td></tr>
-<tr class="memdesc:a032bbaae4f1f4750f64c23c79ab63dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">影の有無を取得します。 <br /></td></tr>
-<tr class="separator:a032bbaae4f1f4750f64c23c79ab63dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01ca4dd80e8b214324749a8f12ab196"><td class="memItemLeft" align="right" valign="top"><a id="ac01ca4dd80e8b214324749a8f12ab196"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#ac01ca4dd80e8b214324749a8f12ab196">setShadowEffectiveDistance</a> (float value)</td></tr>
+<tr class="memdesc:ac01ca4dd80e8b214324749a8f12ab196"><td class="mdescLeft">&#160;</td><td class="mdescRight">視点からの、影を生成できる距離を指定します。 (default: 0.0f) <br /></td></tr>
+<tr class="separator:ac01ca4dd80e8b214324749a8f12ab196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65422eb281fcb297d959c6a213dd937"><td class="memItemLeft" align="right" valign="top"><a id="ac65422eb281fcb297d959c6a213dd937"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#ac65422eb281fcb297d959c6a213dd937">shadowEffectiveDistance</a> () const</td></tr>
+<tr class="memdesc:ac65422eb281fcb297d959c6a213dd937"><td class="mdescLeft">&#160;</td><td class="mdescRight">視点からの、影を生成できる距離を取得します。 <br /></td></tr>
+<tr class="separator:ac65422eb281fcb297d959c6a213dd937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec235e7de8d6577e1b4005fc15f5912"><td class="memItemLeft" align="right" valign="top"><a id="aeec235e7de8d6577e1b4005fc15f5912"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#aeec235e7de8d6577e1b4005fc15f5912">setShadowEffectiveDepth</a> (float value)</td></tr>
+<tr class="memdesc:aeec235e7de8d6577e1b4005fc15f5912"><td class="mdescLeft">&#160;</td><td class="mdescRight">光源方向からの、影を生成できる距離を指定します。 (default: 0.0f) ※これはシャドウマップの深度値の範囲となります。 <br /></td></tr>
+<tr class="separator:aeec235e7de8d6577e1b4005fc15f5912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47405e0ddd98fec4a62898a1928bf13"><td class="memItemLeft" align="right" valign="top"><a id="af47405e0ddd98fec4a62898a1928bf13"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_directional_light_component.html#af47405e0ddd98fec4a62898a1928bf13">shadowEffectiveDepth</a> () const</td></tr>
+<tr class="memdesc:af47405e0ddd98fec4a62898a1928bf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">光源方向からの、影を生成できる距離を指定します。 <br /></td></tr>
+<tr class="separator:af47405e0ddd98fec4a62898a1928bf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ディレクショナルライトのコンポーネントです。 </p>
@@ -142,7 +150,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_directional_light_component.html">DirectionalLightComponent</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

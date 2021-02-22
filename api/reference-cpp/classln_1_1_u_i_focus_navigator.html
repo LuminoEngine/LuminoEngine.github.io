@@ -93,10 +93,23 @@ $(document).ready(function(){initNavTree('classln_1_1_u_i_focus_navigator.html',
 
 <p><code>#include &lt;<a class="el" href="_u_i_focus_navigator_8hpp_source.html">UIFocusNavigator.hpp</a>&gt;</code></p>
 
-<p>Inherits ln::UIContainerElement.</p>
+<p>Inherits ln::Object.</p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>要素のフォーカス遷移を管理すためのコンテナ要素。 </p>
-<p>Dialog のようにひとつの Active な要素にのみ、UI イベントを通知するようにしたいときに使う。 Dialog と異なるのは、関係する要素を常に表示したままにすることができること。</p>
+<p>Dialog のようにひとつの Active な要素にのみ、UI イベントを通知するようにしたいときに使う。 Dialog と異なるのは、</p><ul>
+<li>関係する要素を常に表示したままにすることができること。<ul>
+<li>あくまで「フォーカスの移動」を管理する。Dialog だと遷移にともない winodw の Close が発生するが、こちらはその必要はない。</li>
+</ul>
+</li>
+<li>履歴を一気にさかのぼれること。<ul>
+<li>例：[メニュー] &gt; [アイテム] &gt; [つかう] と選んだら全てのウィンドウを閉じてゲーム画面に戻る</li>
+</ul>
+</li>
+<li>履歴を積まないで画面遷移もできること。<ul>
+<li>例：PageUp/PageDown で別メニューへ移動</li>
+</ul>
+</li>
+</ul>
 <h2>基本動作 </h2>
 <p>例えば RPG の装備画面を考えてみる。</p><ul>
 <li>左側にはキャラクターの装備しているウィンドウ</li>
@@ -106,7 +119,7 @@ $(document).ready(function(){initNavTree('classln_1_1_u_i_focus_navigator.html',
 <p>装備ウィンドウで決定ボタンなどを押したら、pushFocus() で持ち物ウィンドウへのフォーカスをスタックに積む。 これで持ち物ウィンドウが操作可能になり、装備ウィンドウは操作できなくなる。</p>
 <p>持ち物ウィンドウで決定やキャンセルを押したら、popFocus() で装備ウィンドウにフォーカスを戻すことができる。</p>
 <h2>その他の動作 </h2>
-<p>初期子要素以外の UIElement を goto, push に指定することもできる。 その場合その時点で子要素として追加され、フォーカスと操作は管理下に置かれる。 </p>
+<p>初期子要素以外の <a class="el" href="classln_1_1_u_i_element.html" title="UIElement. ">UIElement</a> を goto, push に指定することもできる。 その場合その時点で子要素として追加され、フォーカスと操作は管理下に置かれる。 </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Website/Website/_Lumino/include/LuminoEngine/UI/<a class="el" href="_u_i_focus_navigator_8hpp_source.html">UIFocusNavigator.hpp</a></li>
 </ul>
@@ -116,7 +129,7 @@ $(document).ready(function(){initNavTree('classln_1_1_u_i_focus_navigator.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_u_i_focus_navigator.html">UIFocusNavigator</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

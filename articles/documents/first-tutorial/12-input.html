@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>&#20837;&#21147;&#12434;&#21463;&#12369;&#21462;&#12427; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="&#20837;&#21147;&#12434;&#21463;&#12369;&#21462;&#12427; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -73,6 +81,7 @@
 <h2 id="方向キーでオブジェクトを移動する">方向キーでオブジェクトを移動する</h2>
 <p>ボタンが押されているかどうか、といった入力を確認するには、 <code>Input</code> を使います。</p>
 <p>次のプログラムは、キーボードの上下左右キーで Box を移動します。また、Z キーで位置をリセットします。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_YJ50RctS4G">
 <ul role="tablist">
 <li role="presentation">
@@ -80,6 +89,9 @@
 </li>
 <li role="presentation">
 <a href="#tabpanel_YJ50RctS4G_lang-ruby" role="tab" aria-controls="tabpanel_YJ50RctS4G_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_YJ50RctS4G_lang-hsp3" role="tab" aria-controls="tabpanel_YJ50RctS4G_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_YJ50RctS4G_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -93,29 +105,29 @@ class App : public Application
 
     void onInit() override
     {
-        box = BoxMesh::create();
+        box = BoxMesh::With().buildInto();
     }
 
     void onUpdate() override
     {
-        if (Input::pressed(u&quot;left&quot;)) {
+        if (Input::isPressed(u&quot;left&quot;)) {
             posX -= 0.1;
         }
 
-        if (Input::pressed(u&quot;right&quot;)) {
+        if (Input::isPressed(u&quot;right&quot;)) {
             posX += 0.1;
         }
 
-        if (Input::pressed(u&quot;up&quot;)) {
+        if (Input::isPressed(u&quot;up&quot;)) {
             posY += 0.1;
         }
 
-        if (Input::pressed(u&quot;down&quot;)) {
+        if (Input::isPressed(u&quot;down&quot;)) {
             posY -= 0.1;
         }
 
         // Z key, reset position
-        if (Input::triggered(u&quot;submit&quot;)) {
+        if (Input::isTriggered(u&quot;submit&quot;)) {
             posX = 0.0;
             posY = 0.0;
         }
@@ -132,18 +144,19 @@ LUMINO_APP(App);
 class App &lt; Application
   def on_init
     @box = BoxMesh.new
+    @box.add_into
     @pos_x = 0.0
     @pos_y = 0.0
   end
 
   def on_update
-    @pos_x -= 0.1 if Input.pressed(&quot;left&quot;)
-    @pos_x += 0.1 if Input.pressed(&quot;right&quot;)
-    @pos_y += 0.1 if Input.pressed(&quot;up&quot;)
-    @pos_y -= 0.1 if Input.pressed(&quot;down&quot;)
+    @pos_x -= 0.1 if Input.pressed?(&quot;left&quot;)
+    @pos_x += 0.1 if Input.pressed?(&quot;right&quot;)
+    @pos_y += 0.1 if Input.pressed?(&quot;up&quot;)
+    @pos_y -= 0.1 if Input.pressed?(&quot;down&quot;)
 
     # Z key, reset position
-    if Input.triggered(&quot;submit&quot;)
+    if Input.triggered?(&quot;submit&quot;)
       @pos_x = 0.0
       @pos_y = 0.0
     end
@@ -154,7 +167,38 @@ end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_YJ50RctS4G_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNBoxMesh_Create box
+    LNWorldObject_AddInto box
+    pos_x = 0.0
+    pos_y = 0.0
+    return
+
+*on_update
+    LNInput_IsPressed &quot;left&quot;, a
+    if a : pos_x -= 0.1
+    LNInput_IsPressed &quot;right&quot;, a
+    if a : pos_x += 0.1
+    LNInput_IsPressed &quot;up&quot;, a
+    if a : pos_y += 0.1
+    LNInput_IsPressed &quot;down&quot;, a
+    if a : pos_y -= 0.1
+
+    LNInput_IsTriggered &quot;submit&quot;, a
+    if a {
+        pos_x = 0.0
+        pos_y = 0.0
+    }
+
+    LNWorldObject_SetPositionXYZ box, pos_x, pos_y, 0
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/input-1.gif" alt=""></p>
 <p><code>pressed</code> はキーが押されている間は true を返し、 <code>triggered</code> はキーが押された瞬間だけ true を返します。（これ以外にも離された瞬間を判定する <code>triggeredOff</code>、押している間は定期的に true を返す <code>repeated</code> が定義されています）</p>
 <p>さて、それぞれ引数には <code>left</code> や <code>up</code> のように判定したいキーの名前を指定していますが、<code>submit</code> とはなんでしょうか。</p>
@@ -248,6 +292,7 @@ App.new.run
 </table>
 <p>※: any は割り当てられている全てのボタンに対応します。</p>
 <p>次のプログラムで、押されたボタンに対応する文字列が表示されることを確認してみましょう。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_YJ50RctS4G-1">
 <ul role="tablist">
 <li role="presentation">
@@ -255,6 +300,9 @@ App.new.run
 </li>
 <li role="presentation">
 <a href="#tabpanel_YJ50RctS4G-1_lang-ruby" role="tab" aria-controls="tabpanel_YJ50RctS4G-1_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_YJ50RctS4G-1_lang-hsp3" role="tab" aria-controls="tabpanel_YJ50RctS4G-1_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_YJ50RctS4G-1_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -264,17 +312,17 @@ class App : public Application
 {
     virtual void onUpdate() override
     {
-        if (Input::pressed(u&quot;left&quot;)) Debug::print(0, u&quot;left&quot;);
-        if (Input::pressed(u&quot;right&quot;)) Debug::print(0, u&quot;right&quot;);
-        if (Input::pressed(u&quot;up&quot;)) Debug::print(0, u&quot;up&quot;);
-        if (Input::pressed(u&quot;down&quot;)) Debug::print(0, u&quot;down&quot;);
-        if (Input::pressed(u&quot;submit&quot;)) Debug::print(0, u&quot;submit&quot;);
-        if (Input::pressed(u&quot;cancel&quot;)) Debug::print(0, u&quot;cancel&quot;);
-        if (Input::pressed(u&quot;menu&quot;)) Debug::print(0, u&quot;menu&quot;);
-        if (Input::pressed(u&quot;shift&quot;)) Debug::print(0, u&quot;shift&quot;);
-        if (Input::pressed(u&quot;pageup&quot;)) Debug::print(0, u&quot;pageup&quot;);
-        if (Input::pressed(u&quot;pagedown&quot;)) Debug::print(0, u&quot;pagedown&quot;);
-        if (Input::pressed(u&quot;any&quot;)) Debug::print(0, u&quot;any&quot;);
+        if (Input::isPressed(u&quot;left&quot;)) Debug::print(0, u&quot;left&quot;);
+        if (Input::isPressed(u&quot;right&quot;)) Debug::print(0, u&quot;right&quot;);
+        if (Input::isPressed(u&quot;up&quot;)) Debug::print(0, u&quot;up&quot;);
+        if (Input::isPressed(u&quot;down&quot;)) Debug::print(0, u&quot;down&quot;);
+        if (Input::isPressed(u&quot;submit&quot;)) Debug::print(0, u&quot;submit&quot;);
+        if (Input::isPressed(u&quot;cancel&quot;)) Debug::print(0, u&quot;cancel&quot;);
+        if (Input::isPressed(u&quot;menu&quot;)) Debug::print(0, u&quot;menu&quot;);
+        if (Input::isPressed(u&quot;shift&quot;)) Debug::print(0, u&quot;shift&quot;);
+        if (Input::isPressed(u&quot;pageup&quot;)) Debug::print(0, u&quot;pageup&quot;);
+        if (Input::isPressed(u&quot;pagedown&quot;)) Debug::print(0, u&quot;pagedown&quot;);
+        if (Input::isPressed(u&quot;any&quot;)) Debug::print(0, u&quot;any&quot;);
     }
 };
 
@@ -285,23 +333,56 @@ LUMINO_APP(App);
 
 class App &lt; Application
   def on_update
-    Debug.print(0, &quot;left&quot;) if Input.pressed(&quot;left&quot;)
-    Debug.print(0, &quot;right&quot;) if Input.pressed(&quot;right&quot;)
-    Debug.print(0, &quot;up&quot;) if Input.pressed(&quot;up&quot;)
-    Debug.print(0, &quot;down&quot;) if Input.pressed(&quot;down&quot;)
-    Debug.print(0, &quot;submit&quot;) if Input.pressed(&quot;submit&quot;)
-    Debug.print(0, &quot;cancel&quot;) if Input.pressed(&quot;cancel&quot;)
-    Debug.print(0, &quot;menu&quot;) if Input.pressed(&quot;menu&quot;)
-    Debug.print(0, &quot;shift&quot;) if Input.pressed(&quot;shift&quot;)
-    Debug.print(0, &quot;pageup&quot;) if Input.pressed(&quot;pageup&quot;)
-    Debug.print(0, &quot;pagedown&quot;) if Input.pressed(&quot;pagedown&quot;)
-    Debug.print(0, &quot;any&quot;) if Input.pressed(&quot;any&quot;)
+    Debug.print(0, &quot;left&quot;) if Input.pressed?(&quot;left&quot;)
+    Debug.print(0, &quot;right&quot;) if Input.pressed?(&quot;right&quot;)
+    Debug.print(0, &quot;up&quot;) if Input.pressed?(&quot;up&quot;)
+    Debug.print(0, &quot;down&quot;) if Input.pressed?(&quot;down&quot;)
+    Debug.print(0, &quot;submit&quot;) if Input.pressed?(&quot;submit&quot;)
+    Debug.print(0, &quot;cancel&quot;) if Input.pressed?(&quot;cancel&quot;)
+    Debug.print(0, &quot;menu&quot;) if Input.pressed?(&quot;menu&quot;)
+    Debug.print(0, &quot;shift&quot;) if Input.pressed?(&quot;shift&quot;)
+    Debug.print(0, &quot;pageup&quot;) if Input.pressed?(&quot;pageup&quot;)
+    Debug.print(0, &quot;pagedown&quot;) if Input.pressed?(&quot;pagedown&quot;)
+    Debug.print(0, &quot;any&quot;) if Input.pressed?(&quot;any&quot;)
   end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_YJ50RctS4G-1_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    return
+
+*on_update
+    LNInput_IsPressed &quot;left&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;left&quot;)
+    LNInput_IsPressed &quot;right&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;right&quot;)
+    LNInput_IsPressed &quot;up&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;up&quot;)
+    LNInput_IsPressed &quot;down&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;down&quot;)
+    LNInput_IsPressed &quot;submit&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;submit&quot;)
+    LNInput_IsPressed &quot;cancel&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;cancel&quot;)
+    LNInput_IsPressed &quot;menu&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;menu&quot;)
+    LNInput_IsPressed &quot;shift&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;shift&quot;)
+    LNInput_IsPressed &quot;pageup&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;pageup&quot;)
+    LNInput_IsPressed &quot;pagedown&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;pagedown&quot;)
+    LNInput_IsPressed &quot;any&quot;, a
+    if a : LNDebug_PrintWithTime 0, strf(&quot;any&quot;)
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/input-2.gif" alt=""></p>
 <h2 id="ボタンの割り当てを変更する">ボタンの割り当てを変更する</h2>
 <p>TODO:</p>
@@ -311,7 +392,8 @@ App.new.run
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -325,7 +407,7 @@ App.new.run
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

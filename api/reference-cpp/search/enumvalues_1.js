@@ -9,9 +9,9 @@ var searchData=
   ['blendindices',['BlendIndices',['../namespaceln.html#a941dc703e823b62f6e4431f80b10f76ba0ce5f1db06d7f4853171d93bfe75760d',1,'ln']]],
   ['blendweight',['BlendWeight',['../namespaceln.html#a941dc703e823b62f6e4431f80b10f76ba6878915d87a15e385740ea4a5ec2503e',1,'ln']]],
   ['boolean',['Boolean',['../namespaceln.html#a08e87265e0ffb621489385faeb2bcbc7a27226c864bac7454a8504f8edb15d95b',1,'ln']]],
-  ['borderframe',['BorderFrame',['../namespaceln.html#a9c8c57bc64cafb8fb83dcb81fa9a9004a58df9ec67cdba5148121d30bc5cbdaba',1,'ln']]],
-  ['bottom',['Bottom',['../namespaceln.html#a20d8514a52d80465af2a27db9ed99b3ba2ad9d63b69c4a10a5cc9cad923133bc4',1,'ln']]],
+  ['bottom',['Bottom',['../namespaceln.html#a96e2a4173803132cf7c3994b546ee795a2ad9d63b69c4a10a5cc9cad923133bc4',1,'ln::Bottom()'],['../namespaceln.html#ab6a308305dffe5daf54f3002dfa22ae9a2ad9d63b69c4a10a5cc9cad923133bc4',1,'ln::Bottom()']]],
+  ['bottomleft',['BottomLeft',['../namespaceln.html#a96e2a4173803132cf7c3994b546ee795a98e5a1c44509157ebcaf46c515c78875',1,'ln']]],
+  ['bottomright',['BottomRight',['../namespaceln.html#a96e2a4173803132cf7c3994b546ee795a9146bfc669fddc88db2c4d89297d0e9a',1,'ln']]],
   ['box',['Box',['../namespaceln.html#a1cc1f3c342bdb941218b4baedfd9c9a5a3cfce651e667ab85486dd42a8185f98a',1,'ln']]],
-  ['boxframe',['BoxFrame',['../namespaceln.html#a9c8c57bc64cafb8fb83dcb81fa9a9004a448ec126fbb9ab201143e2c2754b4f2e',1,'ln']]],
   ['bubble',['Bubble',['../namespaceln.html#a20ab530be81c1292130180b252dafde6ab6230dfc594205d0ea15d5890ac22d7f',1,'ln']]]
 ];

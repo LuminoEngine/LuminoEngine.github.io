@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "HF9F1/i/Mdli7zp4dJdX0A=="
+          "hash": "84QDFnnm64Mf2kEoHNwC4A=="
         }
       },
       "is_incremental": false,
@@ -24,7 +24,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ejGKF06nIfCUU01kmOejeA=="
+          "hash": "XBALIJ2s959RShNEoZfDKw=="
         }
       },
       "is_incremental": false,
@@ -39,7 +39,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/1-basic.html",
-          "hash": "VrNyQipIQDFpfYNMAjBxOA=="
+          "hash": "KHPg2mNS85ehWbUy+yr/yg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/10-gui.html",
-          "hash": "Z1B3BmbHWc7YSOZbxErT4g=="
+          "hash": "XyuRRyhGJULA9xL8HY4BUg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/11-font.html",
-          "hash": "Mi+pITs7WtE5sxFMaAQwLA=="
+          "hash": "jctRCCeUoHK3VfSlYI8Vyw=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/12-input.html",
-          "hash": "FUl+2gXLYXk0uSW+qrnGSw=="
+          "hash": "wROMLbCq9FfUJsa5d/IOGA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/13-audio.html",
-          "hash": "l5vnGcERkIhH1Uz/P8b8Xg=="
+          "hash": "Hd2eLPyLl1lD0HGoKtjtLg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/14-effect.html",
-          "hash": "ZoBREVZLNxz1+DJG5WFN2Q=="
+          "hash": "IlQlQEFAGIaQPLnUQR2OsQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/15-physics.html",
-          "hash": "zkq2ePpNZo0e86rcxNkbDg=="
+          "hash": "rIBisOVP/ewqILOuwZVN8w=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/16-assets.html",
-          "hash": "wUhbnjYyl8zLDaAMU8PwkA=="
+          "hash": "prwWqwBo6/7SU+HFQYH6Dw=="
         }
       },
       "is_incremental": false,
@@ -137,11 +137,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/documents/first-tutorial/17-publish.md",
+      "source_relative_path": "articles/documents/first-tutorial/17-debug.md",
       "output": {
         ".html": {
-          "relative_path": "articles/documents/first-tutorial/17-publish.html",
-          "hash": "j84YPsBGmOm16QW0CRcv9A=="
+          "relative_path": "articles/documents/first-tutorial/17-debug.html",
+          "hash": "QLbdionOVrNP8cTm3UzIrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/documents/first-tutorial/18-publish.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/documents/first-tutorial/18-publish.html",
+          "hash": "W3iV4vVcbcqGa+78SoQFgw=="
         }
       },
       "is_incremental": false,
@@ -156,7 +168,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/2-graphics-basic.html",
-          "hash": "VxN/ERebnpBo8lv3yapi/w=="
+          "hash": "sZC/SLFNn0LQAYlQl1cIAA=="
         }
       },
       "is_incremental": false,
@@ -171,7 +183,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/3-object.html",
-          "hash": "9lDOiycXJ70qlFWgOGx0pg=="
+          "hash": "4sPAnbDs+by2MwccpkLcMQ=="
         }
       },
       "is_incremental": false,
@@ -183,7 +195,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/4-shapes.html",
-          "hash": "Zk07FXTWLyffKL6atRAsgw=="
+          "hash": "kjZb3WNksBvu+3KalyD0iw=="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/5-image.html",
-          "hash": "J7ZpyGEQqsqeIANOmtAy5Q=="
+          "hash": "Uagh2Cdq0idNW9wpbjxd6Q=="
         }
       },
       "is_incremental": false,
@@ -210,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/6-render-settings.html",
-          "hash": "nKEJbZJY+cgt/tifETHprg=="
+          "hash": "MEF2vuHh5Zbd8XOPNJbnKg=="
         }
       },
       "is_incremental": false,
@@ -222,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/7-animation.html",
-          "hash": "QBGPxOyCZ6xr/J8k/ArGoQ=="
+          "hash": "sBGUyioJIEatC/PchwQfHg=="
         }
       },
       "is_incremental": false,
@@ -234,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/8-light.html",
-          "hash": "0wLMqO4Scly/8WzXHFUbwg=="
+          "hash": "5CkhRUE4J/iYutlL95L8dw=="
         }
       },
       "is_incremental": false,
@@ -246,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/first-tutorial/9-material.html",
-          "hash": "N6ECT7D9XhlYb1OiVGtT2Q=="
+          "hash": "uo8JNJgyMxOHA5VZPFb3NQ=="
         }
       },
       "is_incremental": false,
@@ -610,7 +622,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/Index.html",
-          "hash": "gP/TPcxSpydt8KSp68YZZA=="
+          "hash": "5o1hQI2kZUS2elzB9pNfLA=="
         }
       },
       "is_incremental": false,
@@ -622,7 +634,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/download.html",
-          "hash": "d/Uvnd5VjxwxJqrFWqW4eg=="
+          "hash": "XwG2Lj5fyNfeiMVXlonzdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/documents/getting-started/getting-started-hsp3.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/documents/getting-started/getting-started-hsp3.html",
+          "hash": "Y19Ab0UfR9mLQO8NgdSB5g=="
         }
       },
       "is_incremental": false,
@@ -634,7 +658,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/getting-started-native.html",
-          "hash": "6Sp/qTIaplysAzTkv7NKgg=="
+          "hash": "AKc4atV2PNmRNCdWCT21sA=="
         }
       },
       "is_incremental": false,
@@ -646,7 +670,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/getting-started-ruby.html",
-          "hash": "t7JVkUbqR4fQdC71MyZSFA=="
+          "hash": "EkkWt7lBcbBOsbRbmG3K5w=="
         }
       },
       "is_incremental": false,
@@ -658,7 +682,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/getting-started.html",
-          "hash": "YVhMDDABi4k4FS7qWctPSg=="
+          "hash": "eC59H2MIMpfm6giH6ZckVQ=="
         }
       },
       "is_incremental": false,
@@ -710,6 +734,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "articles/documents/getting-started/img/getting-started-native-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/documents/getting-started/img/getting-started-native-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/documents/getting-started/img/getting-started-native-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/documents/getting-started/img/getting-started-native-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/documents/getting-started/img/getting-started-native-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/documents/getting-started/img/getting-started-native-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "articles/documents/getting-started/img/getting-started-web-1.png",
       "output": {
         "resource": {
@@ -736,7 +793,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/getting-started/requirements.html",
-          "hash": "ukbjGlKceKqKhOkCYBvQTA=="
+          "hash": "e+yxfLLROOnrcYU0Xg/A3A=="
         }
       },
       "is_incremental": false,
@@ -751,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/index.html",
-          "hash": "ZUzKyU412y6lVZS5pZcF4Q=="
+          "hash": "6trcwDQHeN3DtC399tJ9dA=="
         }
       },
       "is_incremental": false,
@@ -763,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Base/CompoundFormatString.html",
-          "hash": "YZ6C4+3wn6NfBwFgOrH7xA=="
+          "hash": "/ZmWDHDgtFyJ6ra7oWRT8Q=="
         }
       },
       "is_incremental": false,
@@ -775,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Base/ErrorHandling.html",
-          "hash": "If1HXqNdEh6QF8lpo3d1/g=="
+          "hash": "KAK/MKJQVa75BUqDVsQNSA=="
         }
       },
       "is_incremental": false,
@@ -787,7 +844,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Base/MemoryManagement.html",
-          "hash": "CXBSDC7Zb62X9bkVpYZbpw=="
+          "hash": "0otXgYk6WAjus2vw4DF94A=="
         }
       },
       "is_incremental": false,
@@ -799,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Base/String.html",
-          "hash": "8U3+fu/L4dnH0UYfdp+XJw=="
+          "hash": "kof9dfS99rHcrGtk8Pyr/w=="
         }
       },
       "is_incremental": false,
@@ -811,7 +868,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Base_Logging.html",
-          "hash": "N+XdyM/qMDLvUdo5IwIraw=="
+          "hash": "hUHKUuz8W7aePSM4APo2+w=="
         }
       },
       "is_incremental": false,
@@ -823,7 +880,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/IO/CommandLineParser.html",
-          "hash": "EvFItCE2DOg3TnLIQBYVuw=="
+          "hash": "d15bG7AY602Xd3DQtlSTMw=="
         }
       },
       "is_incremental": false,
@@ -835,7 +892,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/IO/FileReadWrite.html",
-          "hash": "K6h8OzKUWYcZ21rjanIOQQ=="
+          "hash": "jvIKyZbVO2CYXAmFdyyP6Q=="
         }
       },
       "is_incremental": false,
@@ -847,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/IO/FileSystem.html",
-          "hash": "t0XLLUaTr/LvV0zJiKy/zQ=="
+          "hash": "gfAfQf+hNKPw+/ZeZRxYaw=="
         }
       },
       "is_incremental": false,
@@ -859,7 +916,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Math/Index.html",
-          "hash": "VXW+TQLQk/qGTGJt1SEr8A=="
+          "hash": "Zm7gkbpM9MgfRnRplG9LKw=="
         }
       },
       "is_incremental": false,
@@ -871,7 +928,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Math/Matrix.html",
-          "hash": "G/W6IWs64uT05gmIev7EUg=="
+          "hash": "EdVBj/jF8eQPvrm77jHjAw=="
         }
       },
       "is_incremental": false,
@@ -883,7 +940,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Math/Quaternion.html",
-          "hash": "iruxIpxa4xdZWKWnB91qKQ=="
+          "hash": "5ZRNT6atwYIcOZjRllSggQ=="
         }
       },
       "is_incremental": false,
@@ -895,7 +952,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Math/Utilities.html",
-          "hash": "V5gzJkG9UiyfFO2NPotrWg=="
+          "hash": "Pmge83+GSk2Og0V0RLDNcA=="
         }
       },
       "is_incremental": false,
@@ -907,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Math/Vector.html",
-          "hash": "8nWd4r6kt/uc+Rm7xs3nPw=="
+          "hash": "kNOlfS0UVEiyXAzxCAkN+w=="
         }
       },
       "is_incremental": false,
@@ -919,7 +976,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Serialization.html",
-          "hash": "tpfxZ/5soVoZUjMsAolC9g=="
+          "hash": "pKZqa/8O8MNHuEhyzRMxNQ=="
         }
       },
       "is_incremental": false,
@@ -931,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Shader/HLSL.html",
-          "hash": "eo8Ifi94B4SXOdvEu3xUQA=="
+          "hash": "uCtT+uf2Lv28t0kajiKq3g=="
         }
       },
       "is_incremental": false,
@@ -943,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Shader/LuminoAndHLSL.html",
-          "hash": "2U8lEqF2+/sl2vN98t4AWw=="
+          "hash": "iSlrQfbzWPx6cJTbU44ZKA=="
         }
       },
       "is_incremental": false,
@@ -955,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Shader/ShaderBackendCompatibility.html",
-          "hash": "qbuJrGR3PU7+q6tBwAs8ug=="
+          "hash": "OrfUoIGSmzXYx19syQ2Arg=="
         }
       },
       "is_incremental": false,
@@ -967,7 +1024,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Shader/ShaderOverview.html",
-          "hash": "bitLBetvaqtJQWMC3wdWPQ=="
+          "hash": "qJAzqKJFu5B/8WgxAN1MMg=="
         }
       },
       "is_incremental": false,
@@ -982,7 +1039,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Shader/ShaderUsing.html",
-          "hash": "QpXnwOzmi85DPo5CEscp6g=="
+          "hash": "/R4lXr+OzbV00KV+ocynVQ=="
         }
       },
       "is_incremental": false,
@@ -994,7 +1051,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/Tools/CliTool.html",
-          "hash": "FAUTxXwRL74S23LfaofTjw=="
+          "hash": "nVbk1ZIn+MPpAxLiTbO1EA=="
         }
       },
       "is_incremental": false,
@@ -1009,7 +1066,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/index.html",
-          "hash": "zVvn/B9qvgruoSlxrLpTsA=="
+          "hash": "B8oqTq4ZnFkvxn38uVfmVA=="
         }
       },
       "is_incremental": false,
@@ -1024,7 +1081,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/platform-specific/windows-Install-nuget.html",
-          "hash": "KSfa7pUWnQWXT8RhNyVoYQ=="
+          "hash": "r1hVtTqZL5UXPf4W2lpt7w=="
         }
       },
       "is_incremental": false,
@@ -1036,7 +1093,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/programming-guide/cpp.html",
-          "hash": "vOZWFAAn3IdSRUAmxsqFAw=="
+          "hash": "KZfI6ZUkY+NOUqRRyG1wBQ=="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/programming-guide/index.html",
-          "hash": "5kXdXH+wj9rAIbc8voonYg=="
+          "hash": "iiqDvFL7eydBz+MXHEPe6g=="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/basics.html",
-          "hash": "5iYkX059bJULo2hWxRUoZw=="
+          "hash": "fSHG3O8X1JxhLUkopoV/3w=="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1129,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/debug.html",
-          "hash": "QPW3D5JBf9/e4pelCiq4Lg=="
+          "hash": "ooiKV0nXJPYp69Ag0Dc1og=="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1141,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/display-sprites.html",
-          "hash": "MX0bvtNzTOy9E3S1EkHUhA=="
+          "hash": "aPkCbOMgWpgmEQFCz4NTLw=="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/1-introduction.html",
-          "hash": "avG5hXemd5yrm0UWUvFbGA=="
+          "hash": "GnEtjJNMs4CnORUfyy1ZaQ=="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1165,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/10-gameover.html",
-          "hash": "+a8FO5CSTF8lgs7fCo3Z5A=="
+          "hash": "UO7NzB2j/EtbBjLY9A6HCw=="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1177,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/11-sound.html",
-          "hash": "hH1rvzRDaTA+StJRXUK4iQ=="
+          "hash": "dxSAwClSEp2A4b9nFW0ytg=="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1189,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/12-release.html",
-          "hash": "WRtAGZNv2aMqGQ/KMUUf+g=="
+          "hash": "dWk/nP9BI3k8P01Uy4xP3Q=="
         }
       },
       "is_incremental": false,
@@ -1147,7 +1204,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/2-texture-and-sprite.html",
-          "hash": "c/i9f/7kEvyAsw0J0k7oRg=="
+          "hash": "cYcfNLv2as9UEq8PqVflAw=="
         }
       },
       "is_incremental": false,
@@ -1159,7 +1216,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/3-world-building.html",
-          "hash": "Sajp0GKeIedSixxV4/2sYw=="
+          "hash": "h8/QV33BuSBdpteFWZtWqw=="
         }
       },
       "is_incremental": false,
@@ -1171,7 +1228,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/4-player.html",
-          "hash": "gCG7vsNtBDkyzHUufzz32g=="
+          "hash": "upTlIRBjZeSE364APl0A+w=="
         }
       },
       "is_incremental": false,
@@ -1183,7 +1240,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/5-physics.html",
-          "hash": "oQOb4zOLBoiEmsCtd9YzvA=="
+          "hash": "+/Y3/Vba3vrS7AsI1vtdOw=="
         }
       },
       "is_incremental": false,
@@ -1195,7 +1252,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/6-physics-moving.html",
-          "hash": "x3ydcaQqUEnxTOlUAjPdGA=="
+          "hash": "DHfFff/tQyqiL4hH50ffdw=="
         }
       },
       "is_incremental": false,
@@ -1207,7 +1264,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/7-animation.html",
-          "hash": "i81n9sTf31RXqRW3Sq5rsw=="
+          "hash": "GE9S1jn58NBTzd1/naCN9Q=="
         }
       },
       "is_incremental": false,
@@ -1219,7 +1276,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/8-collecting-items.html",
-          "hash": "Q/uXfSKlQYDUn7V9yArIMQ=="
+          "hash": "6VHhI8KciJvRC9fx2DwY0g=="
         }
       },
       "is_incremental": false,
@@ -1231,7 +1288,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/first-2d-game/9-scoring-ui.html",
-          "hash": "ibFdZDrF4sfyDGFzSrM5Kg=="
+          "hash": "3MSs1pUPlglUromRGXhrrg=="
         }
       },
       "is_incremental": false,
@@ -1518,7 +1575,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/graphics.html",
-          "hash": "7byq2tlj1xRX/DCzgyYbwg=="
+          "hash": "iIRnLZhz5GvF3aH7WoH9hQ=="
         }
       },
       "is_incremental": false,
@@ -1530,7 +1587,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/index.html",
-          "hash": "ZuFuzGfKCuJlWE8SxAJ0qw=="
+          "hash": "NLLex4YBjqAqfYBpWx1A4Q=="
         }
       },
       "is_incremental": false,
@@ -1542,7 +1599,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/old-docs/tutorial/runnning-game.html",
-          "hash": "csQ9TWNBFM9txC4CJsAupA=="
+          "hash": "0tM7gWhbmacm3nIwpjPW8w=="
         }
       },
       "is_incremental": false,
@@ -1554,7 +1611,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/platform-specific/android.html",
-          "hash": "ZukwgskVrwW5QDtaguyHZg=="
+          "hash": "j6ro3FF6LCkK72f9LUZfBA=="
         }
       },
       "is_incremental": false,
@@ -1577,7 +1634,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/platform-specific/ios.html",
-          "hash": "lKFCLSpZUXZuir2lfqA+Kw=="
+          "hash": "ExLuGcq0XFc8b27SRCp1sA=="
         }
       },
       "is_incremental": false,
@@ -1589,7 +1646,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/platform-specific/macos.html",
-          "hash": "OCMzpLTmb/Yw0LzVv+KFnQ=="
+          "hash": "eEtryc0izL/BQIv36crSYQ=="
         }
       },
       "is_incremental": false,
@@ -1601,7 +1658,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/platform-specific/web.html",
-          "hash": "ZxbtruSycbMCtSl65x9MlQ=="
+          "hash": "6wmO/rG2mw7sH7Bn7UaqzQ=="
         }
       },
       "is_incremental": false,
@@ -1613,7 +1670,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/platform-specific/windows.html",
-          "hash": "vPZyyVdldKZjqUnEAGEssQ=="
+          "hash": "3/XDYfXVC4VIS0SVqlxk0Q=="
         }
       },
       "is_incremental": false,
@@ -1625,7 +1682,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/tips/graphics-spec.html",
-          "hash": "GaK1UF3cvdVrN56L2Qel6g=="
+          "hash": "2d9i8OMfte8kLMjLC823Ow=="
         }
       },
       "is_incremental": false,
@@ -1640,7 +1697,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/documents/toc.html",
-          "hash": "3tN9yPmrh/iOyk4niiripA=="
+          "hash": "QNah+IqhhRBhW951JwyEXw=="
         }
       },
       "is_incremental": false,
@@ -1652,7 +1709,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "+p/K6coOpmN9ZJbKrWJeGQ=="
+          "hash": "alOIbsjmwKuWLotxVZSKMw=="
         }
       },
       "is_incremental": false,
@@ -1664,7 +1721,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/samples/Graphics2D_Sprite2D.html",
-          "hash": "dm2nms/esizhUVBXZTY+vw=="
+          "hash": "RBwd+Wn+L4aBFgpAAJCNVA=="
         }
       },
       "is_incremental": false,
@@ -1676,7 +1733,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/samples/Graphics2D_Text.html",
-          "hash": "IGEMOqC6nFpd7otIMCawNg=="
+          "hash": "oYGOSfFmcBllrUbdhYb7Ow=="
         }
       },
       "is_incremental": false,
@@ -1691,7 +1748,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/samples/Input_VirtualController.html",
-          "hash": "ddHX0qkSSpcuEWdc9UCMnA=="
+          "hash": "llTmeSkbEog6ubLcV+qVew=="
         }
       },
       "is_incremental": false,
@@ -1703,7 +1760,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/samples/Lumino_Basic.html",
-          "hash": "bHq8bfE6qPQ7qt9pp5ZJeQ=="
+          "hash": "kwLX0GPi2KnbS9QrSOmRJw=="
         }
       },
       "is_incremental": false,
@@ -1792,7 +1849,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/samples/index.html",
-          "hash": "GsG60HsIjjH0OwgCFuK89A=="
+          "hash": "/ZflMszV68KiVn76YXo7yA=="
         }
       },
       "is_incremental": false,
@@ -1804,7 +1861,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/toc.html",
-          "hash": "Ro9BIjnXZnmZsYgE9lRqNA=="
+          "hash": "YzcyV71XJggKgjg5liSSsg=="
         }
       },
       "is_incremental": false,
@@ -1816,7 +1873,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/learning_old/tutorials/index.html",
-          "hash": "jakC3AHejIdAbRcW0gI6GQ=="
+          "hash": "IFKYY9JViC3L0HSx8HxPqg=="
         }
       },
       "is_incremental": false,
@@ -1828,7 +1885,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/license/index.html",
-          "hash": "rba997/+sbPBIPMKBmuobQ=="
+          "hash": "E9D9Z+RlV/0jHo3Yoso9fA=="
         }
       },
       "is_incremental": false,
@@ -1840,7 +1897,18 @@
       "output": {
         ".html": {
           "relative_path": "articles/supports/index.html",
-          "hash": "UnGpgJMKaI0zi5sMsDrb3g=="
+          "hash": "Kvyu1HYt28wOOwHXblHuUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "assets.zip",
+      "output": {
+        "resource": {
+          "relative_path": "assets.zip"
         }
       },
       "is_incremental": false,
@@ -1907,7 +1975,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "XTOiFWlrlNNmXjfcBZrdtQ=="
+          "hash": "p9g5GFj+DcnWjRma4dwY/w=="
         }
       },
       "is_incremental": false,
@@ -1930,7 +1998,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "YRkYcFFLYShLJxd9UKW31w=="
+          "hash": "6l3j433EoKdm6kLeTp4ZrQ=="
         }
       },
       "is_incremental": false,
@@ -1948,22 +2016,22 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 84,
+          "total_file_count": 86,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0

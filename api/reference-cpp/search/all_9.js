@@ -1,6 +1,7 @@
 var searchData=
 [
   ['join',['join',['../classln_1_1_string.html#a7db1ae77a407189707d1dc3b95398345',1,'ln::String']]],
+  ['joint',['Joint',['../classln_1_1_joint.html',1,'ln']]],
   ['jsonarray',['JsonArray',['../classln_1_1_json_array.html',1,'ln']]],
   ['jsondiag',['JsonDiag',['../classln_1_1_json_diag.html',1,'ln']]],
   ['jsondiagcode',['JsonDiagCode',['../namespaceln.html#a722c47e04ef466bdc58430e61f752f5a',1,'ln']]],

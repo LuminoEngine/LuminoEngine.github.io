@@ -10,6 +10,7 @@ var classln_1_1_visual_object =
     [ "opacity", "classln_1_1_visual_object.html#aa38336927d650d229a892cb83f4c5ec1", null ],
     [ "setBlendColor", "classln_1_1_visual_object.html#a526b64f9157990d7f6f1772a85142a61", null ],
     [ "setBlendMode", "classln_1_1_visual_object.html#a79e1779d189a25be0b97468579f57468", null ],
+    [ "setBlendMode2", "classln_1_1_visual_object.html#a75dbde9c99ae277de7e191b49322f0ee", null ],
     [ "setColorScale", "classln_1_1_visual_object.html#a64d31085dec3a8825b07d1797d8b063b", null ],
     [ "setCullMode", "classln_1_1_visual_object.html#ae84a6d3051b866ebe36ca652b386a75e", null ],
     [ "setDepthTestEnabled", "classln_1_1_visual_object.html#a8394c501bf4384713a04329791e34474", null ],

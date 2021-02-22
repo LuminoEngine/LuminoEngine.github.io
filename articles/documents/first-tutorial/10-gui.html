@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GUI &#12434;&#20316;&#12427; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="GUI &#12434;&#20316;&#12427; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -73,6 +81,7 @@
 <h2 id="2d-画像-2d-スプライト-を表示する">2D 画像 (2D スプライト) を表示する</h2>
 <p>まずは画像を表示してみましょう。</p>
 <p>以前の章で 3D 空間にスプライトを表示しましたが、今回は <code>UISprite</code> を使います。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_f4jCcumhI0">
 <ul role="tablist">
 <li role="presentation">
@@ -80,6 +89,9 @@
 </li>
 <li role="presentation">
 <a href="#tabpanel_f4jCcumhI0_lang-ruby" role="tab" aria-controls="tabpanel_f4jCcumhI0_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_f4jCcumhI0_lang-hsp3" role="tab" aria-controls="tabpanel_f4jCcumhI0_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_f4jCcumhI0_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -91,6 +103,7 @@ class App : public Application
     {
         auto texture = Texture2D::load(u&quot;picture1.jpg&quot;);
         auto sprite = UISprite::create(texture);
+        sprite-&gt;addInto();
     }
 };
 
@@ -103,12 +116,27 @@ class App &lt; Application
   def on_init
     texture = Texture2D.load(&quot;picture1.jpg&quot;)
     sprite = UISprite.new(texture)
+    sprite.add_into
   end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_f4jCcumhI0_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNTexture2D_Load &quot;picture1.jpg&quot;, texture
+    LNUISprite_CreateWithTexture texture, sprite
+    LNUIElement_AddInto sprite
+    return
+
+*on_update
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/gui-1.png" alt=""></p>
 <p>画像がウィンドウの中央に表示されました。</p>
 <p>画像を 2D 空間に表示する UISprite は、3D の時のような奥行きの計算はされませんので、元の画像と同じサイズで表示されます。</p>
@@ -123,6 +151,7 @@ App.new.run
 <p>これによって、ウィンドウサイズを変えたり UIElement をアニメーションさせたときでも破綻しにくい GUI を構築できるようになります。</p>
 <p>さて、そのような UIElement ですが、デフォルトの Alignment は「中央揃え」になっています。</p>
 <p>次のプログラムでは座標の変化をイメージするために、左上を原点として座標を設定してみます。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_f4jCcumhI0-1">
 <ul role="tablist">
 <li role="presentation">
@@ -130,6 +159,9 @@ App.new.run
 </li>
 <li role="presentation">
 <a href="#tabpanel_f4jCcumhI0-1_lang-ruby" role="tab" aria-controls="tabpanel_f4jCcumhI0-1_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_f4jCcumhI0-1_lang-hsp3" role="tab" aria-controls="tabpanel_f4jCcumhI0-1_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_f4jCcumhI0-1_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -141,8 +173,9 @@ class App : public Application
     {
         auto texture = Texture2D::load(u&quot;picture1.jpg&quot;);
         auto sprite = UISprite::create(texture);
-        sprite-&gt;setAlignments(HAlignment::Left, VAlignment::Top);
+        sprite-&gt;setAlignments(UIHAlignment::Left, UIVAlignment::Top);
         sprite-&gt;setPosition(100, 50);
+        sprite-&gt;addInto();
     }
 };
 
@@ -155,18 +188,36 @@ class App &lt; Application
   def on_init
     texture = Texture2D.load(&quot;picture1.jpg&quot;)
     sprite = UISprite.new(texture)
-    sprite.set_alignments(HAlignment::LEFT, VAlignment::TOP);
+    sprite.set_alignments(UIHAlignment::LEFT, UIVAlignment::TOP);
     sprite.set_position(100, 50);
+    sprite.add_into
   end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_f4jCcumhI0-1_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNTexture2D_Load &quot;picture1.jpg&quot;, texture
+    LNUISprite_CreateWithTexture texture, sprite
+    LNUIElement_SetAlignments sprite, LN_UIHALIGNMENT_LEFT, LN_UIVALIGNMENT_TOP
+    LNUIElement_SetPositionXYZ sprite, 100, 50
+    LNUIElement_AddInto sprite
+    return
+
+*on_update
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/gui-3.png" alt=""></p>
 <h2 id="ボタン">ボタン</h2>
 <p>ボタンは、マウスクリックやタップ操作に反応する UIElement です。</p>
 <p>あらかじめ処理を登録しておくことで、クリックやタップ操作といった <code>イベント</code> が発生したときに、その処理を実行します。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_f4jCcumhI0-2">
 <ul role="tablist">
 <li role="presentation">
@@ -174,6 +225,9 @@ App.new.run
 </li>
 <li role="presentation">
 <a href="#tabpanel_f4jCcumhI0-2_lang-ruby" role="tab" aria-controls="tabpanel_f4jCcumhI0-2_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_f4jCcumhI0-2_lang-hsp3" role="tab" aria-controls="tabpanel_f4jCcumhI0-2_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_f4jCcumhI0-2_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -187,6 +241,7 @@ class App : public Application
         button-&gt;connectOnClicked([]() {
             Debug::printf(u&quot;Hello, UI!&quot;);
         });
+        button-&gt;addInto();
     }
 };
 
@@ -201,12 +256,31 @@ class App &lt; Application
     button.connect_on_clicked do
       Debug.print(&quot;Hello, UI!&quot;)
     end
+    button.add_into
   end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_f4jCcumhI0-2_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNUIButton_CreateWithText &quot;Button&quot;, btn
+    LNUIButton_ConnectOnClicked btn, *clicked
+    LNUIElement_AddInto btn
+    return
+
+*on_update
+    return
+
+*clicked
+    LNDebug_Print &quot;Hsello, UI!&quot;
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/gui-4.gif" alt=""></p>
 </article>
           </div>
@@ -214,7 +288,8 @@ App.new.run
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -228,7 +303,7 @@ App.new.run
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

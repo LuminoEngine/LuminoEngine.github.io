@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['name',['name',['../classln_1_1_text_encoding.html#a3ce390e73ae62782097b8b367624df3d',1,'ln::TextEncoding::name()'],['../classln_1_1_animation_state.html#a23a3305756108e1a438da24d762a1e93',1,'ln::AnimationState::name()'],['../classln_1_1_shader_parameter.html#a7c0f74f08f78c931e285a92a1e95ac66',1,'ln::ShaderParameter::name()'],['../classln_1_1_shader_constant_buffer.html#abeec2bd4130ca4af811c4acb336ac907',1,'ln::ShaderConstantBuffer::name()'],['../classln_1_1_shader_technique.html#afc59f700dd2a7cf0ff75da53c25789d8',1,'ln::ShaderTechnique::name()'],['../classln_1_1_shader_pass.html#a154a041bb62eadff4bc97983b13bb37a',1,'ln::ShaderPass::name()']]],
+  ['name',['name',['../classln_1_1_text_encoding.html#a3ce390e73ae62782097b8b367624df3d',1,'ln::TextEncoding::name()'],['../classln_1_1_animation_state.html#a23a3305756108e1a438da24d762a1e93',1,'ln::AnimationState::name()'],['../classln_1_1_mesh_container.html#a564c2af299c4e3199d66467901b753ba',1,'ln::MeshContainer::name()'],['../classln_1_1_shader_technique.html#afc59f700dd2a7cf0ff75da53c25789d8',1,'ln::ShaderTechnique::name()'],['../classln_1_1_shader_pass.html#a154a041bb62eadff4bc97983b13bb37a',1,'ln::ShaderPass::name()']]],
   ['native',['native',['../classln_1_1_path.html#a139bb210aa372e22d487377715d742c7',1,'ln::Path']]],
+  ['navigator',['navigator',['../classln_1_1_engine.html#ae0aae8b893ca45dcc7f8365221f62161',1,'ln::Engine']]],
   ['nearequal',['nearEqual',['../classln_1_1_math.html#a89a425c7dae2ac508d055c13a5c8c3cf',1,'ln::Math']]],
   ['newline',['newLine',['../classln_1_1_string.html#a871fccca8f07f4c7f4301cb151acded6',1,'ln::String::newLine()'],['../classln_1_1_text_writer.html#a1088b148e3d6aac6959c33fc7e6dd4a5',1,'ln::TextWriter::newLine()']]],
   ['newvalue',['newValue',['../classln_1_1_u_i_scroll_event_args.html#ac9b4252013254f6bc004986be1934043',1,'ln::UIScrollEventArgs']]],

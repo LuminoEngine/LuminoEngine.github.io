@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pause',['pause',['../namespaceln.html#aee2e3c4edc48a29b4b2cb65c1314f61daec1b81965109165de6b38cd92c1e39f9',1,'ln']]],
+  ['pause',['Pause',['../namespaceln.html#aee2e3c4edc48a29b4b2cb65c1314f61da105b296a83f9c105355403f3332af50f',1,'ln']]],
   ['pausereset',['PauseReset',['../namespaceln.html#aee2e3c4edc48a29b4b2cb65c1314f61daee8c2f16f46ede44ff9ac9cf389cabb4',1,'ln']]],
   ['pausing',['Pausing',['../namespaceln.html#a93bf8e2bbfca892180a0aff5ca78b402af89bf2973f11fc8bac3db5669252725a',1,'ln']]],
   ['period',['Period',['../namespaceln.html#a1abfe1a53770d23e706d817dc8bd27bfa1901606ea069a83dc7beea17881ef95a',1,'ln']]],

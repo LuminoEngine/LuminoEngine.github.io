@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>C++ &#12391; Lumino &#12434;&#12399;&#12376;&#12417;&#12427; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="C++ &#12391; Lumino &#12434;&#12399;&#12376;&#12417;&#12427; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -80,33 +88,17 @@
 </ol>
 <h3 id="lumino-をインストールする">Lumino をインストールする</h3>
 <ol>
-<li><a href="http://nnmy.sakura.ne.jp/archive/lumino/v0.9.0/Lumino-v0.9.0-Windows.msi">Lumino のインストーラ</a> をダウンロードし、実行してください。インストーラの指示に従ってインストールを行います。</li>
+<li><a href="http://nnmy.sakura.ne.jp/archive/lumino/v0.10.0/Lumino-v0.10.0-Windows.msi">Lumino のインストーラ</a> をダウンロードし、実行してください。インストーラの指示に従ってインストールを行います。</li>
 <li>実行時に Windows SmartScreen の注意メッセージが表示された場合は「詳細情報」→「実行」を押してください。</li>
 </ol>
-<h2 id="プロジェクトを作成する">プロジェクトを作成する</h2>
-<p>ターミナル（コマンドプロンプト）を開いて次のコマンドを入力します。</p>
-<pre><code class="lang-sh">lumino new hello
-</code></pre><p>カレントディレクトリの下に <code>hello</code> というフォルダが作成され、その中に必要なファイルが作成されます。</p>
-<h2 id="プロジェクトを実行する">プロジェクトを実行する</h2>
-<p><code>hello</code> フォルダの中には Visual Studio のソリューションファイル(.sln) が作成されています。</p>
-<p>このファイルを Visual Studio で開くことで、Visual Studio 上で開発することができます。</p>
-<p>プロジェクトの中に作成されている <code>src/App.cpp</code> が Lumino のエントリーポイントです。ここには次のようなプログラムが書かれています。</p>
-<pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
-
-class HelloApp : public Application
-{
-    void onStart() override
-    {
-        auto text = UITextBlock::create(u&quot;Hello, Lumino!&quot;);
-    }
-
-    void onUpdate() override
-    {
-    }
-};
-
-LUMINO_APP(HelloApp);
-</code></pre><p>プログラムの実行は、[デバッグ] メニューの [デバッグの開始] から行います。</p>
+<h2 id="プロジェクトを作成して実行する">プロジェクトを作成して実行する</h2>
+<ol>
+<li>Visual Studio 2019 を起動し、 [新しいプロジェクトの作成] をクリックします。 <img src="img/getting-started-native-1.png" alt=""></li>
+<li>プロジェクト テンプレートのリストから <code>LuminoProject</code> を選択し、 [次へ] をクリックします。 <img src="img/getting-started-native-2.png" alt=""></li>
+<li>プロジェクト名と保存場所を入力し、[作成] をクリックします。 <img src="img/getting-started-native-3.png" alt=""></li>
+<li>プロジェクトが作成され、サンプルプログラムが表示されます。</li>
+<li>[デバッグ] メニューの [デバッグの開始] からからプログラムを実行します。</li>
+</ol>
 <p><img src="img/first-program.png" alt=""></p>
 <p>中央に &quot;Hello, Lumino!&quot; と書かれたウィンドウが表示されましたか？</p>
 <p>これで Lumino を使うための準備が整いました。次は <a href="../first-tutorial/1-basic.html">チュートリアル</a> に進みましょう！</p>
@@ -116,7 +108,8 @@ LUMINO_APP(HelloApp);
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -130,7 +123,7 @@ LUMINO_APP(HelloApp);
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

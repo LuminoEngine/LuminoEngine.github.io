@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>&#12521;&#12452;&#12488;&#12434;&#35373;&#23450;&#12377;&#12427; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="&#12521;&#12452;&#12488;&#12434;&#35373;&#23450;&#12377;&#12427; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -75,6 +83,7 @@
 <p>カメラと同じく、初期状態ではひとつのライトがワールドに配置されています。</p>
 <p>このライトは、最も一般的に使用される <code>DirectionalLight</code> と呼ばれるものです。DirectionalLight は、太陽のように一定方向から均一に、ワールド全体を照らします。</p>
 <p>次のコードで、カメラと同じように向きを変え、中天から直下を照らすようにしてみます。</p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_WZVdOcozol">
 <ul role="tablist">
 <li role="presentation">
@@ -82,6 +91,9 @@
 </li>
 <li role="presentation">
 <a href="#tabpanel_WZVdOcozol_lang-ruby" role="tab" aria-controls="tabpanel_WZVdOcozol_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_WZVdOcozol_lang-hsp3" role="tab" aria-controls="tabpanel_WZVdOcozol_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_WZVdOcozol_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -91,13 +103,13 @@ class App : public Application
 {
     void onInit() override
     {
-        auto box = BoxMesh::create();
+        auto box = BoxMesh::With().buildInto();
 
         auto camera = Engine::camera();
         camera-&gt;setPosition(5, 5, -5);
         camera-&gt;lookAt(0, 0, 0);
 
-        auto light = Engine::light();
+        auto light = Engine::mainLight();
         light-&gt;lookAt(0, -1, 0);
     }
 };
@@ -108,21 +120,42 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    box = BoxMesh.new
+    def on_init
+        box = BoxMesh.new
+        box.add_into
 
-    camera = Engine.camera
-    camera.set_position(5, 5, -5)
-    camera.look_at(0, 0, 0)
+        camera = Engine.camera
+        camera.set_position(5, 5, -5)
+        camera.look_at(0, 0, 0)
 
-    light = Engine::light
-    light.look_at(0, -1, 0);
-  end
+        light = Engine.main_light
+        light.look_at(0, -1, 0);
+    end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_WZVdOcozol_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNBoxMesh_CreateWithSize 1, 1, 1, box
+    LNWorldObject_AddInto box
+
+    LNEngine_GetMainCamera camera
+    LNWorldObject_SetPositionXYZ camera, 5, 5, -5
+    LNWorldObject_LookAtXYZ camera, 0, 0, 0
+
+    LNEngine_GetMainLight light
+    LNWorldObject_LookAtXYZ light, 0, -1, 0
+    return
+
+*on_update
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/graphics-basic-7.png" alt=""></p>
 <p>ボックスが真上から照らされるようになるため、上面が明るくなり、他の面は暗くなりました。</p>
 <h2 id="ライトの種類">ライトの種類</h2>
@@ -137,7 +170,8 @@ App.new.run
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -151,7 +185,7 @@ App.new.run
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

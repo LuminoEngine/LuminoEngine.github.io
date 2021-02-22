@@ -2,6 +2,7 @@ var searchData=
 [
   ['magenta',['Magenta',['../structln_1_1_color.html#a643cfbc068975a70183999ce44e121e2',1,'ln::Color']]],
   ['maroon',['Maroon',['../structln_1_1_color.html#a8a87c9f73f8b7c2c888675ce636bb0af',1,'ln::Color']]],
+  ['maximum',['Maximum',['../structln_1_1_vector3.html#a5a3bf333869256301be25b7f57551c71',1,'ln::Vector3']]],
   ['maxvalue',['MaxValue',['../structln_1_1_size.html#af271e0d8d301db9e80259949f0e402af',1,'ln::Size']]],
   ['mediumaquamarine',['MediumAquamarine',['../structln_1_1_color.html#a37c8e908c2fe95b24e55901293d908cd',1,'ln::Color']]],
   ['mediumblue',['MediumBlue',['../structln_1_1_color.html#a233baec6677c8128ddcce33bae082615',1,'ln::Color']]],
@@ -14,6 +15,7 @@ var searchData=
   ['mediumvioletred',['MediumVioletRed',['../structln_1_1_color.html#a5345596c4ae96415a14c8cd0f1b55f5b',1,'ln::Color']]],
   ['menu',['Menu',['../classln_1_1_input_buttons.html#a976ddcd39c534ae3999bb334c45080ba',1,'ln::InputButtons']]],
   ['midnightblue',['MidnightBlue',['../structln_1_1_color.html#a1a49099534ab44f6bd950974e38ab91d',1,'ln::Color']]],
+  ['minimum',['Minimum',['../structln_1_1_vector3.html#afdeb41542a90e0f237b2b5a339ef6c4b',1,'ln::Vector3']]],
   ['mintcream',['MintCream',['../structln_1_1_color.html#a359b18fc9ff134384ccf49f253b72285',1,'ln::Color']]],
   ['minvalue',['MinValue',['../structln_1_1_size.html#ad651248f405b3660beef1baa9cdc58ee',1,'ln::Size']]],
   ['mistyrose',['MistyRose',['../structln_1_1_color.html#af81ad9f89b3129483bf2b05b9796dc8e',1,'ln::Color']]],

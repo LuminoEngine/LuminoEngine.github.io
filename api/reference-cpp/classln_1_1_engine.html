@@ -100,13 +100,16 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a2f10b1e619bc02479112a686665adbd0">initialize</a> ()</td></tr>
 <tr class="memdesc:a2f10b1e619bc02479112a686665adbd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンジンの初期化処理を行います。 <br /></td></tr>
 <tr class="separator:a2f10b1e619bc02479112a686665adbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25ef81c85c07af126c2408fa80a5ee3"><td class="memItemLeft" align="right" valign="top"><a id="ae25ef81c85c07af126c2408fa80a5ee3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#ae25ef81c85c07af126c2408fa80a5ee3">finalize</a> ()</td></tr>
-<tr class="memdesc:ae25ef81c85c07af126c2408fa80a5ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンジンの終了処理を行います。 <br /></td></tr>
-<tr class="separator:ae25ef81c85c07af126c2408fa80a5ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb36e794e5aa053aca213f6119613838"><td class="memItemLeft" align="right" valign="top"><a id="aeb36e794e5aa053aca213f6119613838"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#aeb36e794e5aa053aca213f6119613838">terminate</a> ()</td></tr>
+<tr class="memdesc:aeb36e794e5aa053aca213f6119613838"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンジンの終了処理を行います。 <br /></td></tr>
+<tr class="separator:aeb36e794e5aa053aca213f6119613838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e16e266248b224f137518fba7e53aaa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa">update</a> ()</td></tr>
 <tr class="memdesc:a5e16e266248b224f137518fba7e53aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム分の更新処理を行います。  <a href="#a5e16e266248b224f137518fba7e53aaa">More...</a><br /></td></tr>
 <tr class="separator:a5e16e266248b224f137518fba7e53aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8298d6922ada121473fa5cc91c3d8bb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a8298d6922ada121473fa5cc91c3d8bb5">run</a> (<a class="el" href="classln_1_1_application.html">Application</a> *app)</td></tr>
+<tr class="memdesc:a8298d6922ada121473fa5cc91c3d8bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した <a class="el" href="classln_1_1_application.html" title="グローバルなアプリケーション状態を扱うための基本クラスです。 ">Application</a> の実行を開始します。  <a href="#a8298d6922ada121473fa5cc91c3d8bb5">More...</a><br /></td></tr>
+<tr class="separator:a8298d6922ada121473fa5cc91c3d8bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84da7f80381989bc1e9cbcd6f59cffde"><td class="memItemLeft" align="right" valign="top"><a id="a84da7f80381989bc1e9cbcd6f59cffde"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a84da7f80381989bc1e9cbcd6f59cffde">time</a> ()</td></tr>
 <tr class="memdesc:a84da7f80381989bc1e9cbcd6f59cffde"><td class="mdescLeft">&#160;</td><td class="mdescRight">アプリケーション開始からの経過時間を取得します。この値はタイムスケールの影響を受けます。 <br /></td></tr>
@@ -132,29 +135,85 @@ static <a class="el" href="classln_1_1_u_i_control.html">UIControl</a> *&#160;</
 <tr class="memdesc:a4c4a5f0d20f327834cfd609b3b65a123"><td class="mdescLeft">&#160;</td><td class="mdescRight">。 <br /></td></tr>
 <tr class="separator:a4c4a5f0d20f327834cfd609b3b65a123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1807226a8503d7d8b15ae47704398ee"><td class="memItemLeft" align="right" valign="top"><a id="ae1807226a8503d7d8b15ae47704398ee"></a>
-static World *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#ae1807226a8503d7d8b15ae47704398ee">world</a> ()</td></tr>
-<tr class="memdesc:ae1807226a8503d7d8b15ae47704398ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの World です。 <br /></td></tr>
+static <a class="el" href="classln_1_1_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#ae1807226a8503d7d8b15ae47704398ee">world</a> ()</td></tr>
+<tr class="memdesc:ae1807226a8503d7d8b15ae47704398ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_world.html" title="3D シーンを表すクラスです。 ">World</a> です。 <br /></td></tr>
 <tr class="separator:ae1807226a8503d7d8b15ae47704398ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c58b7f8cf48eb1f9926cb9a1f16c54"><td class="memItemLeft" align="right" valign="top"><a id="a85c58b7f8cf48eb1f9926cb9a1f16c54"></a>
-static <a class="el" href="classln_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a85c58b7f8cf48eb1f9926cb9a1f16c54">camera</a> ()</td></tr>
-<tr class="memdesc:a85c58b7f8cf48eb1f9926cb9a1f16c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_camera.html" title="カメラのクラスです。カメラは 3D シーンを描画する際の視点となります。 ">Camera</a> です。 <br /></td></tr>
-<tr class="separator:a85c58b7f8cf48eb1f9926cb9a1f16c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed49435dd62741a265e2f66363ac701"><td class="memItemLeft" align="right" valign="top"><a id="aeed49435dd62741a265e2f66363ac701"></a>
-static <a class="el" href="classln_1_1_directional_light.html">DirectionalLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#aeed49435dd62741a265e2f66363ac701">light</a> ()</td></tr>
-<tr class="memdesc:aeed49435dd62741a265e2f66363ac701"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_directional_light.html" title="ディレクショナルライトのオブジェクトです。 ">DirectionalLight</a> です。 <br /></td></tr>
-<tr class="separator:aeed49435dd62741a265e2f66363ac701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9010851b7345aafe966117b42ce58b2"><td class="memItemLeft" align="right" valign="top"><a id="ae9010851b7345aafe966117b42ce58b2"></a>
-static <a class="el" href="classln_1_1_ambient_light.html">AmbientLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#ae9010851b7345aafe966117b42ce58b2">ambientLight</a> ()</td></tr>
-<tr class="memdesc:ae9010851b7345aafe966117b42ce58b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_ambient_light.html" title="アンビエントライトのオブジェクトです。 ">AmbientLight</a> です。 <br /></td></tr>
-<tr class="separator:ae9010851b7345aafe966117b42ce58b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e13ef6073d8bdabd63fa0d0855c3856"><td class="memItemLeft" align="right" valign="top"><a id="a8e13ef6073d8bdabd63fa0d0855c3856"></a>
-static <a class="el" href="classln_1_1_world_render_view.html">WorldRenderView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a8e13ef6073d8bdabd63fa0d0855c3856">renderView</a> ()</td></tr>
-<tr class="memdesc:a8e13ef6073d8bdabd63fa0d0855c3856"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_render_view.html" title="RenderView. ">RenderView</a> です。 <br /></td></tr>
+<tr class="memitem:a7e7dc235e3a09cc7c5d8323ab9503df3"><td class="memItemLeft" align="right" valign="top"><a id="a7e7dc235e3a09cc7c5d8323ab9503df3"></a>
+static <a class="el" href="classln_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a7e7dc235e3a09cc7c5d8323ab9503df3">mainCamera</a> ()</td></tr>
+<tr class="memdesc:a7e7dc235e3a09cc7c5d8323ab9503df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_camera.html" title="カメラのクラスです。カメラは 3D シーンを描画する際の視点となります。 ">Camera</a> です。 <br /></td></tr>
+<tr class="separator:a7e7dc235e3a09cc7c5d8323ab9503df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a23fb53fe0ac86a41727b77d99a3409"><td class="memItemLeft" align="right" valign="top"><a id="a3a23fb53fe0ac86a41727b77d99a3409"></a>
+static <a class="el" href="classln_1_1_environment_light.html">EnvironmentLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a3a23fb53fe0ac86a41727b77d99a3409">mainLight</a> ()</td></tr>
+<tr class="memdesc:a3a23fb53fe0ac86a41727b77d99a3409"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの Light です。 <br /></td></tr>
+<tr class="separator:a3a23fb53fe0ac86a41727b77d99a3409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e13ef6073d8bdabd63fa0d0855c3856"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classln_1_1_world_render_view.html">WorldRenderView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#a8e13ef6073d8bdabd63fa0d0855c3856">renderView</a> ()</td></tr>
+<tr class="memdesc:a8e13ef6073d8bdabd63fa0d0855c3856"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの AmbientLight です。  <a href="#a8e13ef6073d8bdabd63fa0d0855c3856">More...</a><br /></td></tr>
 <tr class="separator:a8e13ef6073d8bdabd63fa0d0855c3856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0aae8b893ca45dcc7f8365221f62161"><td class="memItemLeft" align="right" valign="top"><a id="ae0aae8b893ca45dcc7f8365221f62161"></a>
+static <a class="el" href="classln_1_1_u_i_focus_navigator.html">UIFocusNavigator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_engine.html#ae0aae8b893ca45dcc7f8365221f62161">navigator</a> ()</td></tr>
+<tr class="memdesc:ae0aae8b893ca45dcc7f8365221f62161"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトで作成されるメインの <a class="el" href="classln_1_1_u_i_focus_navigator.html" title="要素のフォーカス遷移を管理すためのコンテナ要素。 ">UIFocusNavigator</a> です。 <br /></td></tr>
+<tr class="separator:ae0aae8b893ca45dcc7f8365221f62161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>アプリケーション全体にかかわる処理を行います。 </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8e13ef6073d8bdabd63fa0d0855c3856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e13ef6073d8bdabd63fa0d0855c3856">&#9670;&nbsp;</a></span>renderView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classln_1_1_world_render_view.html">WorldRenderView</a>* ln::Engine::renderView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デフォルトで作成されるメインの AmbientLight です。 </p>
+<p>デフォルトで作成されるメインの <a class="el" href="classln_1_1_render_view.html" title="RenderView. ">RenderView</a> です。 </p>
+
+</div>
+</div>
+<a id="a8298d6922ada121473fa5cc91c3d8bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8298d6922ada121473fa5cc91c3d8bb5">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ln::Engine::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classln_1_1_application.html">Application</a> *&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した <a class="el" href="classln_1_1_application.html" title="グローバルなアプリケーション状態を扱うための基本クラスです。 ">Application</a> の実行を開始します。 </p>
+<p>この機能を呼び出した場合、Engine::initialize(), Engine::finalize(), <a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa" title="1フレーム分の更新処理を行います。 ">Engine::update()</a> を呼び出すことはできなくなります。 代わりに <a class="el" href="classln_1_1_application.html#ad8502fecb932981bbcecc621fbaee810" title="エンジンの初期化処理が完了した後に呼び出されます。 ">Application::onInit()</a>, <a class="el" href="classln_1_1_application.html#a8b5100ca4399571606944e365dc08199" title="毎フレーム呼び出されます。 ">Application::onUpdate()</a> などを使用してください。 </p>
+
+</div>
+</div>
 <a id="a5e16e266248b224f137518fba7e53aaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e16e266248b224f137518fba7e53aaa">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -193,7 +252,7 @@ static <a class="el" href="classln_1_1_world_render_view.html">WorldRenderView</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_engine.html">Engine</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

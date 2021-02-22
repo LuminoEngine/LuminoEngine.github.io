@@ -13,5 +13,6 @@ var classln_1_1_index_buffer =
     [ "setIndex", "classln_1_1_index_buffer.html#a54c7b756efe1e5334170419e9e3d793d", null ],
     [ "setResourcePool", "classln_1_1_index_buffer.html#afd53698e0cb84d13266bd541fcf644ac", null ],
     [ "setResourceUsage", "classln_1_1_index_buffer.html#aabecc00d06f7e90cc32a8c28bc9a2a1d", null ],
-    [ "size", "classln_1_1_index_buffer.html#a27b64b3d6639b42c7903f9e1a2dd29d8", null ]
+    [ "size", "classln_1_1_index_buffer.html#a27b64b3d6639b42c7903f9e1a2dd29d8", null ],
+    [ "stride", "classln_1_1_index_buffer.html#ae764b8db61312f0232fc5cc77bd5232a", null ]
 ];

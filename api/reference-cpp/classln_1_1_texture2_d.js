@@ -4,7 +4,6 @@ var classln_1_1_texture2_d =
     [ "clear", "classln_1_1_texture2_d.html#ad52fd3796ff1ed67df149aa0913fdecc", null ],
     [ "init", "classln_1_1_texture2_d.html#ad9a5c427f624138325c208a25aeb32db", null ],
     [ "init", "classln_1_1_texture2_d.html#a8249a1c465fb252768ccf4116fd8eb2e", null ],
-    [ "init", "classln_1_1_texture2_d.html#a81723206df51f6dcca02f9df7989d816", null ],
     [ "map", "classln_1_1_texture2_d.html#acee302051c7c722e9d25559d3398756a", null ],
     [ "setMipmapEnabled", "classln_1_1_texture2_d.html#a463fe0222edab5e08e65f7035a4bfb5f", null ],
     [ "setPixel", "classln_1_1_texture2_d.html#af6dde613fc885e1f3f0b0741d1c36e64", null ],

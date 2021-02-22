@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#12434;&#21205;&#12363;&#12377; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#12434;&#21205;&#12363;&#12377; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -71,7 +79,6 @@
 
 <p>この章では、3D 空間内のオブジェクトの姿勢を設定する方法について学びます。</p>
 <h2 id="移動する">移動する</h2>
-<p>既に前のチュートリアルで行ったように、座標を設定することでオブジェクトを移動できます。</p>
 <div class="tabGroup" id="tabgroup_tPYogLv+EK">
 <ul role="tablist">
 <li role="presentation">
@@ -79,6 +86,9 @@
 </li>
 <li role="presentation">
 <a href="#tabpanel_tPYogLv+EK_lang-ruby" role="tab" aria-controls="tabpanel_tPYogLv+EK_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_tPYogLv+EK_lang-hsp3" role="tab" aria-controls="tabpanel_tPYogLv+EK_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_tPYogLv+EK_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -92,13 +102,13 @@ class App : public Application
         Engine::camera()-&gt;setPosition(5, 5, -5);
         Engine::camera()-&gt;lookAt(0, 0, 0);
 
-        auto box1 = BoxMesh::create();
+        auto box1 = BoxMesh::With().buildInto();
         box1-&gt;setPosition(1, 0, 0);
 
-        auto box2 = BoxMesh::create();
+        auto box2 = BoxMesh::With().buildInto();
         box2-&gt;setPosition(0, 2, 0);
 
-        auto box3 = BoxMesh::create();
+        auto box3 = BoxMesh::With().buildInto();
         box3-&gt;setPosition(0, 0, 3);
     }
 };
@@ -109,23 +119,55 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    Engine.render_view.guide_grid_enabled = true
-    Engine.camera.set_position(5, 5, -5)
-    Engine.camera.look_at(0, 0, 0)
+    def on_init
+        Engine.render_view.guide_grid_enabled = true
+        Engine.camera.set_position(5, 5, -5)
+        Engine.camera.look_at(0, 0, 0)
 
-    box1 = BoxMesh.new
-    box1.set_position(1, 0, 0)
+        box1 = BoxMesh.new
+        box1.set_position(1, 0, 0)
+        box1.add_into
 
-    box2 = BoxMesh.new
-    box2.set_position(0, 2, 0)
+        box2 = BoxMesh.new
+        box2.set_position(0, 2, 0)
+        box2.add_into
 
-    box3 = BoxMesh.new
-    box3.set_position(0, 0, 3)
-  end
+        box3 = BoxMesh.new
+        box3.set_position(0, 0, 3)
+        box3.add_into
+    end
 end
 
 App.new.run
+</code></pre></section>
+<section id="tabpanel_tPYogLv+EK_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNEngine_GetRenderView render_view
+    LNWorldRenderView_SetGuideGridEnabled render_view, LN_TRUE
+
+    LNEngine_GetMainCamera camera
+    LNWorldObject_SetPositionXYZ camera, 5, 5, -5
+    LNWorldObject_LookAtXYZ camera, 0, 0, 0
+
+    LNBoxMesh_Create box1
+    LNWorldObject_SetPositionXYZ box1, 1, 0, 0
+    LNWorldObject_AddInto box1
+
+    LNBoxMesh_Create box2
+    LNWorldObject_SetPositionXYZ box2, 0, 2, 0
+    LNWorldObject_AddInto box2
+
+    LNBoxMesh_Create box3
+    LNWorldObject_SetPositionXYZ box3, 0, 0, 3
+    LNWorldObject_AddInto box3
+
+    return
+
+*on_update
+    return
 </code></pre></section>
 </div>
 <p><img src="img/object-1.png" alt=""></p>
@@ -137,6 +179,9 @@ App.new.run
 </li>
 <li role="presentation">
 <a href="#tabpanel_tPYogLv+EK-1_lang-ruby" role="tab" aria-controls="tabpanel_tPYogLv+EK-1_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_tPYogLv+EK-1_lang-hsp3" role="tab" aria-controls="tabpanel_tPYogLv+EK-1_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_tPYogLv+EK-1_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -152,7 +197,7 @@ class App : public Application
         Engine::camera()-&gt;setPosition(5, 5, -5);
         Engine::camera()-&gt;lookAt(0, 0, 0);
 
-        box = BoxMesh::create();
+        box = BoxMesh::With().buildInto();
     }
 
     void onUpdate() override
@@ -171,24 +216,53 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    Engine.render_view.guide_grid_enabled = true
-    Engine.camera.set_position(5, 5, -5)
-    Engine.camera.look_at(0, 0, 0)
+    def on_init
+        Engine.render_view.guide_grid_enabled = true
+        Engine.camera.set_position(5, 5, -5)
+        Engine.camera.look_at(0, 0, 0)
 
-    @box = BoxMesh.new
-  end
+        @box = BoxMesh.new
+        @box.add_into
+    end
 
-  def on_update
-    r = Mouse.position.x / 100
+    def on_update
+        r = Mouse.position.x / 100
 
-    @box.set_rotation(0, r, 0)
+        @box.set_rotation(0, r, 0)
 
-    Debug.print(0, &quot;angle: %f&quot; % r)
-  end
+        Debug.print(0, &quot;angle: %f&quot; % r)
+    end
 end
 
 App.new.run
+</code></pre></section>
+<section id="tabpanel_tPYogLv+EK-1_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNEngine_GetRenderView render_view
+    LNWorldRenderView_SetGuideGridEnabled render_view, LN_TRUE
+
+    LNEngine_GetMainCamera camera
+    LNWorldObject_SetPositionXYZ camera, 5, 5, -5
+    LNWorldObject_LookAtXYZ camera, 0, 0, 0
+
+    LNBoxMesh_Create box
+    LNWorldObject_AddInto box
+
+    return
+
+*on_update
+    LNMouse_GetPosition p
+    LNPoint_Get p, x, y
+    r = x / 100.0
+
+    LNWorldObject_SetRotationXYZ box, 0, r, 0
+
+    LNDebug_PrintWithTime 0, strf(&quot;angle: %f&quot;, r)
+
+    return
 </code></pre></section>
 </div>
 <p><img src="img/object-2.gif" alt=""></p>
@@ -200,6 +274,9 @@ App.new.run
 </li>
 <li role="presentation">
 <a href="#tabpanel_tPYogLv+EK-2_lang-ruby" role="tab" aria-controls="tabpanel_tPYogLv+EK-2_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_tPYogLv+EK-2_lang-hsp3" role="tab" aria-controls="tabpanel_tPYogLv+EK-2_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_tPYogLv+EK-2_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -215,7 +292,7 @@ class App : public Application
         Engine::camera()-&gt;setPosition(5, 5, -5);
         Engine::camera()-&gt;lookAt(0, 0, 0);
 
-        box = BoxMesh::create();
+        box = BoxMesh::With().buildInto();
     }
 
     void onUpdate() override
@@ -234,24 +311,53 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    Engine.render_view.guide_grid_enabled = true
-    Engine.camera.set_position(5, 5, -5)
-    Engine.camera.look_at(0, 0, 0)
+    def on_init
+        Engine.render_view.guide_grid_enabled = true
+        Engine.camera.set_position(5, 5, -5)
+        Engine.camera.look_at(0, 0, 0)
 
-    @box = BoxMesh.new
-  end
+        @box = BoxMesh.new
+        @box.add_into
+    end
 
-  def on_update
-    s = Mouse.position.y / 100
+    def on_update
+        s = Mouse.position.y / 100
 
-    @box.set_scale(s)
+        @box.set_scale(s)
 
-    Debug.print(0, &quot;scale: %f&quot; % s)
-  end
+        Debug.print(0, &quot;scale: %f&quot; % s)
+    end
 end
 
 App.new.run
+</code></pre></section>
+<section id="tabpanel_tPYogLv+EK-2_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNEngine_GetRenderView render_view
+    LNWorldRenderView_SetGuideGridEnabled render_view, LN_TRUE
+
+    LNEngine_GetMainCamera camera
+    LNWorldObject_SetPositionXYZ camera, 5, 5, -5
+    LNWorldObject_LookAtXYZ camera, 0, 0, 0
+
+    LNBoxMesh_Create box
+    LNWorldObject_AddInto box
+
+    return
+
+*on_update
+    LNMouse_GetPosition p
+    LNPoint_Get p, x, y
+    s = y / 100.0
+
+    LNWorldObject_SetScaleXYZ box, s, s, s
+
+    LNDebug_PrintWithTime 0, strf(&quot;angle: %f&quot;, r)
+
+    return
 </code></pre></section>
 </div>
 <p><img src="img/object-3.gif" alt=""></p>
@@ -267,7 +373,8 @@ App.new.run
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -281,7 +388,7 @@ App.new.run
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

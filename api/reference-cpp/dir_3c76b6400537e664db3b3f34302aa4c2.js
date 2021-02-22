@@ -1,5 +1,6 @@
 var dir_3c76b6400537e664db3b3f34302aa4c2 =
 [
+    [ "Audio.hpp", "_audio_8hpp_source.html", null ],
     [ "AudioBus.hpp", "_audio_bus_8hpp_source.html", null ],
     [ "AudioContext.hpp", "_audio_context_8hpp_source.html", null ],
     [ "AudioDestinationNode.hpp", "_audio_destination_node_8hpp_source.html", null ],

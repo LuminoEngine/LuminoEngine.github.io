@@ -100,20 +100,28 @@ Inheritance diagram for ln::AnimationClip:</div>
  <div class="center">
   <img src="classln_1_1_animation_clip.png" usemap="#ln::AnimationClip_map" alt=""/>
   <map id="ln::AnimationClip_map" name="ln::AnimationClip_map">
-<area href="classln_1_1_vmd_animation_clip.html" title="Vocaloid Motion Data (.vmd) ファイル " alt="ln::VmdAnimationClip" shape="rect" coords="0,56,130,80"/>
+<area href="classln_1_1_asset_object.html" title="アセットファイルやその他の外部ファイルをインポートして構築可能なオブジェクトのベースクラスです。 ..." alt="ln::AssetObject" shape="rect" coords="0,0,105,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a061dbcceae794d1fe899c92980a75085"><td class="memItemLeft" align="right" valign="top"><a id="a061dbcceae794d1fe899c92980a75085"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a061dbcceae794d1fe899c92980a75085">setWrapMode</a> (<a class="el" href="namespaceln.html#a8a73daf96edf406ad0576ea9615994b7">AnimationWrapMode</a> value)</td></tr>
+<tr class="memdesc:a061dbcceae794d1fe899c92980a75085"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの繰り返しの動作を取得します。(default: Loop) <br /></td></tr>
+<tr class="separator:a061dbcceae794d1fe899c92980a75085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e86d87fd6edbda0580310dc449da9ff"><td class="memItemLeft" align="right" valign="top"><a id="a2e86d87fd6edbda0580310dc449da9ff"></a>
 <a class="el" href="namespaceln.html#a8a73daf96edf406ad0576ea9615994b7">AnimationWrapMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a2e86d87fd6edbda0580310dc449da9ff">wrapMode</a> () const</td></tr>
 <tr class="memdesc:a2e86d87fd6edbda0580310dc449da9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの繰り返しの動作を取得します。 <br /></td></tr>
 <tr class="separator:a2e86d87fd6edbda0580310dc449da9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988b5abec22d82817df2ed4be8786d76"><td class="memItemLeft" align="right" valign="top"><a id="a988b5abec22d82817df2ed4be8786d76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a988b5abec22d82817df2ed4be8786d76">setWrapMode</a> (<a class="el" href="namespaceln.html#a8a73daf96edf406ad0576ea9615994b7">AnimationWrapMode</a> mode)</td></tr>
-<tr class="memdesc:a988b5abec22d82817df2ed4be8786d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの繰り返しの動作を取得します。(default: Loop) <br /></td></tr>
-<tr class="separator:a988b5abec22d82817df2ed4be8786d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c741c0a27447976ea7d2e4765535d9"><td class="memItemLeft" align="right" valign="top"><a id="af2c741c0a27447976ea7d2e4765535d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#af2c741c0a27447976ea7d2e4765535d9">setHierarchicalAnimationMode</a> (<a class="el" href="namespaceln.html#af9ea635a353e236b718e3c4d64c4f71d">HierarchicalAnimationMode</a> value)</td></tr>
+<tr class="memdesc:af2c741c0a27447976ea7d2e4765535d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">階層構造を持つアニメーションデータの動作モード。(default: AllowTranslationOnlyRoot) <br /></td></tr>
+<tr class="separator:af2c741c0a27447976ea7d2e4765535d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723ffdb2d4b0b7b6dca9d9fa1b391f5f"><td class="memItemLeft" align="right" valign="top"><a id="a723ffdb2d4b0b7b6dca9d9fa1b391f5f"></a>
+<a class="el" href="namespaceln.html#af9ea635a353e236b718e3c4d64c4f71d">HierarchicalAnimationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a723ffdb2d4b0b7b6dca9d9fa1b391f5f">hierarchicalAnimationMode</a> () const</td></tr>
+<tr class="memdesc:a723ffdb2d4b0b7b6dca9d9fa1b391f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">階層構造を持つアニメーションデータの動作モード。 <br /></td></tr>
+<tr class="separator:a723ffdb2d4b0b7b6dca9d9fa1b391f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -121,6 +129,10 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_animation_clip.html">AnimationClip</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a4647e6ed2cee7b8af922bbf6d1922e13">create</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;targetPath, const std::initializer_list&lt; <a class="el" href="structln_1_1_animation_key_frame.html">AnimationKeyFrame</a> &gt; &amp;keyframes)</td></tr>
 <tr class="memdesc:a4647e6ed2cee7b8af922bbf6d1922e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">ひとつの <a class="el" href="classln_1_1_animation_track.html" title="特定の型のアニメーションを、1つ以上のカーブの集合として表現します。 ">AnimationTrack</a> を持つ <a class="el" href="classln_1_1_animation_clip.html" title="オブジェクトやそのプロパティに影響を与えるアニメーションデータです。 ">AnimationClip</a> を作成します。 <br /></td></tr>
 <tr class="separator:a4647e6ed2cee7b8af922bbf6d1922e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c05415288c9e889faec754d0bba2acb"><td class="memItemLeft" align="right" valign="top"><a id="a3c05415288c9e889faec754d0bba2acb"></a>
+static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_animation_clip.html">AnimationClip</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_animation_clip.html#a3c05415288c9e889faec754d0bba2acb">load</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;filePath)</td></tr>
+<tr class="memdesc:a3c05415288c9e889faec754d0bba2acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">load <br /></td></tr>
+<tr class="separator:a3c05415288c9e889faec754d0bba2acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>オブジェクトやそのプロパティに影響を与えるアニメーションデータです。 </p>
@@ -134,7 +146,7 @@ static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_animation_clip.html">AnimationClip</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -83,9 +83,10 @@ $(document).ready(function(){initNavTree('classln_1_1_shader.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classln_1_1_shader-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ln::Shader Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">ln::Shader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,21 +100,213 @@ Inheritance diagram for ln::Shader:</div>
  <div class="center">
   <img src="classln_1_1_shader.png" usemap="#ln::Shader_map" alt=""/>
   <map id="ln::Shader_map" name="ln::Shader_map">
-<area href="classln_1_1_graphics_resource.html" title="Graphics 機能に関係するリソースのベースクラスです。 " alt="ln::GraphicsResource" shape="rect" coords="0,0,133,24"/>
+<area href="classln_1_1_asset_object.html" title="アセットファイルやその他の外部ファイルをインポートして構築可能なオブジェクトのベースクラスです。 ..." alt="ln::AssetObject" shape="rect" coords="0,0,136,24"/>
+<area href="classln_1_1_i_graphics_resource.html" title="Graphics 機能に関係するリソースのベースクラスです。 " alt="ln::IGraphicsResource" shape="rect" coords="146,0,282,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad9d219c33ffcbecaaa35d3334a87f6ab"><td class="memItemLeft" align="right" valign="top">ShaderParameter2 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#ad9d219c33ffcbecaaa35d3334a87f6ab">findParameter</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name) const</td></tr>
+<tr class="memdesc:ad9d219c33ffcbecaaa35d3334a87f6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">名前を指定してこの <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> に含まれる ShaderParameter を検索します。  <a href="#ad9d219c33ffcbecaaa35d3334a87f6ab">More...</a><br /></td></tr>
+<tr class="separator:ad9d219c33ffcbecaaa35d3334a87f6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ca9626df58d585ee88dbb9c5c3c7af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classln_1_1_shader_technique.html">ShaderTechnique</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#af2ca9626df58d585ee88dbb9c5c3c7af">findTechnique</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;name) const</td></tr>
+<tr class="memdesc:af2ca9626df58d585ee88dbb9c5c3c7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">名前を指定してこの <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> に含まれる <a class="el" href="classln_1_1_shader_technique.html" title="シェーダプログラムに含まれる 1 つのテクニックを表します。 ">ShaderTechnique</a> を検索します。  <a href="#af2ca9626df58d585ee88dbb9c5c3c7af">More...</a><br /></td></tr>
+<tr class="separator:af2ca9626df58d585ee88dbb9c5c3c7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa43a8366ea0409b3552a988d83b808"><td class="memItemLeft" align="right" valign="top"><a id="adaa43a8366ea0409b3552a988d83b808"></a>
 <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_read_only_list.html">ReadOnlyList</a>&lt; <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_shader_technique.html">ShaderTechnique</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#adaa43a8366ea0409b3552a988d83b808">techniques</a> () const</td></tr>
 <tr class="memdesc:adaa43a8366ea0409b3552a988d83b808"><td class="mdescLeft">&#160;</td><td class="mdescRight">この <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> に含まれる <a class="el" href="classln_1_1_shader_technique.html" title="シェーダプログラムに含まれる 1 つのテクニックを表します。 ">ShaderTechnique</a> を取得します。 <br /></td></tr>
 <tr class="separator:adaa43a8366ea0409b3552a988d83b808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3980d2a9565dfe902542b5992b920f8f"><td class="memItemLeft" align="right" valign="top"><a id="a3980d2a9565dfe902542b5992b920f8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#a3980d2a9565dfe902542b5992b920f8f">setFloat</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;parameterName, float value)</td></tr>
+<tr class="memdesc:a3980d2a9565dfe902542b5992b920f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮動小数点値を設定します。 <br /></td></tr>
+<tr class="separator:a3980d2a9565dfe902542b5992b920f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e56297a8a89f913a4b4aed835acbc62"><td class="memItemLeft" align="right" valign="top"><a id="a8e56297a8a89f913a4b4aed835acbc62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#a8e56297a8a89f913a4b4aed835acbc62">setVector</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;parameterName, const <a class="el" href="structln_1_1_vector3.html">Vector3</a> &amp;value)</td></tr>
+<tr class="memdesc:a8e56297a8a89f913a4b4aed835acbc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">ベクトル値を設定します。 <br /></td></tr>
+<tr class="separator:a8e56297a8a89f913a4b4aed835acbc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97a7a52a8e045003ed992f2ffd9e0a3"><td class="memItemLeft" align="right" valign="top"><a id="aa97a7a52a8e045003ed992f2ffd9e0a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#aa97a7a52a8e045003ed992f2ffd9e0a3">setVector</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;parameterName, const <a class="el" href="structln_1_1_vector4.html">Vector4</a> &amp;value)</td></tr>
+<tr class="memdesc:aa97a7a52a8e045003ed992f2ffd9e0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ベクトル値を設定します。 <br /></td></tr>
+<tr class="separator:aa97a7a52a8e045003ed992f2ffd9e0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd5795a83e0b985a9dc0baa96d19d03"><td class="memItemLeft" align="right" valign="top"><a id="afcd5795a83e0b985a9dc0baa96d19d03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#afcd5795a83e0b985a9dc0baa96d19d03">setTexture</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;parameterName, <a class="el" href="classln_1_1_texture.html">Texture</a> *value)</td></tr>
+<tr class="memdesc:afcd5795a83e0b985a9dc0baa96d19d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTexture <br /></td></tr>
+<tr class="separator:afcd5795a83e0b985a9dc0baa96d19d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba5e9a3af9ba3a28369598bc1402cfc"><td class="memItemLeft" align="right" valign="top"><a id="acba5e9a3af9ba3a28369598bc1402cfc"></a>
+<a class="el" href="classln_1_1_ref.html">Ref</a>&lt; detail::ShaderSecondaryDescriptor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#acba5e9a3af9ba3a28369598bc1402cfc">acquireDescriptor</a> ()</td></tr>
+<tr class="memdesc:acba5e9a3af9ba3a28369598bc1402cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">この <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> の DescriptorLayout をもとに、ShaderDescriptor を作成します。 <br /></td></tr>
+<tr class="separator:acba5e9a3af9ba3a28369598bc1402cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a859eeef5b482078f19ea44a97414503a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#a859eeef5b482078f19ea44a97414503a">create</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;filePath, ShaderCompilationProperties *properties=nullptr)</td></tr>
+<tr class="memdesc:a859eeef5b482078f19ea44a97414503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">事前コンパイル済みシェーダファイルまたはシェーダプログラムファイルから <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> オブジェクトを作成します。  <a href="#a859eeef5b482078f19ea44a97414503a">More...</a><br /></td></tr>
+<tr class="separator:a859eeef5b482078f19ea44a97414503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9e60282587da4d97c0cc4ef7610769"><td class="memItemLeft" align="right" valign="top"><a id="a9b9e60282587da4d97c0cc4ef7610769"></a>
+static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#a9b9e60282587da4d97c0cc4ef7610769">load</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;filePath, AssetImportSettings *settings=nullptr)</td></tr>
+<tr class="memdesc:a9b9e60282587da4d97c0cc4ef7610769"><td class="mdescLeft">&#160;</td><td class="mdescRight">load <br /></td></tr>
+<tr class="separator:a9b9e60282587da4d97c0cc4ef7610769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dd80d4ff62b6982d9fa28e9f66fc1d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt; <a class="el" href="classln_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_shader.html#a41dd80d4ff62b6982d9fa28e9f66fc1d">create</a> (const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;vertexShaderFilePath, const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;pixelShaderFilePath, ShaderCompilationProperties *properties=nullptr)</td></tr>
+<tr class="memdesc:a41dd80d4ff62b6982d9fa28e9f66fc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lumino の独自拡張 (technique 構文など) を使用しない HLSL シェーダをコンパイルし、Shader オブジェクトを作成します。  <a href="#a41dd80d4ff62b6982d9fa28e9f66fc1d">More...</a><br /></td></tr>
+<tr class="separator:a41dd80d4ff62b6982d9fa28e9f66fc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>シェーダーを表すクラスです。 </p>
-<p>このクラスは DirectX9 ～ 11 世代に提供されていた「エフェクト」と同様の、シェーダーステージをまとめて管理・適用する機能を持っています。 </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>このクラスは DirectX9 ～ 11 世代に提供されていた「エフェクト」と同様の、シェーダーステージをまとめて管理・適用する機能を持っています。</p>
+<dl class="section note"><dt>Note</dt><dd>パラメータは通常 <a class="el" href="classln_1_1_material.html" title="metallic-roughness テクスチャMetallic 値は B チャネル、Roughness 値は G チャネルからサンプリングされ�...">Material</a> 経由で設定するが、Shader に直接設定することも可能。 その場合 <a class="el" href="classln_1_1_material.html" title="metallic-roughness テクスチャMetallic 値は B チャネル、Roughness 値は G チャネルからサンプリングされ�...">Material</a> 側で持つデータ量や転送のオーバーヘッドは少なくなるが、以下の点に注意すること。<ul>
+<li>値をシリアライズすることはできなくなる。</li>
+<li>複数の <a class="el" href="classln_1_1_material.html" title="metallic-roughness テクスチャMetallic 値は B チャネル、Roughness 値は G チャネルからサンプリングされ�...">Material</a> から参照される場合、値は共有される。 </li>
+</ul>
+</dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a859eeef5b482078f19ea44a97414503a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a859eeef5b482078f19ea44a97414503a">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt;<a class="el" href="classln_1_1_shader.html">Shader</a>&gt; ln::Shader::create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ShaderCompilationProperties *&#160;</td>
+          <td class="paramname"><em>properties</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>事前コンパイル済みシェーダファイルまたはシェーダプログラムファイルから <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> オブジェクトを作成します。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>: 入力ファイル名</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>シェーダプログラムファイル の読み込み機能はデバッグを目的として用意されています。</p>
+<p>シェーダプログラムファイルを読み込むことができるのは、デスクトップターゲットのみです。 モバイルターゲット、Web ターゲットでは事前コンパイル済みシェーダファイルのみを読み込むことができます。 </p>
+
+</div>
+</div>
+<a id="a41dd80d4ff62b6982d9fa28e9f66fc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41dd80d4ff62b6982d9fa28e9f66fc1d">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classln_1_1_ref.html">Ref</a>&lt;<a class="el" href="classln_1_1_shader.html">Shader</a>&gt; ln::Shader::create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertexShaderFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>pixelShaderFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ShaderCompilationProperties *&#160;</td>
+          <td class="paramname"><em>properties</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lumino の独自拡張 (technique 構文など) を使用しない HLSL シェーダをコンパイルし、Shader オブジェクトを作成します。 </p>
+<p>作成された <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> は、1 つの <a class="el" href="classln_1_1_shader_technique.html" title="シェーダプログラムに含まれる 1 つのテクニックを表します。 ">ShaderTechnique</a> と 1 つの <a class="el" href="classln_1_1_shader_pass.html" title="シェーダプログラムに含まれる 1 つのパスを表します。 ">ShaderPass</a> を持ちます。 </p>
+
+</div>
+</div>
+<a id="ad9d219c33ffcbecaaa35d3334a87f6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d219c33ffcbecaaa35d3334a87f6ab">&#9670;&nbsp;</a></span>findParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ShaderParameter2* ln::Shader::findParameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>名前を指定してこの <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> に含まれる ShaderParameter を検索します。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>: パラメータの名前 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>一致した ShaderParameter。見つからない場合は nullptr。</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>現在、SamplerState の設定は未サポートです。将来的には、この関数で <a class="el" href="classln_1_1_sampler_state.html" title="サンプラーステートのクラスです。 ">SamplerState</a> 型のパラメータを検索できるようにする予定です。 </dd></dl>
+
+</div>
+</div>
+<a id="af2ca9626df58d585ee88dbb9c5c3c7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ca9626df58d585ee88dbb9c5c3c7af">&#9670;&nbsp;</a></span>findTechnique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classln_1_1_shader_technique.html">ShaderTechnique</a>* ln::Shader::findTechnique </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classln_1_1_string_ref.html">StringRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>名前を指定してこの <a class="el" href="classln_1_1_shader.html" title="シェーダーを表すクラスです。 ">Shader</a> に含まれる <a class="el" href="classln_1_1_shader_technique.html" title="シェーダプログラムに含まれる 1 つのテクニックを表します。 ">ShaderTechnique</a> を検索します。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>: 定数バッファの名前 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>一致した ShaderConstantBuffer。見つからない場合は nullptr。 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Website/Website/_Lumino/include/LuminoEngine/Shader/<a class="el" href="_shader_8hpp_source.html">Shader.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -122,7 +315,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_shader.html">Shader</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

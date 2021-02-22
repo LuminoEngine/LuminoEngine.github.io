@@ -9,5 +9,7 @@ var dir_d4bc97b60c83c487e0659bb488d97439 =
     [ "Object.hpp", "_object_8hpp_source.html", null ],
     [ "Property.hpp", "_property_8hpp_source.html", null ],
     [ "RenderingCommandList.hpp", "_rendering_command_list_8hpp_source.html", null ],
+    [ "Time.hpp", "_time_8hpp_source.html", null ],
+    [ "TypeInfo.hpp", "_type_info_8hpp_source.html", null ],
     [ "VMProperty.hpp", "_v_m_property_8hpp_source.html", null ]
 ];

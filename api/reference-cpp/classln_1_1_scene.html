@@ -82,103 +82,261 @@ $(document).ready(function(){initNavTree('classln_1_1_scene.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classln_1_1_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ln::Scene Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>シーンのベースクラスです。  
+<p>ワールド 及び レベル 管理のユーティリティです。  
  <a href="classln_1_1_scene.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_scene_8hpp_source.html">Scene.hpp</a>&gt;</code></p>
-
-<p>Inherits ln::Object.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a76381bbe727b150d753cf37e402ceb38"><td class="memItemLeft" align="right" valign="top"><a id="a76381bbe727b150d753cf37e402ceb38"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a76381bbe727b150d753cf37e402ceb38">onCreated</a> ()</td></tr>
-<tr class="memdesc:a76381bbe727b150d753cf37e402ceb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">開始処理 <br /></td></tr>
-<tr class="separator:a76381bbe727b150d753cf37e402ceb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76204648d63d65cd6ac97a75d45fc55d"><td class="memItemLeft" align="right" valign="top"><a id="a76204648d63d65cd6ac97a75d45fc55d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a76204648d63d65cd6ac97a75d45fc55d">onClosed</a> ()</td></tr>
-<tr class="memdesc:a76204648d63d65cd6ac97a75d45fc55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理 <br /></td></tr>
-<tr class="separator:a76204648d63d65cd6ac97a75d45fc55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef6ad482cbb9f6f915e2e6d70f06aeb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#afef6ad482cbb9f6f915e2e6d70f06aeb">onActivated</a> ()</td></tr>
-<tr class="memdesc:afef6ad482cbb9f6f915e2e6d70f06aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when activated.  <a href="#afef6ad482cbb9f6f915e2e6d70f06aeb">More...</a><br /></td></tr>
-<tr class="separator:afef6ad482cbb9f6f915e2e6d70f06aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf45a386e900691b45299c522bad29c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#abf45a386e900691b45299c522bad29c2">onDeactivated</a> ()</td></tr>
-<tr class="memdesc:abf45a386e900691b45299c522bad29c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when deactivated.  <a href="#abf45a386e900691b45299c522bad29c2">More...</a><br /></td></tr>
-<tr class="separator:abf45a386e900691b45299c522bad29c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a04549440b1c03fbdb2471b12f3325"><td class="memItemLeft" align="right" valign="top"><a id="ad3a04549440b1c03fbdb2471b12f3325"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ad3a04549440b1c03fbdb2471b12f3325">onUpdate</a> ()</td></tr>
-<tr class="memdesc:ad3a04549440b1c03fbdb2471b12f3325"><td class="mdescLeft">&#160;</td><td class="mdescRight">フレーム更新 <br /></td></tr>
-<tr class="separator:ad3a04549440b1c03fbdb2471b12f3325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7893e28f40c180b39e6e7d001d381382"><td class="memItemLeft" align="right" valign="top"><a id="a7893e28f40c180b39e6e7d001d381382"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a7893e28f40c180b39e6e7d001d381382">init</a> ()</td></tr>
-<tr class="memdesc:a7893e28f40c180b39e6e7d001d381382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize. <br /></td></tr>
-<tr class="separator:a7893e28f40c180b39e6e7d001d381382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Background and Sky</div></td></tr>
+<tr class="memitem:a87bb3dff3a521d6b4bbb7d339f2ce412"><td class="memItemLeft" align="right" valign="top"><a id="a87bb3dff3a521d6b4bbb7d339f2ce412"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a87bb3dff3a521d6b4bbb7d339f2ce412">setClearMode</a> (<a class="el" href="namespaceln.html#aba43a9e9037e7f77903766332f7dd50b">SceneClearMode</a> value)</td></tr>
+<tr class="memdesc:a87bb3dff3a521d6b4bbb7d339f2ce412"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン背景のクリア方法を設定します。 <br /></td></tr>
+<tr class="separator:a87bb3dff3a521d6b4bbb7d339f2ce412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03a0ce7769df4a920164bb07a486a72"><td class="memItemLeft" align="right" valign="top"><a id="aa03a0ce7769df4a920164bb07a486a72"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aa03a0ce7769df4a920164bb07a486a72">setSkyColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:aa03a0ce7769df4a920164bb07a486a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">ClearMode が SkyDome であるときに使用する、空の基本色を設定します。アルファ値は、設定した色の適用率です。 <br /></td></tr>
+<tr class="separator:aa03a0ce7769df4a920164bb07a486a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377b570e1c657d952b1a24b31ffded8f"><td class="memItemLeft" align="right" valign="top"><a id="a377b570e1c657d952b1a24b31ffded8f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a377b570e1c657d952b1a24b31ffded8f">setSkyHorizonColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:a377b570e1c657d952b1a24b31ffded8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ClearMode が SkyDome であるときに使用する、地平の基本色を設定します。アルファ値は、設定した色の適用率です。 <br /></td></tr>
+<tr class="separator:a377b570e1c657d952b1a24b31ffded8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8523d810f90804dfece7f85be57d9c4"><td class="memItemLeft" align="right" valign="top"><a id="ac8523d810f90804dfece7f85be57d9c4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ac8523d810f90804dfece7f85be57d9c4">setSkyCloudColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:ac8523d810f90804dfece7f85be57d9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ClearMode が SkyDome であるときに使用する、雲の基本色を設定します。アルファ値は、設定した色の適用率です。 <br /></td></tr>
+<tr class="separator:ac8523d810f90804dfece7f85be57d9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b14acda194053911bac060f90cdd85b"><td class="memItemLeft" align="right" valign="top"><a id="a5b14acda194053911bac060f90cdd85b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a5b14acda194053911bac060f90cdd85b">setSkyOverlayColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:a5b14acda194053911bac060f90cdd85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ClearMode が SkyDome であるときに使用する、空全体に影響する色を設定します。アルファ値は、設定した色の適用率です。 <br /></td></tr>
+<tr class="separator:a5b14acda194053911bac060f90cdd85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Level Transition</div></td></tr>
+<tr class="memitem:a0df7db3f8a572ad9a4f89721ad1ea9df"><td class="memItemLeft" align="right" valign="top"><a id="a0df7db3f8a572ad9a4f89721ad1ea9df"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a0df7db3f8a572ad9a4f89721ad1ea9df">gotoLevel</a> (<a class="el" href="classln_1_1_level.html">Level</a> *level, bool withEffect=true)</td></tr>
+<tr class="memdesc:a0df7db3f8a572ad9a4f89721ad1ea9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したレベルへ遷移します。既存の全てのレベルは非アクティブ化または削除されます。 <br /></td></tr>
+<tr class="separator:a0df7db3f8a572ad9a4f89721ad1ea9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1b071e96957f7c88e482b29b4eb4f2"><td class="memItemLeft" align="right" valign="top"><a id="acc1b071e96957f7c88e482b29b4eb4f2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#acc1b071e96957f7c88e482b29b4eb4f2">callLevel</a> (<a class="el" href="classln_1_1_level.html">Level</a> *level, bool withEffect=true)</td></tr>
+<tr class="memdesc:acc1b071e96957f7c88e482b29b4eb4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のレベルを非アクティブ化し、指定したレベルへ遷移します。 <br /></td></tr>
+<tr class="separator:acc1b071e96957f7c88e482b29b4eb4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84ccc47cb0269c19b7bdf9519f1a86d"><td class="memItemLeft" align="right" valign="top"><a id="aa84ccc47cb0269c19b7bdf9519f1a86d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aa84ccc47cb0269c19b7bdf9519f1a86d">returnLevel</a> (bool withEffect=true)</td></tr>
+<tr class="memdesc:aa84ccc47cb0269c19b7bdf9519f1a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のレベルを終了し、ひとつ前のレベルへ遷移します。 <br /></td></tr>
+<tr class="separator:aa84ccc47cb0269c19b7bdf9519f1a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc501003244e142f537d7990a33ea837"><td class="memItemLeft" align="right" valign="top"><a id="acc501003244e142f537d7990a33ea837"></a>
+static <a class="el" href="classln_1_1_level.html">Level</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#acc501003244e142f537d7990a33ea837">activeLevel</a> ()</td></tr>
+<tr class="memdesc:acc501003244e142f537d7990a33ea837"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のアクティブなレベルを取得します。 <br /></td></tr>
+<tr class="separator:acc501003244e142f537d7990a33ea837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39361a89c3ea3f5db29ae3073c5b6320"><td class="memItemLeft" align="right" valign="top"><a id="a39361a89c3ea3f5db29ae3073c5b6320"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a39361a89c3ea3f5db29ae3073c5b6320">isTransitionEffectRunning</a> ()</td></tr>
+<tr class="memdesc:a39361a89c3ea3f5db29ae3073c5b6320"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移エフェクトを実行中であるかを確認します。 <br /></td></tr>
+<tr class="separator:a39361a89c3ea3f5db29ae3073c5b6320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c960d780ebede5a5c002b672be990ee"><td class="memItemLeft" align="right" valign="top"><a id="a9c960d780ebede5a5c002b672be990ee"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a9c960d780ebede5a5c002b672be990ee">setTransitionEffectMode</a> (<a class="el" href="namespaceln.html#a289ce6e045e1f96f51335355e9be11a1">LevelTransitionEffectMode</a> value)</td></tr>
+<tr class="memdesc:a9c960d780ebede5a5c002b672be990ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベル遷移時のエフェクトの種類を設定します。 <br /></td></tr>
+<tr class="separator:a9c960d780ebede5a5c002b672be990ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344d86bd6cbc21b80cf81fe81a188ced"><td class="memItemLeft" align="right" valign="top"><a id="a344d86bd6cbc21b80cf81fe81a188ced"></a>
+static <a class="el" href="namespaceln.html#a289ce6e045e1f96f51335355e9be11a1">LevelTransitionEffectMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a344d86bd6cbc21b80cf81fe81a188ced">transitionEffectMode</a> ()</td></tr>
+<tr class="memdesc:a344d86bd6cbc21b80cf81fe81a188ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベル遷移時のエフェクトの種類を取得します。 <br /></td></tr>
+<tr class="separator:a344d86bd6cbc21b80cf81fe81a188ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51dbc58156bf6dba2d90a831d99fa80"><td class="memItemLeft" align="right" valign="top"><a id="ac51dbc58156bf6dba2d90a831d99fa80"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ac51dbc58156bf6dba2d90a831d99fa80">setTransitionDuration</a> (float value)</td></tr>
+<tr class="memdesc:ac51dbc58156bf6dba2d90a831d99fa80"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移にかける時間を設定します。(Unit: 秒) <br /></td></tr>
+<tr class="separator:ac51dbc58156bf6dba2d90a831d99fa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16082898a65f01f56261aece76760198"><td class="memItemLeft" align="right" valign="top"><a id="a16082898a65f01f56261aece76760198"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a16082898a65f01f56261aece76760198">transitionDuration</a> ()</td></tr>
+<tr class="memdesc:a16082898a65f01f56261aece76760198"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移にかける時間を取得します。(Unit: 秒) <br /></td></tr>
+<tr class="separator:a16082898a65f01f56261aece76760198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95c319fc253624b6bb0da0767a6f28a"><td class="memItemLeft" align="right" valign="top"><a id="aa95c319fc253624b6bb0da0767a6f28a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aa95c319fc253624b6bb0da0767a6f28a">setTransitionEffectColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:aa95c319fc253624b6bb0da0767a6f28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移モードが FadeInOut である場合に使用する色を設定します。 <br /></td></tr>
+<tr class="separator:aa95c319fc253624b6bb0da0767a6f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9b999144e72ef89c6ceabc5b5322a5"><td class="memItemLeft" align="right" valign="top"><a id="a2e9b999144e72ef89c6ceabc5b5322a5"></a>
+static const <a class="el" href="structln_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a2e9b999144e72ef89c6ceabc5b5322a5">transitionEffectColor</a> ()</td></tr>
+<tr class="memdesc:a2e9b999144e72ef89c6ceabc5b5322a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移モードが FadeInOut である場合に使用する色を取得します。 <br /></td></tr>
+<tr class="separator:a2e9b999144e72ef89c6ceabc5b5322a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f2fd6b01f209518610fbb437dca5ca"><td class="memItemLeft" align="right" valign="top"><a id="a60f2fd6b01f209518610fbb437dca5ca"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a60f2fd6b01f209518610fbb437dca5ca">setTransitionEffectMaskTexture</a> (<a class="el" href="classln_1_1_texture.html">Texture</a> *value)</td></tr>
+<tr class="memdesc:a60f2fd6b01f209518610fbb437dca5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移エフェクトで使用するマスクテクスチャを設定します。 <br /></td></tr>
+<tr class="separator:a60f2fd6b01f209518610fbb437dca5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a60e6e65cd776397de0dcc3dca2e20"><td class="memItemLeft" align="right" valign="top"><a id="a20a60e6e65cd776397de0dcc3dca2e20"></a>
+static <a class="el" href="classln_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a20a60e6e65cd776397de0dcc3dca2e20">transitionEffectMaskTexture</a> ()</td></tr>
+<tr class="memdesc:a20a60e6e65cd776397de0dcc3dca2e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移エフェクトで使用するマスクテクスチャを取得します。 <br /></td></tr>
+<tr class="separator:a20a60e6e65cd776397de0dcc3dca2e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4edae422ca735edf553f28bb57f065d"><td class="memItemLeft" align="right" valign="top"><a id="ab4edae422ca735edf553f28bb57f065d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ab4edae422ca735edf553f28bb57f065d">setTransitionEffectVague</a> (float value)</td></tr>
+<tr class="memdesc:ab4edae422ca735edf553f28bb57f065d"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移エフェクトの境界のあいまいさを設定します。 <br /></td></tr>
+<tr class="separator:ab4edae422ca735edf553f28bb57f065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0994ce228f54d75c1b6cfa0502db1921"><td class="memItemLeft" align="right" valign="top"><a id="a0994ce228f54d75c1b6cfa0502db1921"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a0994ce228f54d75c1b6cfa0502db1921">transitionEffectVague</a> ()</td></tr>
+<tr class="memdesc:a0994ce228f54d75c1b6cfa0502db1921"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルの遷移エフェクトの境界のあいまいさを取得します。 <br /></td></tr>
+<tr class="separator:a0994ce228f54d75c1b6cfa0502db1921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d16619f09783148b67e117242708587"><td class="memItemLeft" align="right" valign="top"><a id="a1d16619f09783148b67e117242708587"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a1d16619f09783148b67e117242708587">startFadeOut</a> ()</td></tr>
+<tr class="memdesc:a1d16619f09783148b67e117242708587"><td class="mdescLeft">&#160;</td><td class="mdescRight">フェードアウトエフェクトを開始します。 <br /></td></tr>
+<tr class="separator:a1d16619f09783148b67e117242708587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42c16dea90cfaa24a8ea5e4315b641e"><td class="memItemLeft" align="right" valign="top"><a id="ad42c16dea90cfaa24a8ea5e4315b641e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ad42c16dea90cfaa24a8ea5e4315b641e">startFadeIn</a> ()</td></tr>
+<tr class="memdesc:ad42c16dea90cfaa24a8ea5e4315b641e"><td class="mdescLeft">&#160;</td><td class="mdescRight">フェードインエフェクトを開始します。 <br /></td></tr>
+<tr class="separator:ad42c16dea90cfaa24a8ea5e4315b641e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fog</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>クロスフェードエフェクトを開始します。 </p>
+</div></td></tr>
+<tr class="memitem:a8b3f7aa8a2c0f2dfe8203b0f7c62adbe"><td class="memItemLeft" align="right" valign="top"><a id="a8b3f7aa8a2c0f2dfe8203b0f7c62adbe"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a8b3f7aa8a2c0f2dfe8203b0f7c62adbe">setFogStartDistance</a> (float value)</td></tr>
+<tr class="memdesc:a8b3f7aa8a2c0f2dfe8203b0f7c62adbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォグを開始するカメラからの距離を設定します。 <br /></td></tr>
+<tr class="separator:a8b3f7aa8a2c0f2dfe8203b0f7c62adbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46361e0c334bdc25654398f1e05d08ef"><td class="memItemLeft" align="right" valign="top"><a id="a46361e0c334bdc25654398f1e05d08ef"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a46361e0c334bdc25654398f1e05d08ef">setFogColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:a46361e0c334bdc25654398f1e05d08ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォグのメインカラーを設定します。 <br /></td></tr>
+<tr class="separator:a46361e0c334bdc25654398f1e05d08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd96c61255aaaa10538fad4996cf0725"><td class="memItemLeft" align="right" valign="top"><a id="afd96c61255aaaa10538fad4996cf0725"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#afd96c61255aaaa10538fad4996cf0725">setFogDensity</a> (float value)</td></tr>
+<tr class="memdesc:afd96c61255aaaa10538fad4996cf0725"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォグの濃さを設定します。 <br /></td></tr>
+<tr class="separator:afd96c61255aaaa10538fad4996cf0725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567843ff5ae44f28d9fd2975e95c81fb"><td class="memItemLeft" align="right" valign="top"><a id="a567843ff5ae44f28d9fd2975e95c81fb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a567843ff5ae44f28d9fd2975e95c81fb">setFogHeightDensity</a> (float value)</td></tr>
+<tr class="memdesc:a567843ff5ae44f28d9fd2975e95c81fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">高さフォグの濃さを設定します。 <br /></td></tr>
+<tr class="separator:a567843ff5ae44f28d9fd2975e95c81fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029701438754bf70f1510d529777afb6"><td class="memItemLeft" align="right" valign="top"><a id="a029701438754bf70f1510d529777afb6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a029701438754bf70f1510d529777afb6">setFogLowerHeight</a> (float value)</td></tr>
+<tr class="memdesc:a029701438754bf70f1510d529777afb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォグの高さの下限を設定します。 <br /></td></tr>
+<tr class="separator:a029701438754bf70f1510d529777afb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a77afb7def65a4c347182046a5349eb"><td class="memItemLeft" align="right" valign="top"><a id="a5a77afb7def65a4c347182046a5349eb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a5a77afb7def65a4c347182046a5349eb">setFogUpperHeight</a> (float value)</td></tr>
+<tr class="memdesc:a5a77afb7def65a4c347182046a5349eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォグの高さの上限を設定します。 <br /></td></tr>
+<tr class="separator:a5a77afb7def65a4c347182046a5349eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">PostEffect</div></td></tr>
+<tr class="memitem:a7d6ed8be01467f0fe130e52d4d182278"><td class="memItemLeft" align="right" valign="top"><a id="a7d6ed8be01467f0fe130e52d4d182278"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a7d6ed8be01467f0fe130e52d4d182278">setHDREnabled</a> (bool value)</td></tr>
+<tr class="memdesc:a7d6ed8be01467f0fe130e52d4d182278"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDR レンダリングの有無を設定します。 (default: false) <br /></td></tr>
+<tr class="separator:a7d6ed8be01467f0fe130e52d4d182278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432aadbaf6a7b1997ab8f384a02ed0b7"><td class="memItemLeft" align="right" valign="top"><a id="a432aadbaf6a7b1997ab8f384a02ed0b7"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a432aadbaf6a7b1997ab8f384a02ed0b7">isHDREnabled</a> ()</td></tr>
+<tr class="memdesc:a432aadbaf6a7b1997ab8f384a02ed0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDR レンダリングの有無を取得します。 <br /></td></tr>
+<tr class="separator:a432aadbaf6a7b1997ab8f384a02ed0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba810942b782997e647f591b8ee07369"><td class="memItemLeft" align="right" valign="top"><a id="aba810942b782997e647f591b8ee07369"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aba810942b782997e647f591b8ee07369">setScreenBlendColor</a> (const <a class="el" href="structln_1_1_color.html">Color</a> &amp;value)</td></tr>
+<tr class="memdesc:aba810942b782997e647f591b8ee07369"><td class="mdescLeft">&#160;</td><td class="mdescRight">画面全体へのブレンドカラーを設定します。(default: Black) <br /></td></tr>
+<tr class="separator:aba810942b782997e647f591b8ee07369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa001cedab9696d3356880c79b7ce12"><td class="memItemLeft" align="right" valign="top"><a id="a1fa001cedab9696d3356880c79b7ce12"></a>
+static const <a class="el" href="structln_1_1_color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a1fa001cedab9696d3356880c79b7ce12">screenBlendColor</a> ()</td></tr>
+<tr class="memdesc:a1fa001cedab9696d3356880c79b7ce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">画面全体へのブレンドカラーを取得します。 <br /></td></tr>
+<tr class="separator:a1fa001cedab9696d3356880c79b7ce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73b7ea1cf95dd00b86c8630027b1a2a"><td class="memItemLeft" align="right" valign="top"><a id="ac73b7ea1cf95dd00b86c8630027b1a2a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ac73b7ea1cf95dd00b86c8630027b1a2a">setColorTone</a> (const <a class="el" href="structln_1_1_color_tone.html">ColorTone</a> &amp;value)</td></tr>
+<tr class="memdesc:ac73b7ea1cf95dd00b86c8630027b1a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setColorTone <br /></td></tr>
+<tr class="separator:ac73b7ea1cf95dd00b86c8630027b1a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8e090f36d0857956c2ca0b865a4e73"><td class="memItemLeft" align="right" valign="top"><a id="a6c8e090f36d0857956c2ca0b865a4e73"></a>
+static const <a class="el" href="structln_1_1_color_tone.html">ColorTone</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a6c8e090f36d0857956c2ca0b865a4e73">colorTone</a> ()</td></tr>
+<tr class="memdesc:a6c8e090f36d0857956c2ca0b865a4e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">colorTone <br /></td></tr>
+<tr class="separator:a6c8e090f36d0857956c2ca0b865a4e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd348b0f1b1a0964471c5cfeb77e281"><td class="memItemLeft" align="right" valign="top"><a id="aedd348b0f1b1a0964471c5cfeb77e281"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aedd348b0f1b1a0964471c5cfeb77e281">setAntialiasEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:aedd348b0f1b1a0964471c5cfeb77e281"><td class="mdescLeft">&#160;</td><td class="mdescRight">アンチエイリアスの有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:aedd348b0f1b1a0964471c5cfeb77e281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62250f279eb1650a57189291605dfd02"><td class="memItemLeft" align="right" valign="top"><a id="a62250f279eb1650a57189291605dfd02"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a62250f279eb1650a57189291605dfd02">isAntialiasEnabled</a> ()</td></tr>
+<tr class="memdesc:a62250f279eb1650a57189291605dfd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">アンチエイリアスの有無を取得します。 <br /></td></tr>
+<tr class="separator:a62250f279eb1650a57189291605dfd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c808928644c3261cfed51ed3b2e0643"><td class="memItemLeft" align="right" valign="top"><a id="a6c808928644c3261cfed51ed3b2e0643"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a6c808928644c3261cfed51ed3b2e0643">setSSREnabled</a> (bool value)</td></tr>
+<tr class="memdesc:a6c808928644c3261cfed51ed3b2e0643"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSR (Screen Space Reflection) の有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:a6c808928644c3261cfed51ed3b2e0643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f82c039b3e6b545d93c661c291eab7"><td class="memItemLeft" align="right" valign="top"><a id="a85f82c039b3e6b545d93c661c291eab7"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a85f82c039b3e6b545d93c661c291eab7">isSSREnabled</a> ()</td></tr>
+<tr class="memdesc:a85f82c039b3e6b545d93c661c291eab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSR の有無を取得します。 <br /></td></tr>
+<tr class="separator:a85f82c039b3e6b545d93c661c291eab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf61eaf79844a97cd33beb151995d533"><td class="memItemLeft" align="right" valign="top"><a id="acf61eaf79844a97cd33beb151995d533"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#acf61eaf79844a97cd33beb151995d533">setSSAOEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:acf61eaf79844a97cd33beb151995d533"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSAO (Screen Space Ambient Occlusion) の有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:acf61eaf79844a97cd33beb151995d533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7576a8aab78d2100977f35f8e682875"><td class="memItemLeft" align="right" valign="top"><a id="ac7576a8aab78d2100977f35f8e682875"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ac7576a8aab78d2100977f35f8e682875">isSSAOEnabled</a> ()</td></tr>
+<tr class="memdesc:ac7576a8aab78d2100977f35f8e682875"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSAO の有無を取得します。 <br /></td></tr>
+<tr class="separator:ac7576a8aab78d2100977f35f8e682875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeba73b4f6e753f332d4a7ed8eefabd1"><td class="memItemLeft" align="right" valign="top"><a id="afeba73b4f6e753f332d4a7ed8eefabd1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#afeba73b4f6e753f332d4a7ed8eefabd1">setBloomEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:afeba73b4f6e753f332d4a7ed8eefabd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブルームエフェクトの有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:afeba73b4f6e753f332d4a7ed8eefabd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c00d9030f7f34445a395ecafa15ea02"><td class="memItemLeft" align="right" valign="top"><a id="a1c00d9030f7f34445a395ecafa15ea02"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a1c00d9030f7f34445a395ecafa15ea02">isBloomEnabled</a> ()</td></tr>
+<tr class="memdesc:a1c00d9030f7f34445a395ecafa15ea02"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブルームエフェクトの有無を取得します。 <br /></td></tr>
+<tr class="separator:a1c00d9030f7f34445a395ecafa15ea02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a94437ab71480e573d2ab7dff4d7e7b"><td class="memItemLeft" align="right" valign="top"><a id="a3a94437ab71480e573d2ab7dff4d7e7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a3a94437ab71480e573d2ab7dff4d7e7b">setDOFEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:a3a94437ab71480e573d2ab7dff4d7e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">被写界深度の有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:a3a94437ab71480e573d2ab7dff4d7e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8211c4f391bc4dc70af22b1754390517"><td class="memItemLeft" align="right" valign="top"><a id="a8211c4f391bc4dc70af22b1754390517"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a8211c4f391bc4dc70af22b1754390517">isDOFEnabled</a> ()</td></tr>
+<tr class="memdesc:a8211c4f391bc4dc70af22b1754390517"><td class="mdescLeft">&#160;</td><td class="mdescRight">被写界深度の有無を取得します。 <br /></td></tr>
+<tr class="separator:a8211c4f391bc4dc70af22b1754390517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebcb4624425f7ac9504aa4ac9732f22"><td class="memItemLeft" align="right" valign="top"><a id="adebcb4624425f7ac9504aa4ac9732f22"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#adebcb4624425f7ac9504aa4ac9732f22">setTonemapEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:adebcb4624425f7ac9504aa4ac9732f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">トーンマッピングの有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:adebcb4624425f7ac9504aa4ac9732f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2ad747817465e0fb6c826a8515c418"><td class="memItemLeft" align="right" valign="top"><a id="aff2ad747817465e0fb6c826a8515c418"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#aff2ad747817465e0fb6c826a8515c418">isTonemapEnabled</a> ()</td></tr>
+<tr class="memdesc:aff2ad747817465e0fb6c826a8515c418"><td class="mdescLeft">&#160;</td><td class="mdescRight">トーンマッピングの有無を取得します。 <br /></td></tr>
+<tr class="separator:aff2ad747817465e0fb6c826a8515c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948656cfeb5361def976883c1f60a670"><td class="memItemLeft" align="right" valign="top"><a id="a948656cfeb5361def976883c1f60a670"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a948656cfeb5361def976883c1f60a670">setVignetteEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:a948656cfeb5361def976883c1f60a670"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビネットエフェクトの有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:a948656cfeb5361def976883c1f60a670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9543180485a425b5bd0387dd9ce339"><td class="memItemLeft" align="right" valign="top"><a id="a8b9543180485a425b5bd0387dd9ce339"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a8b9543180485a425b5bd0387dd9ce339">isVignetteEnabled</a> ()</td></tr>
+<tr class="memdesc:a8b9543180485a425b5bd0387dd9ce339"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビネットエフェクトの有無を取得します。 <br /></td></tr>
+<tr class="separator:a8b9543180485a425b5bd0387dd9ce339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494fe47fb8eac6de0944cf8d1faeafea"><td class="memItemLeft" align="right" valign="top"><a id="a494fe47fb8eac6de0944cf8d1faeafea"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a494fe47fb8eac6de0944cf8d1faeafea">setGammaEnabled</a> (bool value)</td></tr>
+<tr class="memdesc:a494fe47fb8eac6de0944cf8d1faeafea"><td class="mdescLeft">&#160;</td><td class="mdescRight">ガンマ補正の有無を設定します。(default: false) <br /></td></tr>
+<tr class="separator:a494fe47fb8eac6de0944cf8d1faeafea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a5e6b04e83caa0b217b4eeb60cb3b8"><td class="memItemLeft" align="right" valign="top"><a id="a97a5e6b04e83caa0b217b4eeb60cb3b8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a97a5e6b04e83caa0b217b4eeb60cb3b8">isGammaEnabled</a> ()</td></tr>
+<tr class="memdesc:a97a5e6b04e83caa0b217b4eeb60cb3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ガンマ補正の有無を取得します。 <br /></td></tr>
+<tr class="separator:a97a5e6b04e83caa0b217b4eeb60cb3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d33b9ebf1f63af72c90c2bcda4d229"><td class="memItemLeft" align="right" valign="top"><a id="a96d33b9ebf1f63af72c90c2bcda4d229"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a96d33b9ebf1f63af72c90c2bcda4d229">setTonemapExposure</a> (float value)</td></tr>
+<tr class="memdesc:a96d33b9ebf1f63af72c90c2bcda4d229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tonemap exposure. <br /></td></tr>
+<tr class="separator:a96d33b9ebf1f63af72c90c2bcda4d229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273a5c00c42c41971b6f0f3ab1782d7e"><td class="memItemLeft" align="right" valign="top"><a id="a273a5c00c42c41971b6f0f3ab1782d7e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a273a5c00c42c41971b6f0f3ab1782d7e">setTonemapLinearWhite</a> (float value)</td></tr>
+<tr class="memdesc:a273a5c00c42c41971b6f0f3ab1782d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapLinearWhite <br /></td></tr>
+<tr class="separator:a273a5c00c42c41971b6f0f3ab1782d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d89d09458da5eaed5903fbdfb6b1fd"><td class="memItemLeft" align="right" valign="top"><a id="ab2d89d09458da5eaed5903fbdfb6b1fd"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ab2d89d09458da5eaed5903fbdfb6b1fd">setTonemapShoulderStrength</a> (float value)</td></tr>
+<tr class="memdesc:ab2d89d09458da5eaed5903fbdfb6b1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapShoulderStrength <br /></td></tr>
+<tr class="separator:ab2d89d09458da5eaed5903fbdfb6b1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2596b80da9860108f579c7f624473c50"><td class="memItemLeft" align="right" valign="top"><a id="a2596b80da9860108f579c7f624473c50"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a2596b80da9860108f579c7f624473c50">setTonemapLinearStrength</a> (float value)</td></tr>
+<tr class="memdesc:a2596b80da9860108f579c7f624473c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapLinearStrength <br /></td></tr>
+<tr class="separator:a2596b80da9860108f579c7f624473c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a27c8f94b36622e251e34315809d67"><td class="memItemLeft" align="right" valign="top"><a id="a55a27c8f94b36622e251e34315809d67"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a55a27c8f94b36622e251e34315809d67">setTonemapLinearAngle</a> (float value)</td></tr>
+<tr class="memdesc:a55a27c8f94b36622e251e34315809d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapLinearAngle <br /></td></tr>
+<tr class="separator:a55a27c8f94b36622e251e34315809d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11abaabb7e2d6b474daecf5db1bf52ad"><td class="memItemLeft" align="right" valign="top"><a id="a11abaabb7e2d6b474daecf5db1bf52ad"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a11abaabb7e2d6b474daecf5db1bf52ad">setTonemapToeStrength</a> (float value)</td></tr>
+<tr class="memdesc:a11abaabb7e2d6b474daecf5db1bf52ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapToeStrength <br /></td></tr>
+<tr class="separator:a11abaabb7e2d6b474daecf5db1bf52ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6244273b7bb0bef117307d61b671179a"><td class="memItemLeft" align="right" valign="top"><a id="a6244273b7bb0bef117307d61b671179a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#a6244273b7bb0bef117307d61b671179a">setTonemapToeNumerator</a> (float value)</td></tr>
+<tr class="memdesc:a6244273b7bb0bef117307d61b671179a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapToeNumerator <br /></td></tr>
+<tr class="separator:a6244273b7bb0bef117307d61b671179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae528f8d0a5f07fdb3b49145a88ee2d57"><td class="memItemLeft" align="right" valign="top"><a id="ae528f8d0a5f07fdb3b49145a88ee2d57"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classln_1_1_scene.html#ae528f8d0a5f07fdb3b49145a88ee2d57">setTonemapToeDenominator</a> (float value)</td></tr>
+<tr class="memdesc:ae528f8d0a5f07fdb3b49145a88ee2d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTonemapToeDenominator <br /></td></tr>
+<tr class="separator:ae528f8d0a5f07fdb3b49145a88ee2d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>シーンのベースクラスです。 </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afef6ad482cbb9f6f915e2e6d70f06aeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afef6ad482cbb9f6f915e2e6d70f06aeb">&#9670;&nbsp;</a></span>onActivated()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ln::Scene::onActivated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when activated. </p>
-
-</div>
-</div>
-<a id="abf45a386e900691b45299c522bad29c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf45a386e900691b45299c522bad29c2">&#9670;&nbsp;</a></span>onDeactivated()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ln::Scene::onDeactivated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when deactivated. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>ワールド 及び レベル 管理のユーティリティです。 </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Website/Website/_Lumino/include/LuminoEngine/Scene/<a class="el" href="_scene_8hpp_source.html">Scene.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -187,7 +345,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_scene.html">Scene</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

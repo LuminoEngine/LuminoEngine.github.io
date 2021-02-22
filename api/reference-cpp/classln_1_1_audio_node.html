@@ -103,9 +103,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aee42a4f389877a23827f3ad46122eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>Audio graph の実装のフロントエンド。Graph の実態は Core と呼んでおり、別スレッドで実行される。 フロントエンドの実装の注意点として、状態変化は直接 Core に設定してはならない。 変更は必ず遅延設定で実装する。 変化は一度 <a class="el" href="classln_1_1_audio_node.html">AudioNode</a> のフィールドに保持しておいて、AudioNode::commit() が呼ばれたときに、その内部から Core に変更を設定する。</dd></dl>
-<p>AudioNode::commit() は Audio thread から呼び出される。 そのため <a class="el" href="classln_1_1_audio_node.html">AudioNode</a> のフィールドを設定する、ユーザープログラムから呼ばれる setVolume() などの setter は、mutex を Write-lock する必要がある。 一方 AudioNode::commit() では Read-lock する。</p>
-<p>× インスタンスの削除は常に Audio-thread 上から行われる。インスタンス作成と同時に AudioContext の管理下に入り強参照される。 → Binding で公開するクラスなので、別スレッドからの削除は非常に危険。 もともと Audio モジュールは <a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa" title="1フレーム分の更新処理を行います。 ">Engine::update()</a> 無しでも使いたいコンセプトだったけど、AudioGraph はかなり難しい。 「従来通り Sound クラスだけ使ってるなら <a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa" title="1フレーム分の更新処理を行います。 ">Engine::update()</a> は不要だけど、AudioGraph 使うなら必須だよ」 くらいの仕様にしたほうがよさそう。 </p>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd><a class="el" href="classln_1_1_audio.html" title="Audio. ">Audio</a> graph の実装のフロントエンド。Graph の実態は Core と呼んでおり、別スレッドで実行される。 フロントエンドの実装の注意点として、状態変化は直接 Core に設定してはならない。 変更は必ず遅延設定で実装する。 変化は一度 <a class="el" href="classln_1_1_audio_node.html">AudioNode</a> のフィールドに保持しておいて、AudioNode::commit() が呼ばれたときに、その内部から Core に変更を設定する。</dd></dl>
+<p>AudioNode::commit() は <a class="el" href="classln_1_1_audio.html" title="Audio. ">Audio</a> thread から呼び出される。 そのため <a class="el" href="classln_1_1_audio_node.html">AudioNode</a> のフィールドを設定する、ユーザープログラムから呼ばれる setVolume() などの setter は、mutex を Write-lock する必要がある。 一方 AudioNode::commit() では Read-lock する。</p>
+<p>× インスタンスの削除は常に Audio-thread 上から行われる。インスタンス作成と同時に AudioContext の管理下に入り強参照される。 → Binding で公開するクラスなので、別スレッドからの削除は非常に危険。 もともと <a class="el" href="classln_1_1_audio.html" title="Audio. ">Audio</a> モジュールは <a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa" title="1フレーム分の更新処理を行います。 ">Engine::update()</a> 無しでも使いたいコンセプトだったけど、AudioGraph はかなり難しい。 「従来通り <a class="el" href="classln_1_1_sound.html" title="Sound. ">Sound</a> クラスだけ使ってるなら <a class="el" href="classln_1_1_engine.html#a5e16e266248b224f137518fba7e53aaa" title="1フレーム分の更新処理を行います。 ">Engine::update()</a> は不要だけど、AudioGraph 使うなら必須だよ」 くらいの仕様にしたほうがよさそう。</p>
+<h2>[2020/7/6] <a class="el" href="classln_1_1_audio_node.html">AudioNode</a> のライフサイクル </h2>
+<p>create() した後、AudioContext に追加するのはユーザープログラムの役目とする。 ちょうど、ノードエディタのキャンバス上に Node を置くイメージ。 なので、Context から Node を外すのもユーザープログラムの役目。 内部的に参照カウントを監視して自動開放したりはしない。 → 以前はそのような想定だったが、マルチスレッドの難易度が跳ね上がるのと、AudioNode を積極的にユーザープログラムで書くことは少ない (それよりも <a class="el" href="classln_1_1_sound.html" title="Sound. ">Sound</a> クラスを使ってね) なスタイルなので、ちょっと凝ったことする人は気を付けてね、な方向にしてみる。 ↑ よく考えたらこれだけじゃだめ。Binding の件で、Object の派生は必ずメインスレッドで開放しなければならない。 </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/Website/Website/_Lumino/include/LuminoEngine/Audio/<a class="el" href="_audio_node_8hpp_source.html">AudioNode.hpp</a></li>
 </ul>
@@ -115,7 +117,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceln.html">ln</a></li><li class="navelem"><a class="el" href="classln_1_1_audio_node.html">AudioNode</a></li>
-    <li class="footer">Generated on Sat Mar 14 2020 13:35:41 for Lumino by
+    <li class="footer">Generated on Mon Feb 22 2021 10:28:09 for Lumino by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

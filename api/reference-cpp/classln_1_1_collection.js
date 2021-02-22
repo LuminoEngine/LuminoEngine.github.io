@@ -8,6 +8,7 @@ var classln_1_1_collection =
     [ "cend", "classln_1_1_collection.html#a656223dd0369eeb02922f8b3d3ea7c2e", null ],
     [ "clear", "classln_1_1_collection.html#a74027139158f24d71fcc69569cba1138", null ],
     [ "clearItems", "classln_1_1_collection.html#ad9c22be6ad29b92a7376bc7902504dbe", null ],
+    [ "contains", "classln_1_1_collection.html#a10d4de7e30d5e5bd85395a2737a4d7e4", null ],
     [ "end", "classln_1_1_collection.html#a4a71ac7502f9931c35baa465ad40426e", null ],
     [ "end", "classln_1_1_collection.html#aed169c29fc214e4479ca24a413a4a546", null ],
     [ "findIf", "classln_1_1_collection.html#a556c71f267b44921867bc633f253ac58", null ],

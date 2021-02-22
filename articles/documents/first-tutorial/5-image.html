@@ -3,12 +3,20 @@
 <html>
   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWZCPFJ1J4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWZCPFJ1J4');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#30011;&#20687;&#12434;&#25551;&#30011;&#12377;&#12427; | Lumino website </title>
+    <title>&#30011;&#20687;&#12434;&#34920;&#31034;&#12377;&#12427; | Lumino website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#30011;&#20687;&#12434;&#25551;&#30011;&#12377;&#12427; | Lumino website ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="title" content="&#30011;&#20687;&#12434;&#34920;&#31034;&#12377;&#12427; | Lumino website ">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -67,14 +75,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="画像を描画する">画像を描画する</h1>
+<h1 id="画像を表示する">画像を表示する</h1>
 
 <p>この章では、2D 画像を表す <code>テクスチャ</code> と、それを効率的にワールド上に表示する <code>スプライト</code> について学びます。</p>
 <h2 id="画像ファイルを読み込んで描画する">画像ファイルを読み込んで描画する</h2>
 <p>画像を表示するには、まず <code>Texture2D</code> で画像ファイルを読み込み、次に <code>Sprite</code> オブジェクトを作成します。</p>
 <p>Sprite は画像を張り付けて表示するための板のようなものであると考えてください。</p>
-<p>ここでは次の画像を表示してみます。チュートリアル冒頭で作成したプロジェクトの <code>assets</code> フォルダの中に、次のような <code>picture1.jpg</code> というファイルが入っていることを確認して実行してください。</p>
+<p>ここでは次の画像を表示してみます。チュートリアル冒頭で準備した <code>assets</code> フォルダの中に、次のような <code>picture1.jpg</code> というファイルが入っていることを確認して実行してください。</p>
 <p><img src="img/picture1.jpg" alt=""></p>
+<!-- -------------------------------------------------------------------------------- -->
 <div class="tabGroup" id="tabgroup_Amr4eMsARi">
 <ul role="tablist">
 <li role="presentation">
@@ -82,6 +91,9 @@
 </li>
 <li role="presentation">
 <a href="#tabpanel_Amr4eMsARi_lang-ruby" role="tab" aria-controls="tabpanel_Amr4eMsARi_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_Amr4eMsARi_lang-hsp3" role="tab" aria-controls="tabpanel_Amr4eMsARi_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
 </li>
 </ul>
 <section id="tabpanel_Amr4eMsARi_lang-cpp" role="tabpanel" data-tab="lang-cpp">
@@ -92,7 +104,7 @@ class App : public Application
     void onInit() override
     {
         auto texture = Texture2D::load(u&quot;picture1.jpg&quot;);
-        auto sprite = Sprite::create(texture);
+        auto sprite = Sprite::With(texture).buildInto();
     }
 };
 
@@ -102,15 +114,30 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    texture = Texture2D.load(&quot;picture1.jpg&quot;)
-    sprite = Sprite.new(texture)
-  end
+    def on_init
+        texture = Texture2D.load(&quot;picture1.jpg&quot;)
+        sprite = Sprite.new(texture)
+        sprite.add_into
+    end
 end
 
 App.new.run
 </code></pre></section>
+<section id="tabpanel_Amr4eMsARi_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNTexture2D_Load &quot;picture1.jpg&quot;, texture
+    LNSprite_CreateWithTexture texture, sprite
+    LNWorldObject_AddInto sprite
+    return
+
+*on_update
+    return
+</code></pre></section>
 </div>
+<!-- -------------------------------------------------------------------------------- -->
 <p><img src="img/image-1.png" alt=""></p>
 <h3 id="対応している画像フォーマット">対応している画像フォーマット</h3>
 <p>現在、画像フォーマットの読み込みがサポートされています。</p>
@@ -164,6 +191,9 @@ App.new.run
 <li role="presentation">
 <a href="#tabpanel_Amr4eMsARi-1_lang-ruby" role="tab" aria-controls="tabpanel_Amr4eMsARi-1_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
 </li>
+<li role="presentation">
+<a href="#tabpanel_Amr4eMsARi-1_lang-hsp3" role="tab" aria-controls="tabpanel_Amr4eMsARi-1_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
+</li>
 </ul>
 <section id="tabpanel_Amr4eMsARi-1_lang-cpp" role="tabpanel" data-tab="lang-cpp">
 <pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
@@ -173,8 +203,9 @@ class App : public Application
     void onInit() override
     {
         auto texture = Texture2D::load(u&quot;picture1.jpg&quot;);
-        auto sprite = Sprite::create(texture);
-        sprite-&gt;setSize(3, 3);
+        auto sprite = Sprite::With(texture)
+            .size(3, 3)
+            .buildInto();
     }
 };
 
@@ -184,14 +215,29 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    texture = Texture2D.load(&quot;picture1.jpg&quot;)
-    sprite = Sprite.new(texture)
-    sprite.set_size(3, 3)
-  end
+    def on_init
+        texture = Texture2D.load(&quot;picture1.jpg&quot;)
+        sprite = Sprite.new(texture)
+        sprite.set_size(3, 3)
+        sprite.add_into
+    end
 end
 
 App.new.run
+</code></pre></section>
+<section id="tabpanel_Amr4eMsARi-1_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">#include &quot;lumino.as&quot;
+LUMINO_APP
+
+*on_init
+    LNTexture2D_Load &quot;picture1.jpg&quot;, texture
+    LNSprite_CreateWithTexture texture, sprite
+    LNSprite_SetSizeWH sprite, 3, 3
+    LNWorldObject_AddInto sprite
+    return
+
+*on_update
+    return
 </code></pre></section>
 </div>
 <p><img src="img/image-3.png" alt=""></p>
@@ -206,6 +252,9 @@ App.new.run
 <li role="presentation">
 <a href="#tabpanel_Amr4eMsARi-2_lang-ruby" role="tab" aria-controls="tabpanel_Amr4eMsARi-2_lang-ruby" data-tab="lang-ruby" tabindex="-1">Ruby</a>
 </li>
+<li role="presentation">
+<a href="#tabpanel_Amr4eMsARi-2_lang-hsp3" role="tab" aria-controls="tabpanel_Amr4eMsARi-2_lang-hsp3" data-tab="lang-hsp3" tabindex="-1">HSP3</a>
+</li>
 </ul>
 <section id="tabpanel_Amr4eMsARi-2_lang-cpp" role="tabpanel" data-tab="lang-cpp">
 <pre><code class="lang-cpp">#include &lt;Lumino.hpp&gt;
@@ -215,7 +264,7 @@ class App : public Application
     void onInit() override
     {
         auto texture = Texture2D::loadEmoji(u&quot;🌱&quot;);
-        auto sprite = Sprite::create(texture);
+        auto sprite = Sprite::With(texture).buildInto();
     }
 };
 
@@ -225,13 +274,18 @@ LUMINO_APP(App);
 <pre><code class="lang-ruby">require &quot;lumino&quot;
 
 class App &lt; Application
-  def on_init
-    texture = Texture2D.load_emoji(&quot;🌱&quot;)
-    sprite = Sprite.new(texture)
-  end
+    def on_init
+        texture = Texture2D.load_emoji(&quot;🌱&quot;)
+        sprite = Sprite.new(texture)
+        sprite.add_into
+    end
 end
 
 App.new.run
+</code></pre></section>
+<section id="tabpanel_Amr4eMsARi-2_lang-hsp3" role="tabpanel" data-tab="lang-hsp3" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-c">ver3.51 時点の HSP3 は Shift_JIS を前提としているため、スクリプトエディタで絵文字を入力することはできません。
+TODO: ファイルから UTF-8 文字列を読み込む方法
 </code></pre></section>
 </div>
 <p><img src="img/image-4.png" alt=""></p>
@@ -254,7 +308,8 @@ App.new.run
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -268,7 +323,7 @@ App.new.run
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2017-2020 lriki
+            Copyright © 2017-2021 lriki
             
           </div>
         </div>

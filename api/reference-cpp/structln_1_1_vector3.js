@@ -6,6 +6,7 @@ var structln_1_1_vector3 =
     [ "clamp", "structln_1_1_vector3.html#a0cb2dd75378a4d68399ac498303d1c46", null ],
     [ "data", "structln_1_1_vector3.html#af837b13be9ce05576fc6f3d8de14842c", null ],
     [ "data", "structln_1_1_vector3.html#aec33e03646780e148f2008c01e6e1b1b", null ],
+    [ "get", "structln_1_1_vector3.html#aa13444a7fe83e8b6b97477a8b38e88f7", null ],
     [ "isNaNOrInf", "structln_1_1_vector3.html#ab012f1ea6d514199150141c21f286f87", null ],
     [ "length", "structln_1_1_vector3.html#a0b67921e845855f367016a34be98abf9", null ],
     [ "lengthSquared", "structln_1_1_vector3.html#a7571917ec05db8d350c7dd5cbfe37bcb", null ],
