@@ -105,7 +105,8 @@
 
 class App &lt; Application
   def on_init
-    text = UITextBlock.new(&quot;Hello, Lumino!&quot;)
+    text = UIText.new(&quot;Hello, Lumino!&quot;)
+    text.add_into
   end
 end
 

@@ -286,7 +286,6 @@ var searchData=
   ['ref_3c_20uicolorchangedeventhandler_20_3e',['Ref&lt; UIColorChangedEventHandler &gt;',['../classln_1_1_ref.html',1,'ln']]],
   ['ref_3c_20uicolorpickercontent_20_3e',['Ref&lt; UIColorPickerContent &gt;',['../classln_1_1_ref.html',1,'ln']]],
   ['ref_3c_20uicommand_20_3e',['Ref&lt; UICommand &gt;',['../classln_1_1_ref.html',1,'ln']]],
-  ['ref_3c_20uicreationcontext_20_3e',['Ref&lt; UICreationContext &gt;',['../classln_1_1_ref.html',1,'ln']]],
   ['ref_3c_20uidialog_20_3e',['Ref&lt; UIDialog &gt;',['../classln_1_1_ref.html',1,'ln']]],
   ['ref_3c_20uieditabletextarea_20_3e',['Ref&lt; UIEditableTextArea &gt;',['../classln_1_1_ref.html',1,'ln']]],
   ['ref_3c_20uigeneraleventhandler_20_3e',['Ref&lt; UIGeneralEventHandler &gt;',['../classln_1_1_ref.html',1,'ln']]],

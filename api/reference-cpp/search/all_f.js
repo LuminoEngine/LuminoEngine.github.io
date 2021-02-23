@@ -54,7 +54,7 @@ var searchData=
   ['playse',['playSE',['../classln_1_1_audio.html#a87a8cc0399c8f62e26bc648273dd240b',1,'ln::Audio']]],
   ['playse3d',['playSE3D',['../classln_1_1_audio.html#aae99e90bd7857586162c258e22721590',1,'ln::Audio']]],
   ['plum',['Plum',['../structln_1_1_color.html#a1c9617dbe2a34d7faf38ffc965e3e02d',1,'ln::Color']]],
-  ['point',['Point',['../structln_1_1_point.html',1,'ln::Point'],['../classln_1_1_raycast_result.html#acdee4ed42f2d3d3c1010d7db947de8f6',1,'ln::RaycastResult::point()'],['../structln_1_1_point.html#a089df5f0fe2da1f9db347e7122668831',1,'ln::Point::Point()'],['../structln_1_1_point.html#a1cf93d6a57b07a4c7d31ee3be52fcabe',1,'ln::Point::Point(float x_, float y_)'],['../structln_1_1_point.html#a997ba326cc9a37f210cc59d4d885fc3e',1,'ln::Point::Point(const Vector2 &amp;v)'],['../namespaceln.html#a354be6a9d5792d50abbb66c668bfd76fa2a3cd5946cfd317eb99c3d32e35e2d4c',1,'ln::Point()'],['../namespaceln.html#a08facfc97a073043a2b1851490d8b8e9a2a3cd5946cfd317eb99c3d32e35e2d4c',1,'ln::Point()']]],
+  ['point',['Point',['../structln_1_1_point.html',1,'ln::Point'],['../structln_1_1_point.html#a089df5f0fe2da1f9db347e7122668831',1,'ln::Point::Point()'],['../structln_1_1_point.html#a1cf93d6a57b07a4c7d31ee3be52fcabe',1,'ln::Point::Point(float x_, float y_)'],['../structln_1_1_point.html#a997ba326cc9a37f210cc59d4d885fc3e',1,'ln::Point::Point(const Vector2 &amp;v)'],['../classln_1_1_raycast_result.html#acdee4ed42f2d3d3c1010d7db947de8f6',1,'ln::RaycastResult::point()'],['../namespaceln.html#a354be6a9d5792d50abbb66c668bfd76fa2a3cd5946cfd317eb99c3d32e35e2d4c',1,'ln::Point()'],['../namespaceln.html#a08facfc97a073043a2b1851490d8b8e9a2a3cd5946cfd317eb99c3d32e35e2d4c',1,'ln::Point()']]],
   ['pointlight',['PointLight',['../classln_1_1_point_light.html',1,'ln']]],
   ['pointlightcomponent',['PointLightComponent',['../classln_1_1_point_light_component.html',1,'ln']]],
   ['pointlist',['PointList',['../namespaceln.html#a0d795a496b70be222636a7a68d62a01fa1a18ff71b3df3e362a2489eef4b30003',1,'ln']]],
@@ -75,5 +75,5 @@ var searchData=
   ['promise',['Promise',['../classln_1_1_promise.html',1,'ln']]],
   ['promisefailuredelegate',['PromiseFailureDelegate',['../namespaceln.html#a1d2ca3130ba0b3b80cf652a1bbf5bf30',1,'ln']]],
   ['propertyname',['propertyName',['../classln_1_1_json_reader.html#a1af60ebcd729d6b0cd997a28ae57619c',1,'ln::JsonReader::propertyName()'],['../namespaceln.html#a08e87265e0ffb621489385faeb2bcbc7a0c7a70fe1a1717fc7c61a4621daa144d',1,'ln::PropertyName()']]],
-  ['purple',['purple',['../classln_1_1_u_i_colors.html#a523e598fde6c9ae6996b083ef2b2ae65',1,'ln::UIColors::purple()'],['../structln_1_1_color.html#a4e4822091e14bbad2895ec31d4390193',1,'ln::Color::Purple()']]]
+  ['purple',['Purple',['../structln_1_1_color.html#a4e4822091e14bbad2895ec31d4390193',1,'ln::Color::Purple()'],['../classln_1_1_u_i_colors.html#a523e598fde6c9ae6996b083ef2b2ae65',1,'ln::UIColors::purple()']]]
 ];

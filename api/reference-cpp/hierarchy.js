@@ -306,7 +306,6 @@ var hierarchy =
     [ "ln::Ref< UIColorChangedEventHandler >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< UIColorPickerContent >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< UICommand >", "classln_1_1_ref.html", null ],
-    [ "ln::Ref< UICreationContext >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< UIDialog >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< UIEditableTextArea >", "classln_1_1_ref.html", null ],
     [ "ln::Ref< UIGeneralEventHandler >", "classln_1_1_ref.html", null ],
